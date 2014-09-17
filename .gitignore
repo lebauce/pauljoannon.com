@@ -1,0 +1,13 @@
+# Vendor
+/bower_components
+
+# Hakyll internal dirs
+/_cache
+/_site
+
+# Cabal build dir
+/dist
+
+# Haskell compiled files
+*.hi
+*.o
