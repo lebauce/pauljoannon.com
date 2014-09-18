@@ -1,0 +1,57 @@
+@import "bootstrap/less/bootstrap";
+
+@import "variables";
+
+html { height: 100%; }
+
+body {
+    background: url(/images/body.gif) repeat;
+    color: #444;
+    height: 100%;
+
+    a {
+        color: #333;
+
+        &:hover {
+            color: #1EB6CE;
+            text-decoration: none;
+        }
+    }
+
+    .container {
+        height: 100%;
+
+        > div {
+            height: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 30px;
+
+            h1 {
+                display: none;
+            }
+
+            a {
+                border: none;
+            }
+        }
+
+        .content {
+            border-bottom: @bottom-border;
+
+            h1 { text-align: center; }
+        }
+
+        .footer {
+            border-top: @top-border;
+            padding-top: 10px;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

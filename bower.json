@@ -1,0 +1,15 @@
+{
+  "name": "pauljoannon.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Paulloz/pauljoannon.com",
+  "authors": [
+    "Paul Joannon <paul.joannon@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
