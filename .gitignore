@@ -1,5 +1,5 @@
 # Vendor
-/bower_components
+assets/vendor
 
 # Hakyll internal dirs
 /_cache

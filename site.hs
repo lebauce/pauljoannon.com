@@ -25,13 +25,14 @@ main = do
         match "templates/*" $ compile templateCompiler
 
         -- Copy static assets
-        let assets = [ "images/*", "js/**", "CNAME" ]
+        let assets = [ "CNAME", "assets/images/*", "assets/js/**",
+                       "assets/vendor/**/*.min.js", "assets/vendor/fontawesome/fonts/*" ]
         match (foldr1 (.||.) assets) $ do
             route idRoute
             compile copyFileCompiler
 
         -- Compile less
-        match "css/*" $ do
+        match "assets/css/*" $ do
             route $ setExtension "css"
             compile lessCompiler
 
@@ -57,7 +58,7 @@ main = do
 lessCompiler :: Compiler (Item String)
 lessCompiler =
     getResourceString
-        >>= withItemBody (unixFilter "lessc" ["--include-path=css/:bower_components/", "-"])
+        >>= withItemBody (unixFilter "lessc" ["--include-path=assets/css/:assets/vendor/", "-"])
         >>= return . fmap compressCss
 
 -- ------------------------------------------------------------------------------
