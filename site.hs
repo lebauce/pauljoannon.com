@@ -37,7 +37,7 @@ main = do
             compile lessCompiler
 
         -- Compile the home page
-        match "index.md" $ do
+        create ["index.md"] $ do
             route $ setExtension "html"
             compile $ do
                 let indexContext =
