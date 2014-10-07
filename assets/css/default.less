@@ -6,6 +6,30 @@
 
 @fa-font-path: "/assets/vendor/fontawesome/fonts";
 
+@brand-primary: #ff6f40;
+
+@navbar-height: 50px;
+
+html, body, .container {
+    background-color: #faf9f7;
+    position: relative;
+}
+
 .container {
     width: 100%;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -@navbar-height;
+    height: 1px;
+    width: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    display: block;
+    padding-top: @navbar-height;
 }
