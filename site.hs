@@ -72,8 +72,9 @@ indexCtx = mconcat
 
 projectsCtx :: Context String
 projectsCtx = mconcat
-    [ listField "projects" defaultContext (loadAllSnapshots "content/projects/*.md" "content")
-    , defaultContext
+    [ defaultContext
+    , titleField "Projets"
+    , listField "projects" defaultContext (recentFirst =<< loadAllSnapshots "content/projects/*.md" "content")
     ]
 
 -- ------------------------------------------------------------------------------
