@@ -42,6 +42,13 @@ main = do
                     >>= loadAndApplyTemplate "templates/about.html" defaultContext
                     >>= saveSnapshot "content"
 
+        -- Compile all Projects
+        match "content/projects/*.md" $ do
+            compile $ do
+                pandocCompiler
+                    >>= loadAndApplyTemplate "templates/project.html" defaultContext
+                    >>= saveSnapshot "content"
+
 -- ------------------------------------------------------------------------------
 -- Contexts
 
