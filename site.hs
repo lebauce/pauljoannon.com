@@ -36,15 +36,15 @@ main = do
             route $ setExtension "css"
             compile lessCompiler
 
-        -- Compile the home page
-        create ["index.md"] $ do
-            route $ setExtension "html"
+        -- Compile Index
+        create ["index.html"] $ do
+            route idRoute
             compile $ do
                 let indexContext =
                         titleField "pauljoannon.com" `mappend`
                         aboutField `mappend`
                         baseContext
-                pandocCompiler
+                makeItem ""
                     >>= loadAndApplyTemplate "templates/index.html" indexContext
                     >>= loadAndApplyTemplate "templates/base.html"  indexContext
                     >>= relativizeUrls
