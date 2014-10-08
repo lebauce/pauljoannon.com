@@ -2,24 +2,14 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Hakyll
-import Control.Applicative
-import Data.Monoid (mappend, mconcat)
-import Data.Time.Clock
-import Data.Time.Calendar
-import Data.Tuple.Select
+import Data.Monoid (mconcat)
 
 -- ------------------------------------------------------------------------------
 
 main :: IO ()
 main = do
-    now <- getCurrentTime
 
     hakyll $ do
-
-        let baseContext =
-                constField "site_title" "pauljoannon.com" `mappend`
-                constField "current_year" (show (sel1 (toGregorian $ utctDay now))) `mappend`
-                defaultContext
 
         -- Compile templates
         match "templates/*" $ compile templateCompiler
@@ -40,24 +30,30 @@ main = do
         create ["index.html"] $ do
             route idRoute
             compile $ do
-                let indexContext =
-                        titleField "pauljoannon.com" `mappend`
-                        aboutField `mappend`
-                        baseContext
                 makeItem ""
-                    >>= loadAndApplyTemplate "templates/index.html" indexContext
-                    >>= loadAndApplyTemplate "templates/base.html"  indexContext
+                    >>= loadAndApplyTemplate "templates/index.html" indexCtx
+                    >>= loadAndApplyTemplate "templates/base.html"  indexCtx
                     >>= relativizeUrls
 
         -- Compile About
         match "content/about.md" $ do
             compile $ do
                 pandocCompiler
-                    >>= loadAndApplyTemplate "templates/about.html" baseContext
+                    >>= loadAndApplyTemplate "templates/about.html" defaultContext
                     >>= saveSnapshot "content"
 
 -- ------------------------------------------------------------------------------
 -- Contexts
+
+indexCtx :: Context String
+indexCtx = mconcat
+    [ defaultContext
+    , titleField "Paul Joannon"
+    , constField "subtitle" "aka Paulloz"
+    , constField "twitter" "@pauljoannon"
+    , constField "github" "Paulloz"
+    , aboutField
+    ]
 
 -- ------------------------------------------------------------------------------
 -- Fields
