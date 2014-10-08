@@ -42,6 +42,13 @@ main = do
                     >>= loadAndApplyTemplate "templates/about.html" defaultContext
                     >>= saveSnapshot "content"
 
+        -- Compile Projects
+        create ["content/projects.html"] $ do
+            compile $ do
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/projects.html" projectsCtx
+                    >>= saveSnapshot "content"
+
         -- Compile all Projects
         match "content/projects/*.md" $ do
             compile $ do
@@ -60,6 +67,12 @@ indexCtx = mconcat
     , constField "twitter" "@pauljoannon"
     , constField "github" "Paulloz"
     , aboutField
+    ]
+
+projectsCtx :: Context String
+projectsCtx = mconcat
+    [ listField "projects" defaultContext (loadAllSnapshots "content/projects/*.md" "content")
+    , defaultContext
     ]
 
 -- ------------------------------------------------------------------------------
