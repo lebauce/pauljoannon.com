@@ -42,17 +42,18 @@ main = do
             compile $ do
                 let indexContext =
                         titleField "pauljoannon.com" `mappend`
-                        aproposField `mappend`
+                        aboutField `mappend`
                         baseContext
                 pandocCompiler
                     >>= loadAndApplyTemplate "templates/index.html" indexContext
                     >>= loadAndApplyTemplate "templates/base.html"  indexContext
                     >>= relativizeUrls
 
-        match "content/apropos.md" $ do
+        -- Compile About
+        match "content/about.md" $ do
             compile $ do
                 pandocCompiler
-                    >>= loadAndApplyTemplate "templates/apropos.html" baseContext
+                    >>= loadAndApplyTemplate "templates/about.html" baseContext
                     >>= saveSnapshot "content"
 
 -- ------------------------------------------------------------------------------
@@ -62,10 +63,10 @@ main = do
 -- Fields
 
 -- A field containing the 'content' snapshot of 'apropos.md'
-aproposField :: Context a
-aproposField = field "apropos" $ \_ -> do
-    apropos <- loadSnapshot "content/apropos.md" "content"
-    return $ itemBody apropos
+aboutField :: Context a
+aboutField = field "about" $ \_ -> do
+    about <- loadSnapshot "content/about.md" "content"
+    return $ itemBody about
 
 -- ------------------------------------------------------------------------------
 -- Compilers
