@@ -49,7 +49,7 @@ main = do
                     >>= loadAndApplyTemplate "templates/base.html"  indexContext
                     >>= relativizeUrls
 
-        match "apropos.md" $ do
+        match "content/apropos.md" $ do
             compile $ do
                 pandocCompiler
                     >>= loadAndApplyTemplate "templates/apropos.html" baseContext
@@ -64,7 +64,7 @@ main = do
 -- A field containing the 'content' snapshot of 'apropos.md'
 aproposField :: Context a
 aproposField = field "apropos" $ \_ -> do
-    apropos <- loadSnapshot "apropos.md" "content"
+    apropos <- loadSnapshot "content/apropos.md" "content"
     return $ itemBody apropos
 
 -- ------------------------------------------------------------------------------
