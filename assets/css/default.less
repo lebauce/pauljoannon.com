@@ -1,17 +1,16 @@
-@import "bootstrap/less/bootstrap";
+@import "bootstrap/less/bootstrap.less";
 @import "fontawesome/less/font-awesome.less";
 
 @import "variables.less";
+
 @import "header.less";
 
-@fa-font-path: "/assets/vendor/fontawesome/fonts";
-
-@brand-primary: #ff6f40;
-
-@navbar-height: 50px;
-
 html, body, .container {
-    background-color: #faf9f7;
+    background-color: @body-bg;
+}
+
+body {
+    padding-top: @navbar-height;
     position: relative;
 }
 
@@ -31,5 +30,6 @@ html, body, .container {
 
 .content {
     display: block;
-    padding-top: @navbar-height;
 }
+
+@import "index.less";
