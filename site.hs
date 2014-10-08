@@ -43,7 +43,7 @@ main = do
                     >>= saveSnapshot "content"
 
         -- Compile Projects
-        create ["content/projects.html"] $ do
+        create ["content/projects.md"] $ do
             compile $ do
                 makeItem ""
                     >>= loadAndApplyTemplate "templates/projects.html" projectsCtx
@@ -66,8 +66,8 @@ indexCtx = mconcat
     , constField "subtitle" "aka Paulloz"
     , constField "twitter" "@pauljoannon"
     , constField "github" "Paulloz"
-    , aboutField
-    , projectsField
+    , includeField "about"
+    , includeField "projects"
     ]
 
 projectsCtx :: Context String
@@ -79,16 +79,11 @@ projectsCtx = mconcat
 -- ------------------------------------------------------------------------------
 -- Fields
 
--- A field containing the 'content' snapshot of 'apropos.md'
-aboutField :: Context a
-aboutField = field "about" $ \_ -> do
-    about <- loadSnapshot "content/about.md" "content"
-    return $ itemBody about
-
-projectsField :: Context a
-projectsField = field "projects" $ \_ -> do
-    projects <- loadSnapshot "content/projects.html" "content"
-    return $ itemBody projects
+-- A field containing a 'content' snapshot
+includeField :: String -> Context a
+includeField name = field name $ \_ -> do
+    include <- loadSnapshot (fromFilePath $ "content/" ++ name ++ ".md") "content"
+    return $ itemBody include
 
 -- ------------------------------------------------------------------------------
 -- Compilers
