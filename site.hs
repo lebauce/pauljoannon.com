@@ -67,6 +67,7 @@ indexCtx = mconcat
     , constField "twitter" "@pauljoannon"
     , constField "github" "Paulloz"
     , aboutField
+    , projectsField
     ]
 
 projectsCtx :: Context String
@@ -83,6 +84,11 @@ aboutField :: Context a
 aboutField = field "about" $ \_ -> do
     about <- loadSnapshot "content/about.md" "content"
     return $ itemBody about
+
+projectsField :: Context a
+projectsField = field "projects" $ \_ -> do
+    projects <- loadSnapshot "content/projects.html" "content"
+    return $ itemBody projects
 
 -- ------------------------------------------------------------------------------
 -- Compilers
