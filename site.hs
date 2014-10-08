@@ -32,7 +32,7 @@ main = do
             compile copyFileCompiler
 
         -- Compile less
-        match "assets/css/*" $ do
+        match "assets/css/default.less" $ do
             route $ setExtension "css"
             compile lessCompiler
 
