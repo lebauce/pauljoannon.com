@@ -42,14 +42,30 @@ main = do
             compile $ do
                 let indexContext =
                         titleField "pauljoannon.com" `mappend`
+                        aproposField `mappend`
                         baseContext
                 pandocCompiler
                     >>= loadAndApplyTemplate "templates/index.html" indexContext
                     >>= loadAndApplyTemplate "templates/base.html"  indexContext
                     >>= relativizeUrls
 
+        match "apropos.md" $ do
+            compile $ do
+                pandocCompiler
+                    >>= loadAndApplyTemplate "templates/apropos.html" baseContext
+                    >>= saveSnapshot "content"
+
 -- ------------------------------------------------------------------------------
 -- Contexts
+
+-- ------------------------------------------------------------------------------
+-- Fields
+
+-- A field containing the 'content' snapshot of 'apropos.md'
+aproposField :: Context a
+aproposField = field "apropos" $ \_ -> do
+    apropos <- loadSnapshot "apropos.md" "content"
+    return $ itemBody apropos
 
 -- ------------------------------------------------------------------------------
 -- Compilers
@@ -58,7 +74,7 @@ main = do
 lessCompiler :: Compiler (Item String)
 lessCompiler =
     getResourceString
-        >>= withItemBody (unixFilter "lessc" ["--include-path=assets/css/:assets/vendor/", "-"])
+        >>= withItemBody (unixFilter "lessc" ["--include-path=./assets/css/:./assets/vendor/", "-"])
         >>= return . fmap compressCss
 
 -- ------------------------------------------------------------------------------
