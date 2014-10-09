@@ -32,7 +32,6 @@ main = do
             compile $ do
                 makeItem ""
                     >>= loadAndApplyTemplate "templates/index.html" indexCtx
-                    >>= loadAndApplyTemplate "templates/base.html"  indexCtx
                     >>= relativizeUrls
 
         -- Compile About
