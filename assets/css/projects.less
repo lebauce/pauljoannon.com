@@ -1,5 +1,12 @@
-.project {
+@projects-bg-color: #14181b;
 
+.content__index__projets {
+    background-color: @projects-bg-color;
+    padding-top: 15px;
+    padding-bottom: 65px;
+}
+
+.project {
     > div {
         margin-top: 15px;
         margin-bottom: 15px;
@@ -8,9 +15,33 @@
     &__wrapper {
         width:100%;
         height:240px;
-        background-size: cover;
-        background-position: center;
-        border-radius: .2em;
-        box-shadow: inset 0 0 .3em #000;
+        background-color: lighten(@projects-bg-color, 4%);
+        border-radius: .3em;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+        border: 1px solid darken(@projects-bg-color, 7%);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        &__title {
+            position: absolute;
+            z-index: 9;
+            font-family: @font-family-sans-serif;
+            color: @brand-primary;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-11deg);
+            font-size: 36px;
+            white-space: nowrap;
+        }
+
+        &__image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 10;
+        }
     }
 }
