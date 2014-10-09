@@ -1,8 +1,16 @@
 <li class="project">
     <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project__wrapper">
-            <span class="project__wrapper__title">$title$</span>
-            <div class="project__wrapper__image" style="background-image: url(/assets/images/projects/$image$);"></div>
+        <div class="project__inner">
+            <div class="project__inner__content">
+                <div class="project__inner__content__image-wrapper">
+                    <span class="project__inner__content__image-wrapper__fallback">$title$</span>
+                    <div class="project__inner__content__image-wrapper__image" style="background-image: url(/assets/images/projects/$image$);"></div>
+                </div>
+                <div class="project__inner__content__content-wrapper">
+                    <h3>$title$</h3>
+                    $body$
+                </div>
+            </div>
         </div>
     </div>
 </li>
