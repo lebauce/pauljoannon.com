@@ -2,6 +2,10 @@
 title: À propos
 ---
 
-Proper story’s supposed to start at the beginning. Ain’t so simple with this one. Now here’s a kid whose whole world got all twisted, leaving him stranded on a rock in the sky. He gets up. Sets off for the Bastion. Where everyone agreed to go in case of trouble. The ground forms up under his feet as if pointing the way. He don’t stop to wonder why. Finds his lifelong friend just lying in the road. Well it’s a…touching reunion. His old friend comforts the Kid in more ways than one. He sees what’s left of the Rippling Walls. Years of work undone in an instant. In the Calamity. Nothing could have stopped it. Kid just rages for a while.  
+Étudiant à l'EPITECH Paris pour encore quelques mois, j'ai travaillé chez [Hedera Technology](http://hederatech.com/) puis chez [Journalism++](http://jplusplus.org).  
+  
+Dès que possible je code pour [H-Bomb](http://h-bomb.fr), un groupe de développement de jeux vidéo créé en 2013.
+  
+<hr />
   
 Ce site est propulsé par [Hakyll](http://jaspervdj.be/hakyll/), un générateur de contenu statique développé en [Haskell](http://www.haskell.org). Ses sources sont bien sûr disponibles sur mon [GitHub](https://github.com/Paulloz/pauljoannon.com).

@@ -27,9 +27,15 @@
     }
 
     &__apropos {
-        background-color: #161a1d;
+        @apropos_bg_color: #161a1d;
+
+        background-color: @apropos_bg_color;
         padding-top: 15px;
         padding-bottom: 65px;
+
+        hr {
+            border-color: lighten(@apropos_bg_color, 3%);
+        }
     }
 
     &__contact {
