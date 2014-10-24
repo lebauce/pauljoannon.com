@@ -1,7 +1,7 @@
 # pauljoannon.com
 
 Just my personal website built with **[Hakyll](http://jaspervdj.be/hakyll/index.html)**.  
-It's just a bunch of `.md` files compiled to `.html` and fancied with **[AngularJs](https://angularjs.org/)**.  
+It's just a bunch of `.md` files compiled to `.html`.  
 Feel free to ask me any question that's on your mind or re-use anything in this repository.
 
 --
