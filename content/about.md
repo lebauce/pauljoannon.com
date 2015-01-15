@@ -4,7 +4,7 @@ title: À propos
 
 Étudiant à l'EPITECH Paris pour encore quelques mois, j'ai travaillé chez [Hedera Technology](http://hederatech.com/) puis chez [Journalism++](http://jplusplus.org).  
   
-Dès que possible je code pour [H-Bomb](http://h-bomb.fr), un groupe de développement de jeux vidéo créé en 2013.
+Dès que possible je code pour [My Sweet Whomp](http://mysweetwhomp.fr), un groupe de développement de jeux vidéo créé en 2013.
   
 <hr />
   
