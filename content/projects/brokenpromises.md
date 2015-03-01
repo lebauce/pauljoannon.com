@@ -1,6 +1,6 @@
 ---
 title: Broken Promises
-image: brokenpromises.png
+image: brokenpromises.jpg
 date: 2014-01-03
 link: http://brokenpromises.jplusplus.org
 ---

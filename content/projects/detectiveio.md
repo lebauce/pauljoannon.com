@@ -1,6 +1,6 @@
 ---
 title: Detective.io
-image: detectiveio.png
+image: detectiveio.jpg
 date: 2014-09-01
 link: https://detective.io
 ---

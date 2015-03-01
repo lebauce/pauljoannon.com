@@ -1,6 +1,6 @@
 ---
 title: Voicious
-image: voicious.png
+image: voicious.jpg
 date: 2013-09-01
 link: https://github.com/Voicious/Voicious
 ---

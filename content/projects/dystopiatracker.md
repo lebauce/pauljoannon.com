@@ -1,6 +1,6 @@
 ---
 title: Dystopia tracker
-image: dystopiatracker.png
+image: dystopiatracker.jpg
 date: 2014-05-23
 link: http://www.dystopiatracker.com/
 ---

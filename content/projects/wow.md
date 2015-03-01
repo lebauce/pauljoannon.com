@@ -1,6 +1,6 @@
 ---
 title: World of Work
-image: wow.png
+image: wow.jpg
 date: 2014-04-09
 link: http://arte-wow-production.herokuapp.com/survey?lang=en
 ---

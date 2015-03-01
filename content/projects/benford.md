@@ -1,6 +1,6 @@
 ---
 title: Benford's law checker
-image: benford.png
+image: benford.jpg
 date: 2013-09-10
 link: http://benford.jplusplus.org/
 ---
