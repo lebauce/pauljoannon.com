@@ -34,11 +34,7 @@ angular.module("pauljoannon").directive("uuddlrlrba", ['$timeout', '$window', fu
                     if (isWow) {
                         word = "wow";
                     } else {
-                        if (Math.random() > .8) {
-                            word = "wow";
-                        } else {
-                            word = fWords[Math.floor(Math.random() * fWords.length)] + " " + sWords[Math.floor(Math.random() * sWords.length)];
-                        }
+                        word = fWords[Math.floor(Math.random() * fWords.length)] + " " + sWords[Math.floor(Math.random() * sWords.length)];
                     }
 
                     var domElement = $("<div>");
@@ -57,7 +53,9 @@ angular.module("pauljoannon").directive("uuddlrlrba", ['$timeout', '$window', fu
                         domElement.css('top', parseInt(domElement.css('top')) - domElement.height());
                     }
 
-                    $timeout(newWord, 3000);
+                    $timeout(function() {
+                        newWord(Math.random() > .8);
+                    }, 3000);
                 };
 
                 $element.append($("<div>").attr("class", "doge"));
