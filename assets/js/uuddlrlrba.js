@@ -27,7 +27,7 @@ angular.module("pauljoannon").directive("uuddlrlrba", ['$timeout', '$window', fu
                 var fWords = ["such", "much", "very"];
                 var sWords = ["website", "contacter", "classe", "beau",
                               "javascript", "paul joannon", "développeur",
-                              "freelance", "pythonic", "haskell"];
+                              "freelance", "pythonic", "haskell", "projets"];
 
                 var newWord = function(isWow) {
                     var word;
@@ -50,14 +50,14 @@ angular.module("pauljoannon").directive("uuddlrlrba", ['$timeout', '$window', fu
 
                     $element.append(domElement);
 
-                    if (domElement.outerWidth + parseInt(domElement.css('left')) > $window.innerWidth) {
-                        domElement.css('left', parseInt(domElement.css('left')) - domElement.outerWidth);
+                    if (domElement.width() + parseInt(domElement.css('left')) > $window.innerWidth) {
+                        domElement.css('left', parseInt(domElement.css('left')) - domElement.width());
                     }
-                    if (domElement.outerHeight + parseInt(domElement.css('top')) > $window.innerHeight) {
-                        domElement.css('top', parseInt(domElement.css('top')) - domElement.outerHeight);
+                    if (domElement.height() + parseInt(domElement.css('top')) > $window.innerHeight) {
+                        domElement.css('top', parseInt(domElement.css('top')) - domElement.height());
                     }
 
-                    $timeout(newWord, 2000);
+                    $timeout(newWord, 3000);
                 };
 
                 $element.append($("<div>").attr("class", "doge"));
