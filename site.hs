@@ -92,7 +92,7 @@ includeField name = field name $ \_ -> do
 lessCompiler :: Compiler (Item String)
 lessCompiler =
     getResourceString
-        >>= withItemBody (unixFilter "lessc" ["--include-path=./assets/css/:./assets/vendor/", "-"])
+        >>= withItemBody (unixFilter "lessc" ["--compress --include-path=./assets/css/:./assets/vendor/", "-"])
         >>= return . fmap compressCss
 
 -- ------------------------------------------------------------------------------
