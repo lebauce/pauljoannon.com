@@ -19,7 +19,7 @@ angular.module("pauljoannon").directive("uuddlrlrba", ['$timeout', '$window', fu
         restrict : 'A',
         scope : { },
         link: function($scope, $element) {
-            var sequence = [38, 38, 40, 40, 37, 39, 37, 39, 98, 97];
+            var sequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
             var currentIdx = 0;
             var timer;
 
@@ -74,9 +74,7 @@ angular.module("pauljoannon").directive("uuddlrlrba", ['$timeout', '$window', fu
                 timer = undefined;
 
                 if (currentIdx < sequence.length) {
-                    var key = currentIdx < sequence.length - 2 ? "keyCode" : "charCode";
-
-                    if (event[key] == sequence[currentIdx]) {
+                    if (event.keyCode == sequence[currentIdx]) {
                         ++currentIdx;
 
                         if (currentIdx >= sequence.length) {
@@ -91,7 +89,7 @@ angular.module("pauljoannon").directive("uuddlrlrba", ['$timeout', '$window', fu
                 }
             };
 
-            $element.on("keypress", onKeyPress);
+            $element.on("keyup", onKeyPress);
         }
     };
 }]);
