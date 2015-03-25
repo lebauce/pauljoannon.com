@@ -1,5 +1,5 @@
 ---
-title: Hobodissey
+title: Hobodyssey
 image: ccs.jpg
 date: 2014-10-01
 link: http://clodocrushsaga.h-bomb.fr
