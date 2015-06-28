@@ -7,4 +7,4 @@ link: http://elections.radiofrance.fr/departementales-2015
 
 Application présentant les résultats des élections départementales de mars 2015.
   
-**Javascript**, **AngularJS**
+**Javascript**, **AngularJS**, **Leaflet**
