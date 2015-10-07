@@ -1,21 +1,23 @@
 window.onload = function() {
-    var i, j,
-        mustaches = document.getElementsByTagName('object'),
-        title = document.getElementsByTagName('h1')[0],
-        leftClientRect = document.getElementsByClassName('left')[0].getBoundingClientRect(),
-        colors = [
-            '#f4f4f4'
-        ];
+    (function() {
+        var i, j,
+            mustaches = document.getElementsByTagName('object'),
+            title = document.getElementsByTagName('h1')[0],
+            leftClientRect = document.getElementsByClassName('left')[0].getBoundingClientRect(),
+            color = '#f4f4f4';
 
-    for (i = 0; i < mustaches.length; ++i) {
-        var svg = mustaches[i].getSVGDocument(),
-            lines = svg.getElementsByTagName('line'),
-            paths = svg.getElementsByTagName('path');
-        for (j = 0; j < lines.length + paths.length; ++j) {
-            (j >= lines.length ? paths[j - lines.length] : lines[j])
-                .setAttribute('stroke', colors[i]);
+        for (i = 0; i < mustaches.length; ++i) {
+            var svg = mustaches[i].getSVGDocument(),
+                lines = svg.getElementsByTagName('line'),
+                paths = svg.getElementsByTagName('path');
+            for (j = 0; j < lines.length; ++j) {
+                lines[j].setAttribute('stroke', color);
+            }
+            for (j = 0; j < paths.length; ++j) {
+                paths[j].setAttribute('stroke', color);
+            }
         }
-    }
+    })();
 
     var em = 1;
     while (em < 7) {

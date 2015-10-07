@@ -4,223 +4,116 @@
 	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
 ]>
 <svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="227px" height="113px" viewBox="-12.509 -16.617 227 113" enable-background="new -12.509 -16.617 227 113"
-	 xml:space="preserve">
-<defs>
-	
-		<pattern  x="-196.764" y="-603.354" width="29" height="705.808" patternUnits="userSpaceOnUse" id="Gradation_points_0_à_100_xA0__x25_" viewBox="21.579 -709.405 29 705.808" overflow="visible">
-		<g>
-			<polygon fill="none" points="21.579,-3.598 21.579,-709.405 50.579,-709.405 50.579,-3.598 			"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="0.3" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-0.15" x2="60.379" y2="-0.15"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="0.585" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-14.781" x2="60.379" y2="-14.781"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="0.871" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-29.413" x2="60.379" y2="-29.413"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="1.157" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-44.045" x2="60.379" y2="-44.045"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="1.443" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-58.678" x2="60.379" y2="-58.678"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="1.729" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-73.309" x2="60.379" y2="-73.309"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="2.015" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-87.941" x2="60.379" y2="-87.941"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="2.301" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-102.572" x2="60.379" y2="-102.572"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="2.587" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-117.204" x2="60.379" y2="-117.204"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="2.873" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-131.837" x2="60.379" y2="-131.837"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="3.158" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-146.469" x2="60.379" y2="-146.469"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="3.444" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-161.1" x2="60.379" y2="-161.1"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="3.73" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-175.732" x2="60.379" y2="-175.732"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="4.016" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-190.364" x2="60.379" y2="-190.364"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="4.302" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-204.995" x2="60.379" y2="-204.995"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="4.588" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-219.628" x2="60.379" y2="-219.628"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="4.874" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-234.259" x2="60.379" y2="-234.259"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="5.16" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-248.891" x2="60.379" y2="-248.891"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="5.446" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-263.523" x2="60.379" y2="-263.523"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="5.731" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-278.155" x2="60.379" y2="-278.155"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="6.017" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-292.786" x2="60.379" y2="-292.786"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="6.303" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-307.419" x2="60.379" y2="-307.419"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="6.589" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-322.05" x2="60.379" y2="-322.05"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="6.875" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-336.683" x2="60.379" y2="-336.683"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="7.161" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-351.314" x2="60.379" y2="-351.314"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="7.447" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-365.946" x2="60.379" y2="-365.946"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="7.733" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-380.578" x2="60.379" y2="-380.578"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="8.019" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-395.209" x2="60.379" y2="-395.209"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="8.304" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-409.841" x2="60.379" y2="-409.841"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="8.59" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-424.474" x2="60.379" y2="-424.474"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="8.876" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-439.105" x2="60.379" y2="-439.105"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="9.162" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-453.737" x2="60.379" y2="-453.737"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="9.448" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-468.369" x2="60.379" y2="-468.369"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="9.734" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-483.002" x2="60.379" y2="-483.002"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="10.02" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-497.633" x2="60.379" y2="-497.633"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="10.306" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-512.264" x2="60.379" y2="-512.264"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="10.592" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-526.896" x2="60.379" y2="-526.896"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="10.877" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-541.528" x2="60.379" y2="-541.528"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="11.163" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-556.16" x2="60.379" y2="-556.16"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="11.449" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-570.793" x2="60.379" y2="-570.793"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="11.735" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-585.424" x2="60.379" y2="-585.424"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="12.021" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-600.055" x2="60.379" y2="-600.055"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="12.307" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-614.688" x2="60.379" y2="-614.688"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="12.593" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-629.319" x2="60.379" y2="-629.319"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="12.879" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-643.951" x2="60.379" y2="-643.951"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="13.165" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-658.583" x2="60.379" y2="-658.583"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="13.45" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-673.216" x2="60.379" y2="-673.216"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="13.736" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-687.846" x2="60.379" y2="-687.846"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="14.022" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-702.479" x2="60.379" y2="-702.479"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="0.442" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-7.466" x2="53.079" y2="-7.466"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="0.728" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-22.098" x2="53.079" y2="-22.098"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="1.014" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-36.729" x2="53.079" y2="-36.729"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-51.361" x2="53.079" y2="-51.361"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="1.586" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-65.993" x2="53.079" y2="-65.993"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="1.872" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-80.625" x2="53.079" y2="-80.625"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="2.158" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-95.258" x2="53.079" y2="-95.258"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="2.444" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-109.888" x2="53.079" y2="-109.888"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="2.73" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-124.521" x2="53.079" y2="-124.521"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="3.015" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-139.152" x2="53.079" y2="-139.152"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="3.301" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-153.784" x2="53.079" y2="-153.784"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="3.587" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-168.416" x2="53.079" y2="-168.416"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="3.873" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-183.049" x2="53.079" y2="-183.049"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="4.159" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-197.679" x2="53.079" y2="-197.679"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="4.445" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-212.312" x2="53.079" y2="-212.312"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="4.731" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-226.943" x2="53.079" y2="-226.943"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="5.017" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-241.575" x2="53.079" y2="-241.575"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="5.303" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-256.207" x2="53.079" y2="-256.207"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="5.588" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-270.84" x2="53.079" y2="-270.84"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="5.874" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-285.471" x2="53.079" y2="-285.471"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="6.16" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-300.103" x2="53.079" y2="-300.103"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="6.446" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-314.734" x2="53.079" y2="-314.734"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="6.732" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-329.366" x2="53.079" y2="-329.366"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="7.018" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-343.998" x2="53.079" y2="-343.998"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="7.304" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-358.63" x2="53.079" y2="-358.63"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="7.59" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-373.262" x2="53.079" y2="-373.262"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="7.876" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-387.893" x2="53.079" y2="-387.893"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="8.161" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-402.525" x2="53.079" y2="-402.525"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="8.447" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-417.157" x2="53.079" y2="-417.157"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="8.733" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-431.789" x2="53.079" y2="-431.789"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="9.019" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-446.422" x2="53.079" y2="-446.422"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="9.305" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-461.053" x2="53.079" y2="-461.053"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="9.591" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-475.686" x2="53.079" y2="-475.686"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="9.877" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-490.316" x2="53.079" y2="-490.316"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="10.163" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-504.948" x2="53.079" y2="-504.948"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="10.449" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-519.58" x2="53.079" y2="-519.58"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="10.734" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-534.213" x2="53.079" y2="-534.213"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="11.02" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-548.845" x2="53.079" y2="-548.845"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="11.306" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-563.477" x2="53.079" y2="-563.477"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="11.592" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-578.108" x2="53.079" y2="-578.108"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="11.878" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-592.739" x2="53.079" y2="-592.739"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="12.164" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-607.371" x2="53.079" y2="-607.371"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="12.45" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-622.003" x2="53.079" y2="-622.003"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="12.736" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-636.635" x2="53.079" y2="-636.635"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="13.022" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-651.268" x2="53.079" y2="-651.268"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="13.307" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-665.899" x2="53.079" y2="-665.899"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="13.593" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-680.53" x2="53.079" y2="-680.53"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="13.879" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-695.162" x2="53.079" y2="-695.162"/>
-			
-				<line fill="none" stroke="#000000" stroke-width="14.158" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079" y1="-709.405" x2="53.079" y2="-709.405"/>
-		</g>
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+     x="0px" y="0px" width="227px" height="113px" viewBox="-12.509 -16.617 227 113" enable-background="new -12.509 -16.617 227 113"
+     xml:space="preserve">
+    <defs>
+        <pattern  x="-196.764" y="-603.354" width="29" height="705.808" patternUnits="userSpaceOnUse" id="Gradation_points_0_à_100_xA0__x25_" viewBox="21.579 -709.405 29 705.808" overflow="visible">
+	    <g>
+	        <polygon fill="none" points="21.579,-3.598 21.579,-709.405 50.579,-709.405 50.579,-3.598"/>
+                <line fill="none" stroke="#000000" stroke-width="0.3"    stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-0.15"    x2="60.379" y2="-0.15"   />
+                <line fill="none" stroke="#000000" stroke-width="0.585"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-14.781"  x2="60.379" y2="-14.781" />
+                <line fill="none" stroke="#000000" stroke-width="0.871"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-29.413"  x2="60.379" y2="-29.413" />
+                <line fill="none" stroke="#000000" stroke-width="1.157"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-44.045"  x2="60.379" y2="-44.045" />
+                <line fill="none" stroke="#000000" stroke-width="1.443"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-58.678"  x2="60.379" y2="-58.678" />
+                <line fill="none" stroke="#000000" stroke-width="1.729"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-73.309"  x2="60.379" y2="-73.309" />
+                <line fill="none" stroke="#000000" stroke-width="2.015"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-87.941"  x2="60.379" y2="-87.941" />
+                <line fill="none" stroke="#000000" stroke-width="2.301"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-102.572" x2="60.379" y2="-102.572"/>
+                <line fill="none" stroke="#000000" stroke-width="2.587"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-117.204" x2="60.379" y2="-117.204"/>
+                <line fill="none" stroke="#000000" stroke-width="2.873"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-131.837" x2="60.379" y2="-131.837"/>
+                <line fill="none" stroke="#000000" stroke-width="3.158"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-146.469" x2="60.379" y2="-146.469"/>
+                <line fill="none" stroke="#000000" stroke-width="3.444"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-161.1"   x2="60.379" y2="-161.1"  />
+                <line fill="none" stroke="#000000" stroke-width="3.73"   stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-175.732" x2="60.379" y2="-175.732"/>
+                <line fill="none" stroke="#000000" stroke-width="4.016"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-190.364" x2="60.379" y2="-190.364"/>
+                <line fill="none" stroke="#000000" stroke-width="4.302"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-204.995" x2="60.379" y2="-204.995"/>
+                <line fill="none" stroke="#000000" stroke-width="4.588"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-219.628" x2="60.379" y2="-219.628"/>
+                <line fill="none" stroke="#000000" stroke-width="4.874"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-234.259" x2="60.379" y2="-234.259"/>
+                <line fill="none" stroke="#000000" stroke-width="5.16"   stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-248.891" x2="60.379" y2="-248.891"/>
+                <line fill="none" stroke="#000000" stroke-width="5.446"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-263.523" x2="60.379" y2="-263.523"/>
+                <line fill="none" stroke="#000000" stroke-width="5.731"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-278.155" x2="60.379" y2="-278.155"/>
+                <line fill="none" stroke="#000000" stroke-width="6.017"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-292.786" x2="60.379" y2="-292.786"/>
+                <line fill="none" stroke="#000000" stroke-width="6.303"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-307.419" x2="60.379" y2="-307.419"/>
+                <line fill="none" stroke="#000000" stroke-width="6.589"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-322.05"  x2="60.379" y2="-322.05" />
+                <line fill="none" stroke="#000000" stroke-width="6.875"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-336.683" x2="60.379" y2="-336.683"/>
+                <line fill="none" stroke="#000000" stroke-width="7.161"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-351.314" x2="60.379" y2="-351.314"/>
+                <line fill="none" stroke="#000000" stroke-width="7.447"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-365.946" x2="60.379" y2="-365.946"/>
+                <line fill="none" stroke="#000000" stroke-width="7.733"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-380.578" x2="60.379" y2="-380.578"/>
+                <line fill="none" stroke="#000000" stroke-width="8.019"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-395.209" x2="60.379" y2="-395.209"/>
+                <line fill="none" stroke="#000000" stroke-width="8.304"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-409.841" x2="60.379" y2="-409.841"/>
+                <line fill="none" stroke="#000000" stroke-width="8.59"   stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-424.474" x2="60.379" y2="-424.474"/>
+                <line fill="none" stroke="#000000" stroke-width="8.876"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-439.105" x2="60.379" y2="-439.105"/>
+                <line fill="none" stroke="#000000" stroke-width="9.162"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-453.737" x2="60.379" y2="-453.737"/>
+                <line fill="none" stroke="#000000" stroke-width="9.448"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-468.369" x2="60.379" y2="-468.369"/>
+                <line fill="none" stroke="#000000" stroke-width="9.734"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-483.002" x2="60.379" y2="-483.002"/>
+                <line fill="none" stroke="#000000" stroke-width="10.02"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-497.633" x2="60.379" y2="-497.633"/>
+                <line fill="none" stroke="#000000" stroke-width="10.306" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-512.264" x2="60.379" y2="-512.264"/>
+                <line fill="none" stroke="#000000" stroke-width="10.592" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-526.896" x2="60.379" y2="-526.896"/>
+                <line fill="none" stroke="#000000" stroke-width="10.877" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-541.528" x2="60.379" y2="-541.528"/>
+                <line fill="none" stroke="#000000" stroke-width="11.163" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-556.16"  x2="60.379" y2="-556.16" />
+                <line fill="none" stroke="#000000" stroke-width="11.449" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-570.793" x2="60.379" y2="-570.793"/>
+                <line fill="none" stroke="#000000" stroke-width="11.735" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-585.424" x2="60.379" y2="-585.424"/>
+                <line fill="none" stroke="#000000" stroke-width="12.021" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-600.055" x2="60.379" y2="-600.055"/>
+                <line fill="none" stroke="#000000" stroke-width="12.307" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-614.688" x2="60.379" y2="-614.688"/>
+                <line fill="none" stroke="#000000" stroke-width="12.593" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-629.319" x2="60.379" y2="-629.319"/>
+                <line fill="none" stroke="#000000" stroke-width="12.879" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-643.951" x2="60.379" y2="-643.951"/>
+                <line fill="none" stroke="#000000" stroke-width="13.165" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-658.583" x2="60.379" y2="-658.583"/>
+                <line fill="none" stroke="#000000" stroke-width="13.45"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-673.216" x2="60.379" y2="-673.216"/>
+                <line fill="none" stroke="#000000" stroke-width="13.736" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-687.846" x2="60.379" y2="-687.846"/>
+                <line fill="none" stroke="#000000" stroke-width="14.022" stroke-linecap="round" stroke-dasharray="0,14.6" x1="14.379" y1="-702.479" x2="60.379" y2="-702.479"/>
+                <line fill="none" stroke="#000000" stroke-width="0.442"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-7.466"   x2="53.079" y2="-7.466"  />
+                <line fill="none" stroke="#000000" stroke-width="0.728"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-22.098"  x2="53.079" y2="-22.098" />
+                <line fill="none" stroke="#000000" stroke-width="1.014"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-36.729"  x2="53.079" y2="-36.729" />
+                <line fill="none" stroke="#000000" stroke-width="1.3"    stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-51.361"  x2="53.079" y2="-51.361" />
+                <line fill="none" stroke="#000000" stroke-width="1.586"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-65.993"  x2="53.079" y2="-65.993" />
+                <line fill="none" stroke="#000000" stroke-width="1.872"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-80.625"  x2="53.079" y2="-80.625" />
+                <line fill="none" stroke="#000000" stroke-width="2.158"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-95.258"  x2="53.079" y2="-95.258" />
+                <line fill="none" stroke="#000000" stroke-width="2.444"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-109.888" x2="53.079" y2="-109.888"/>
+                <line fill="none" stroke="#000000" stroke-width="2.73"   stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-124.521" x2="53.079" y2="-124.521"/>
+                <line fill="none" stroke="#000000" stroke-width="3.015"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-139.152" x2="53.079" y2="-139.152"/>
+                <line fill="none" stroke="#000000" stroke-width="3.301"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-153.784" x2="53.079" y2="-153.784"/>
+                <line fill="none" stroke="#000000" stroke-width="3.587"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-168.416" x2="53.079" y2="-168.416"/>
+                <line fill="none" stroke="#000000" stroke-width="3.873"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-183.049" x2="53.079" y2="-183.049"/>
+                <line fill="none" stroke="#000000" stroke-width="4.159"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-197.679" x2="53.079" y2="-197.679"/>
+                <line fill="none" stroke="#000000" stroke-width="4.445"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-212.312" x2="53.079" y2="-212.312"/>
+                <line fill="none" stroke="#000000" stroke-width="4.731"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-226.943" x2="53.079" y2="-226.943"/>
+                <line fill="none" stroke="#000000" stroke-width="5.017"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-241.575" x2="53.079" y2="-241.575"/>
+                <line fill="none" stroke="#000000" stroke-width="5.303"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-256.207" x2="53.079" y2="-256.207"/>
+                <line fill="none" stroke="#000000" stroke-width="5.588"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-270.84"  x2="53.079" y2="-270.84" />
+                <line fill="none" stroke="#000000" stroke-width="5.874"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-285.471" x2="53.079" y2="-285.471"/>
+                <line fill="none" stroke="#000000" stroke-width="6.16"   stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-300.103" x2="53.079" y2="-300.103"/>
+                <line fill="none" stroke="#000000" stroke-width="6.446"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-314.734" x2="53.079" y2="-314.734"/>
+                <line fill="none" stroke="#000000" stroke-width="6.732"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-329.366" x2="53.079" y2="-329.366"/>
+                <line fill="none" stroke="#000000" stroke-width="7.018"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-343.998" x2="53.079" y2="-343.998"/>
+                <line fill="none" stroke="#000000" stroke-width="7.304"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-358.63"  x2="53.079" y2="-358.63" />
+                <line fill="none" stroke="#000000" stroke-width="7.59"   stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-373.262" x2="53.079" y2="-373.262"/>
+                <line fill="none" stroke="#000000" stroke-width="7.876"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-387.893" x2="53.079" y2="-387.893"/>
+                <line fill="none" stroke="#000000" stroke-width="8.161"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-402.525" x2="53.079" y2="-402.525"/>
+                <line fill="none" stroke="#000000" stroke-width="8.447"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-417.157" x2="53.079" y2="-417.157"/>
+                <line fill="none" stroke="#000000" stroke-width="8.733"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-431.789" x2="53.079" y2="-431.789"/>
+                <line fill="none" stroke="#000000" stroke-width="9.019"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-446.422" x2="53.079" y2="-446.422"/>
+                <line fill="none" stroke="#000000" stroke-width="9.305"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-461.053" x2="53.079" y2="-461.053"/>
+                <line fill="none" stroke="#000000" stroke-width="9.591"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-475.686" x2="53.079" y2="-475.686"/>
+                <line fill="none" stroke="#000000" stroke-width="9.877"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-490.316" x2="53.079" y2="-490.316"/>
+                <line fill="none" stroke="#000000" stroke-width="10.163" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-504.948" x2="53.079" y2="-504.948"/>
+                <line fill="none" stroke="#000000" stroke-width="10.449" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-519.58"  x2="53.079" y2="-519.58" />
+                <line fill="none" stroke="#000000" stroke-width="10.734" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-534.213" x2="53.079" y2="-534.213"/>
+                <line fill="none" stroke="#000000" stroke-width="11.02"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-548.845" x2="53.079" y2="-548.845"/>
+                <line fill="none" stroke="#000000" stroke-width="11.306" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-563.477" x2="53.079" y2="-563.477"/>
+                <line fill="none" stroke="#000000" stroke-width="11.592" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-578.108" x2="53.079" y2="-578.108"/>
+                <line fill="none" stroke="#000000" stroke-width="11.878" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-592.739" x2="53.079" y2="-592.739"/>
+                <line fill="none" stroke="#000000" stroke-width="12.164" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-607.371" x2="53.079" y2="-607.371"/>
+                <line fill="none" stroke="#000000" stroke-width="12.45"  stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-622.003" x2="53.079" y2="-622.003"/>
+                <line fill="none" stroke="#000000" stroke-width="12.736" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-636.635" x2="53.079" y2="-636.635"/>
+                <line fill="none" stroke="#000000" stroke-width="13.022" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-651.268" x2="53.079" y2="-651.268"/>
+                <line fill="none" stroke="#000000" stroke-width="13.307" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-665.899" x2="53.079" y2="-665.899"/>
+                <line fill="none" stroke="#000000" stroke-width="13.593" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-680.53" x2="53.079" y2="-680.53"  />
+                <line fill="none" stroke="#000000" stroke-width="13.879" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-695.162" x2="53.079" y2="-695.162"/>
+                <line fill="none" stroke="#000000" stroke-width="14.158" stroke-linecap="round" stroke-dasharray="0,14.6" x1="7.079"  y1="-709.405" x2="53.079" y2="-709.405"/>
+	    </g>
 	</pattern>
-</defs>
-<path fill="url(#Gradation_points_0_à_100_xA0__x25_)" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="
-	M100.823,9.043c0,0-37.333-23.212-57.217,17.801C33.434,47.823,3.776,42.102,3.776,42.102S17.3,81.24,52.3,85.332
-	c32.629,3.814,48.523-27.973,48.523-27.973V9.043z"/>
-<path fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M101.322,9.193c0,0,37.333-23.212,57.218,17.801
-	c10.172,20.979,39.83,15.258,39.83,15.258s-13.524,39.14-48.523,43.231c-32.63,3.814-48.524-27.973-48.524-27.973V9.193z"/>
-<path fill="url(#Gradation_points_0_à_100_xA0__x25_)" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="
-	M101.322,9.193c0,0,37.333-23.212,57.218,17.801c10.172,20.979,39.83,15.258,39.83,15.258s-13.524,39.14-48.523,43.231
-	c-32.63,3.814-48.524-27.973-48.524-27.973V9.193z"/>
-<path fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M7.236,44.226c0,0,25.913,27.45,53.497,12.162
-	c18.932-10.492,11.003-46.242,37.753-46.242"/>
-<path fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M194.721,44.226c0,0-26.055,27.45-53.79,12.162
-	c-19.036-10.492-11.063-46.242-37.96-46.242"/>
+    </defs>
+    <path fill="url(#Gradation_points_0_à_100_xA0__x25_)" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M100.823,9.043c0,0-37.333-23.212-57.217,17.801C33.434,47.823,3.776,42.102,3.776,42.102S17.3,81.24,52.3,85.332c32.629,3.814,48.523-27.973,48.523-27.973V9.043z"/>
+    <path fill="url(#Gradation_points_0_à_100_xA0__x25_)" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M101.322,9.193c0,0,37.333-23.212,57.218,17.801c10.172,20.979,39.83,15.258,39.83,15.258s-13.524,39.14-48.523,43.231c-32.63,3.814-48.524-27.973-48.524-27.973V9.193z"/>
+    <path fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M7.236,44.226c0,0,25.913,27.45,53.497,12.162c18.932-10.492,11.003-46.242,37.753-46.242"/>
+    <path fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M194.721,44.226c0,0-26.055,27.45-53.79,12.162c-19.036-10.492-11.063-46.242-37.96-46.242"/>
 </svg>
