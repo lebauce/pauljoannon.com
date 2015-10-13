@@ -11,6 +11,7 @@ assets/vendor
 # Haskell compiled files
 *.hi
 *.o
+pauljoannon.com
 
 # Vim swapfiles
 .*.swp
