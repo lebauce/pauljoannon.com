@@ -23,7 +23,6 @@ window.onload = function() {
     while (em < 7) {
         title.style['font-size'] = String(em) + 'em';
         em += 0.1;
-        console.debug(title.getBoundingClientRect().width, leftClientRect.width);
         if (title.getBoundingClientRect().width >= leftClientRect.width - 32) {
             em -= 0.1;
             title.style['font-size'] = String(em) + 'em';
