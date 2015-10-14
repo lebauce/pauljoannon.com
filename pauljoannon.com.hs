@@ -8,7 +8,7 @@ import Hakyll
 
 main :: IO ()
 main = do
-    hakyll $ do
+    hakyllWith configuration $ do
         -- Copy static assets
         match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg"]) $ do
             route idRoute
@@ -49,3 +49,12 @@ babelCompiler =
     getResourceString
         >>= withItemBody (unixFilter "babel" [])
         >>= return
+
+-- -------------------------------------------------------------------------------------------------
+-- Configuration
+
+configuration :: Configuration
+configuration = defaultConfiguration
+    {
+        deployCommand = "cd _site && rm -rf .git && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
+    }
