@@ -19,3 +19,37 @@
         box-shadow: inset 0 1px 10px rgba(0, 0, 0, .5);
     }
 }
+
+@media (max-width: 1479px) {
+    .portfolio__item {
+        width: calc(~"33% - 21px");
+    }
+}
+
+@media (max-width: 1079px) {
+    .portfolio__item {
+        width: calc(~"50% - 21px");
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio__item {
+        width: calc(~"100% - 21px");
+    }
+}
+
+@media (max-width: 649px) {
+    .portfolio {
+        padding-left: 16px;
+
+        &__item {
+            width: calc(~"50% - 21px");
+        }
+    }
+}
+
+@media (max-width: 399px) {
+    .portfolio__item {
+        width: calc(~"100% - 21px");
+    }
+}
