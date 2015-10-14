@@ -5,6 +5,8 @@
 @color: #f4f4f4;
 @link-color: #1bfcb5;
 
+@import 'portfolio.less';
+
 html, body {
     width: 100%;
     min-height: 100%;
@@ -18,7 +20,9 @@ html, body {
 }
 
 .left {
-    max-width: 400px;
+    float: left;
+
+    width: 400px;
     padding: 0 16px 8px 16px;
 
     .box-sizing(border-box);
@@ -70,4 +74,9 @@ html, body {
         border-top: 1px solid rgba(0, 0, 0, 0.25);
         box-shadow: 0px 1px rgba(255, 255, 255, 0.024) inset;
     }
+}
+
+.right {
+    float: left;
+    width: calc(~"100% - 400px");
 }

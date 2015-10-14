@@ -1,0 +1,21 @@
+.portfolio {
+    width: 100%;
+    padding: 32px 0 32px 32px;
+
+    .box-sizing(border-box);
+
+    &__item {
+        display: inline-block;
+
+        width: calc(~"25% - 21px");
+        height: 200px;
+        margin: 0 16px 16px 0;
+
+        background-position: center;
+        background-size: cover;
+
+        border: 1px solid rgba(45, 45, 45, 1);
+
+        box-shadow: inset 0 1px 10px rgba(0, 0, 0, .5);
+    }
+}
