@@ -3,6 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Hakyll
+import Data.Monoid (mconcat)
 
 -- -------------------------------------------------------------------------------------------------
 
@@ -10,7 +11,7 @@ main :: IO ()
 main = do
     hakyllWith configuration $ do
         -- Copy static assets
-        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg"]) $ do
+        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg", "content/portfolio/*.jpg"]) $ do
             route idRoute
             compile copyFileCompiler
 
@@ -32,8 +33,20 @@ main = do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
                 pandocCompiler
-                    >>= loadAndApplyTemplate "templates/index.html" defaultContext
+                    >>= loadAndApplyTemplate "templates/index.html" mainContext
                     >>= relativizeUrls
+
+        create ["content/portfolio.md"] $  do
+            compile $ do
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/portfolio.html" portfolioContext
+                    >>= saveSnapshot "content"
+
+        match "content/portfolio/*.md" $ do
+            compile $ do
+                pandocCompiler
+                    >>= loadAndApplyTemplate "templates/portfolio-item.html" defaultContext
+                    >>= saveSnapshot "content"
 
 -- -------------------------------------------------------------------------------------------------
 -- Compilers
@@ -51,7 +64,32 @@ babelCompiler =
         >>= return
 
 -- -------------------------------------------------------------------------------------------------
--- Configuration
+-- Contexts
+
+mainContext :: Context String
+mainContext = mconcat
+    [
+        defaultContext,
+        includeField "portfolio"
+    ]
+
+portfolioContext :: Context String
+portfolioContext = mconcat
+    [
+        defaultContext,
+        listField "items" defaultContext (recentFirst =<< loadAllSnapshots "content/portfolio/*.md" "content")
+    ]
+
+-- -------------------------------------------------------------------------------------------------
+-- Fields
+
+includeField :: String -> Context a
+includeField name = field name $ \_ -> do
+    include <- loadSnapshot (fromFilePath $ "content/" ++ name ++ ".md") "content"
+    return $ itemBody include
+
+-- -------------------------------------------------------------------------------------------------
+-- Configurations
 
 configuration :: Configuration
 configuration = defaultConfiguration
