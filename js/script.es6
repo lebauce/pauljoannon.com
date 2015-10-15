@@ -1,4 +1,5 @@
 window.onload = function() {
+    // Mustache color
     (() => {
         let mustaches = document.getElementsByTagName('object'),
             color = '#f4f4f4';
@@ -16,6 +17,7 @@ window.onload = function() {
         }
     })();
 
+    // Title size
     (() => {
         let em = 1,
             leftClientRect = document.getElementsByClassName('left')[0].getBoundingClientRect(),
@@ -31,6 +33,7 @@ window.onload = function() {
         }
     })();
 
+    // Links target
     (() => {
         let links = document.getElementsByTagName('a');
 
