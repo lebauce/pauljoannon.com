@@ -36,11 +36,13 @@
         }
 
         &__title {
-            display: none;
+            display: block;
 
             position: relative;
             top: 50%;
             z-index: 50;
+
+            opacity: 0;
 
             color: @color;
             font-size: 2.3em;
@@ -52,20 +54,24 @@
         &::before {
             content: '';
 
-            display: none;
+            display: block;
 
             position: absolute;
             z-index: 20;
+
+            opacity: 0;
 
             width: 100%;
             height: 100%;
 
             background-color: rgba(0, 0, 0, .7);
+
+            .transition(opacity .4s linear);
         }
 
         &:hover {
             .portfolio__item__title, &::before {
-                display: block;
+                opacity: 1;
             }
         }
     }
