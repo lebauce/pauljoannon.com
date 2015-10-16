@@ -70,7 +70,7 @@ mainContext :: Context String
 mainContext = mconcat
     [
         defaultContext,
-        includeField "portfolio"
+        includeField "content" "portfolio"
     ]
 
 portfolioContext :: Context String
@@ -83,8 +83,8 @@ portfolioContext = mconcat
 -- -------------------------------------------------------------------------------------------------
 -- Fields
 
-includeField :: String -> Context a
-includeField name = field name $ \_ -> do
+includeField :: String -> String -> Context a
+includeField fName name = field fName $ \_ -> do
     include <- loadSnapshot (fromFilePath $ "content/" ++ name ++ ".md") "content"
     return $ itemBody include
 
