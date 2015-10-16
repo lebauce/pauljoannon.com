@@ -11,7 +11,7 @@ main :: IO ()
 main = do
     hakyllWith configuration $ do
         -- Copy static assets
-        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg", "content/portfolio/*.jpg"]) $ do
+        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg", "content/**/*.jpg"]) $ do
             route idRoute
             compile copyFileCompiler
 
@@ -48,6 +48,13 @@ main = do
                     >>= loadAndApplyTemplate "templates/portfolio-item.html" defaultContext
                     >>= saveSnapshot "content"
 
+        match "content/blog/**/*.md" $ do
+            route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
+            compile $ do
+                pandocCompiler
+                    >>= loadAndApplyTemplate "templates/blog-item.html" blogContext
+                    >>= relativizeUrls
+
 -- -------------------------------------------------------------------------------------------------
 -- Compilers
 
@@ -79,6 +86,13 @@ portfolioContext = mconcat
     [
         defaultContext,
         listField "items" defaultContext (recentFirst =<< loadAllSnapshots "content/portfolio/*.md" "content")
+    ]
+
+blogContext :: Context String
+blogContext = mconcat
+    [
+        defaultContext,
+        constField "main-title" "Paulloz&nbsp;:&nbsp;le&nbsp;blog"
     ]
 
 -- -------------------------------------------------------------------------------------------------
