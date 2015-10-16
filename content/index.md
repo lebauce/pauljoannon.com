@@ -1,7 +1,3 @@
----
-title: Paul&nbsp;Joannon
----
-
 A.k.a. **Paulloz**.  
 Le jour je suis le développeur de [Libé&nbsp;Six&nbsp;Plus](http://liberation.fr/data-nouveaux-formats-six-plus,100538) et la nuit je crée des jeux avec [My&nbsp;Sweet&nbsp;Whomp](http://mysweetwhomp.fr/). Avant tout ça je faisais des trucs chez [Journalism++](http://jplusplus.org/). Pendant un moment j'ai aussi parlé de jeux vidéo sur [Livegen](http://livegen.fr/) et de musique sur divers blogs.  
 

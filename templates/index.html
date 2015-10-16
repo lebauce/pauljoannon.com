@@ -1,49 +1,21 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
         <title>Paul Joannon</title>
 
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-
-        <link rel="canonical" href="http://pauljoannon.com">
-        <meta property="og:title" content="Paul Joannon">
-        <meta property="og:site_name" content="Paul Joannon">
-        <meta property="og:image" content="">
-        <meta property="og:url" content="http://pauljoannon.com">
-        <meta property="og:description" content="">
-
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" href="/css/main.css">
+        $partial("templates/_head.html")$
     </head>
     <body>
         <div class="left">
-            <object data="/content/mustache.svg" type="image/svg+xml"></object>
-            <h1>$title$</h1>
+            $partial("templates/_left-top.html")$
             <p>
                 $body$
             </p>
-            <div class="separator"></div>
-            <p>
-                <a href="mailto:hello@pauljoannon.com">hello[at]pauljoannon[dot]com</a>
-                <br>
-                <i class="fa fa-lock"></i>&nbsp;0x128B663C
-            <p>
-                <a title="@pauljoannon sur Twitter" class="social" target="_blank" href="https://twitter.com/pauljoannon"><i class="fa fa-lg fa-twitter-square"></i></a>
-                <a title="Paulloz sur GitHub" class="social" target="_blank" href="https://github.com/Paulloz"><i class="fa fa-lg fa-github-square"></i></a>
-                <a title="paulloz sur Reddit" class="social" target="_blank" href="https://reddit.com/user/paulloz"><i class="fa fa-lg fa-reddit-square"></i></a>
-                <a title="Paulloz sur Flickr" class="social" target="_blank" href="https://flickr.com/photos/paulloz"><i class="fa fa-lg fa-flickr"></i></a>
-                <a title="Paulloz sur Steam" class="social" target="_blank" href="https://steamcommunity.com/id/paulloz"><i class="fa fa-lg fa-steam-square"></i></a>
-            </p>
+            $partial("templates/_left-bottom.html")$
         </div>
 
         <div class="right">
             $content$
         </div>
-
-        <script src="/js/script.js" type="text/javascript"></script>
     </body>
 </html>

@@ -33,7 +33,7 @@ main = do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
                 pandocCompiler
-                    >>= loadAndApplyTemplate "templates/index.html" mainContext
+                    >>= loadAndApplyTemplate "templates/index.html" indexContext
                     >>= relativizeUrls
 
         create ["content/portfolio.md"] $  do
@@ -66,10 +66,11 @@ babelCompiler =
 -- -------------------------------------------------------------------------------------------------
 -- Contexts
 
-mainContext :: Context String
-mainContext = mconcat
+indexContext :: Context String
+indexContext = mconcat
     [
         defaultContext,
+        constField "main-title" "Paul&nbsp;Joannon",
         includeField "content" "portfolio"
     ]
 

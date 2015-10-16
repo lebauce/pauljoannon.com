@@ -38,6 +38,9 @@ window.onload = function() {
         let links = document.getElementsByTagName('a');
 
         for (let i = 0; i < links.length; ++i) {
+            if (links[i].parentElement.tagName !== 'P') {
+                continue;
+            }
             links[i].setAttribute('target', '_blank');
         }
     })();
