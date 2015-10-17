@@ -44,4 +44,16 @@ window.onload = function() {
             links[i].setAttribute('target', '_blank');
         }
     })();
+
+    // Dates
+    (() => {
+        let dates = document.getElementsByClassName('date'),
+            months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août',
+                      'septembre', 'octobre', 'novembre', 'décembre'];
+
+        for (let i = 0; i < dates.length; ++i) {
+            let date = dates[i].textContent.trim().split('-');
+            dates[i].textContent = [date[2], months[date[1] - 1], date[0]].join(' ');
+        }
+    })();
 };
