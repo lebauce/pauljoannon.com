@@ -125,5 +125,6 @@ includeField fName name = field fName $ \_ -> do
 configuration :: Configuration
 configuration = defaultConfiguration
     {
+        previewHost = "0.0.0.0",
         deployCommand = "cd _site && rm -rf .git && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
     }
