@@ -15,7 +15,10 @@
         <div class="right">
             <div class="blog">
                 <div id="entry" class="blog__entry">
-                    <h1>$title$</h1>
+                    <h2>$title$</h2>
+                    $if(subtitle)$
+                        <h3>$subtitle$</h3>
+                    $endif$
                     <span class="blog__entry__metadata small">
                         <i class="fa fa-calendar"></i>&nbsp;<span class="date">$date$</span>
                     </span>
