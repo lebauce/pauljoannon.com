@@ -14,9 +14,21 @@
 
         <div class="right">
             <div class="blog">
-                <div class="blog__entry">
+                <div id="entry" class="blog__entry">
                     <h1>$title$</h1>
+                    <span class="blog__entry__metadata small">
+                        <i class="fa fa-calendar"></i>&nbsp;<span class="date">$date$</span>
+                    </span>
                     $body$
+                    <p class="blog__entry__link small align-right">
+                        <span>
+                            <a href="javascript:window.history.back()"><i class="fa fa-angle-left"></i>&nbsp;Retour</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a href="#entry"><i class="fa fa-angle-up"></i>&nbsp;Remonter</a>
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
