@@ -42,7 +42,8 @@ window.onload = function() {
         let links = document.getElementsByTagName('a');
 
         for (let i = 0; i < links.length; ++i) {
-            if (links[i].parentElement.tagName !== 'P') {
+            let href = links[i].getAttribute('href');
+            if (links[i].parentElement.tagName !== 'P' || ['.', '/'].indexOf(href[0]) >= 0) {
                 continue;
             }
             links[i].setAttribute('target', '_blank');
