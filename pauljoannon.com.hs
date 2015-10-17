@@ -11,7 +11,7 @@ main :: IO ()
 main = do
     hakyllWith configuration $ do
         -- Copy static assets
-        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg", "content/**/*.jpg"]) $ do
+        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg", "content/social.jpg", "content/**/*.jpg"]) $ do
             route idRoute
             compile copyFileCompiler
 
@@ -108,6 +108,7 @@ blogContext :: Context String
 blogContext = mconcat
     [
         blogEntryContext,
+        titleField "blog",
         listField "entries" blogEntryContext (recentFirst =<< loadAllSnapshots "content/blog/**/*.md" "content")
     ]
 
