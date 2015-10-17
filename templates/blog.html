@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>$main-title$ - $title$</title>
+
+        $partial("templates/_head.html")$
+    </head>
+    <body>
+        <div class="left">
+            $partial("templates/_left-top.html")$
+            <p></p>
+            $partial("templates/_left-bottom.html")$
+        </div>
+
+        <div class="right">
+            <div class="blog">
+                $for(entries)$
+                    <div class="blog__entry">
+                        <h2>$title$</h2>
+                        <span class="blog__entry__metadata">
+                            <i class="fa fa-calendar"></i>&nbsp;<span class="date">$date$
+                        </span>
+                        $teaser$
+                    </div>
+                    <div class="separator"></div>
+                $endfor$
+            </div>
+        </div>
+    </body>
+</html>

@@ -52,7 +52,15 @@ main = do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
                 pandocCompiler
-                    >>= loadAndApplyTemplate "templates/blog-item.html" blogContext
+                    >>= saveSnapshot "content"
+                    >>= loadAndApplyTemplate "templates/blog-entry.html" blogEntryContext
+                    >>= relativizeUrls
+
+        create ["content/blog/index.md"] $ do
+            route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
+            compile $ do
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/blog.html" blogContext
                     >>= relativizeUrls
 
 -- -------------------------------------------------------------------------------------------------
@@ -88,11 +96,19 @@ portfolioContext = mconcat
         listField "items" defaultContext (recentFirst =<< loadAllSnapshots "content/portfolio/*.md" "content")
     ]
 
+blogEntryContext :: Context String
+blogEntryContext = mconcat
+    [
+        defaultContext,
+        constField "main-title" "Paulloz&nbsp;:&nbsp;le&nbsp;blog",
+        teaserField "teaser" "content"
+    ]
+
 blogContext :: Context String
 blogContext = mconcat
     [
-        defaultContext,
-        constField "main-title" "Paulloz&nbsp;:&nbsp;le&nbsp;blog"
+        blogEntryContext,
+        listField "entries" blogEntryContext (recentFirst =<< loadAllSnapshots "content/blog/**/*.md" "content")
     ]
 
 -- -------------------------------------------------------------------------------------------------
