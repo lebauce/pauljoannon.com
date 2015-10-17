@@ -19,18 +19,22 @@ window.onload = function() {
 
     // Title size
     (() => {
-        let em = 1,
-            leftClientRect = document.getElementsByClassName('left')[0].getBoundingClientRect(),
-            title = document.getElementsByTagName('h1')[0];
-        while (em < 7) {
-            title.style['font-size'] = String(em) + 'em';
-            em += 0.1;
-            if (title.getBoundingClientRect().width >= leftClientRect.width - 32) {
-                em -= 0.1;
+        let resizeTitle = () => {
+            let em = 1,
+                leftClientRect = document.getElementsByClassName('left')[0].getBoundingClientRect(),
+                title = document.getElementsByTagName('h1')[0];
+            while (em < 10) {
                 title.style['font-size'] = String(em) + 'em';
-                break;
+                em += 0.1;
+                if (title.getBoundingClientRect().width >= leftClientRect.width - 40) {
+                    em -= 0.1;
+                    title.style['font-size'] = String(em) + 'em';
+                    break;
+                }
             }
         }
+        window.onresize = resizeTitle;
+        resizeTitle();
     })();
 
     // Links target
