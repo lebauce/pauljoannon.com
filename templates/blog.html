@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>$main-title$ - $title$</title>
+        <title>$main-title$</title>
 
         $partial("templates/_head.html")$
     </head>
@@ -16,11 +16,18 @@
             <div class="blog">
                 $for(entries)$
                     <div class="blog__entry">
-                        <h2>$title$</h2>
+                        <h2><a href="$url$">$title$</a></h2>
                         <span class="blog__entry__metadata">
-                            <i class="fa fa-calendar"></i>&nbsp;<span class="date">$date$
+                            <i class="fa fa-calendar"></i>&nbsp;<span class="date">$date$</span>
                         </span>
                         $teaser$
+                        <p class="blog__entry__link">
+                            <span>
+                                <a href="$url$">
+                                    <i class="fa fa-angle-right"></i>&nbsp;Lire la suite
+                                </a>
+                            </span>
+                        </p>
                     </div>
                     <div class="separator"></div>
                 $endfor$
