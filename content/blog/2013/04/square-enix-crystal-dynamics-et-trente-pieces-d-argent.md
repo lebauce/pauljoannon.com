@@ -16,7 +16,7 @@ Il s'est passé quelques temps après la sortie de *Tomb Raider* et avant que je
 Enfin ne brûlons pas les étapes car je l'ai dit c'est d'abord l'euphorie qui a refait surface.  
 Que ressentir d'autre en lançant ce jeu et en étant étonné de voir son ordinateur cracher pareils graphismes&nbsp;? Oui, c'est beau, c'est très beau, je me suis même surpris un certain nombre de fois à me le répéter intérieurement. Pour autant ça ne fait pas tout.
 
-Après l'introduction on se retrouve échouée sur une île déserte ([spoiler](http://twitter.com/itsnotaspoil) alert) et on a droit à un ersatz d'introduction stage nous expliquant les bases du gameplay intelligemment (je suis un grand partisan de l'introduction stage). Lara s'étant retrouvée seule par d'habiles ficelles scénaristiques il nous faut nous mettre à la recherche de nos compagnons.  
+Après l'opening on se retrouve échouée sur une île déserte ([spoiler](http://twitter.com/itsnotaspoil) alert) et on a droit à un ersatz d'introduction stage nous expliquant les bases du gameplay intelligemment (je suis un grand partisan de l'introduction stage). Lara s'étant retrouvée seule par d'habiles ficelles scénaristiques il nous faut nous mettre à la recherche de nos compagnons.  
 La descente aux enfers commence alors&nbsp;; aussi bien pour Lara que pour moi, joueur. D'ores et déjà entr'aperçus pour certains, on va avoir droit à un florilège des plus mauvais concepts en matière de game design.  
 Bien sûr ils sont tous à la mode depuis des années, bien sûr ils tuent à petit feu la majeure partie de la production vidéoludique et bien sûr ils se devaient d'être là, j'aurais dû m'en douter.  
 
