@@ -4,10 +4,10 @@ subtitle: À travers un casque de réalité virtuelle
 date: 2015-10-28
 ---
 
-En 2015 tout le monde est au courant&nbsp;: [Bush did 9/11](https://en.wikipedia.org/wiki/9/11_conspiracy_theories). Ce que beaucoup moins de gens savent en revenche, c'est que [french students did [8:46]](http://www.08h46.com/).  
+En 2015 tout le monde est au courant&nbsp;: [Bush did 9/11](https://en.wikipedia.org/wiki/9/11_conspiracy_theories). Ce que beaucoup moins de gens savent en revenche, c'est que [french students did [08:46]](http://www.08h46.com/).  
 
 Lundi dernier [j'étais invité](https://twitter.com/pauljoannon/status/658613174292365312) à tester une *«expérience narrative»* qui met, grâce à la réalité virtuelle (VR), le joueur dans la peau d'une personne travaillant dans la tour Nord du World Trade Center le 11 septembre 2001.  
-Cette expérience s'appelle [8:46] et a été développé en environ trois mois par six étudiants de l'[Enjmin](http://www.enjmin.com/).
+Cette expérience s'appelle [08:46] et a été développée en environ trois mois par six étudiants de l'[Enjmin](http://www.enjmin.com/).
 
 <!--more-->
 
@@ -44,7 +44,7 @@ Concernant l'expérience en elle même ensuite. J'ai été assez bluffé par l'i
 On peut bien sûr trouver des reproches. Le fait que ce soit assez court par exemple, le discours et le rythme auraient sûrement gagné en puissance avec quelques minutes de jeu en plus. Puis on se souvient que c'est un projet étudiant, produit rapidement, avec des moyens et un temps très réduits.  
 Le bémol que j'avancerais ne concerne pas ces restrictions de production. Je me demande s'il n'aurait pas été tout aussi intéressant de pousser jusqu'au bout le parti pris dirigiste en retirant toute interaction avec des objets. Ces interactions, trop rares, ne servent finalement qu'à souligner tous les autres moments où elles sont absentes et n'apportent, donc, que frustration au joueur.
 
-Quoi qu'il en soit, si vous avez accès à un Oculus Rift, [8:46] est sans aucun doute un jeu à essayer.
+Quoi qu'il en soit, si vous avez accès à un Oculus Rift, [08:46] est sans aucun doute un jeu à essayer.
 
 Pour conclure&nbsp;: merci aux [porteurs du projet](http://www.08h46.com/#!artists/cfvg) pour leur temps et à [\@ThePixelHunt](https://twitter.com/ThePixelHunt) pour avoir organisé cette petite soirée de test, c'était bien cool.
 
