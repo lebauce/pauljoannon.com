@@ -26,6 +26,21 @@
             font-size: 2em;
         }
 
+        blockquote {
+            font-weight: 400;
+            font-style: italic;
+
+            p {
+                &::before {
+                    content: "«";
+                }
+
+                &::after {
+                    content: "»";
+                }
+            }
+        }
+
         p {
             a {
                 color: @link-color;
