@@ -86,6 +86,7 @@ indexContext = mconcat
     [
         defaultContext,
         constField "main-title" "Paul&nbsp;Joannon",
+        constField "main-url" "/",
         includeField "content" "portfolio"
     ]
 
@@ -101,6 +102,7 @@ blogEntryContext = mconcat
     [
         defaultContext,
         constField "main-title" "Paulloz&nbsp;:&nbsp;le&nbsp;blog",
+        constField "main-url" "/blog",
         teaserField "teaser" "content"
     ]
 
