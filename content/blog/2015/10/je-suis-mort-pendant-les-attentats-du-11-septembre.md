@@ -28,7 +28,7 @@ Mes vieux réflexes de joueur de point and click refont surface et je regarde to
 Quelques instants passent puis une voix nous parvient de l'autre côté de la porte qui finit enfin par s'ouvrir. Face à nous se trouve l'agent de sécurité responsable de notre étage. Une évacuation a déjà commencé. Les ascenseurs sont hors service, il faudra descendre par les escaliers.  
 L'homme me donne une lampe torche et nous le suivons dans le couloir.  
 De la fumée envahit petit à petit notre étage&nbsp;; ma visibilité s'en ressent mais, tant bien que mal, nous avançons.  
-J'essaie d'ouvrir chaque porte que je croise. Les rares fois où j'y arrive, c'est pour me retrouver nez à nez avec des débrits qui empêchent toute avancée.  
+J'essaie d'ouvrir chaque porte que je croise. Les rares fois où j'y arrive, c'est pour me retrouver nez à nez avec des débris qui empêchent toute avancée.  
 
 La fumée et la chaleur qui l'accompagne deviennent étouffantes. On trouve refuge dans un bureau. L'un de nos collègues s'y trouve déjà, prostré dans un coin contre la fenêtre.  
 La chaleur devient insoutenable. Les mains moites sur la manette, j'attrape l'écran d'ordinateur qui se trouve sur le bureau et le lance contre la fenêtre. Un peu d'air entre... Mais notre collègue craque.  
