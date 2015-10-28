@@ -41,9 +41,10 @@ Ce qu'il se passe ensuite, c'est votre choix...
 D'abord d'un point de vue strictement technique, la VR a pas mal évolué depuis ma dernière occasion de tester ce genre de techno. Oui, j'ai encore eu un peu la gerbe quand j'ai commencé à bouger dans le jeu alors que j'étais en réalité assis. Oui, il y a encore des soucis concernant le rapport entre notre taille et celle du personnage incarné etc. Tout ça est cependant beaucoup plus supportable qu'il y a ne serait-ce que quelques mois.  
 
 Concernant l'expérience en elle même ensuite. J'ai été assez bluffé par l'immersion dont j'ai été *«victime»* alors que le rendu 3D est loin d'être photo-réaliste. La narration est assez maîtrisée. Tous les dialogues sont en anglais et apparemment documentés (grâce à des enregistrements ou des transcriptions d'appels téléphoniques).  
-Le rare reproche que j'ai envie de faire c'est que c'était court et que le discours et le rythme auraient sûrement gagné en puissance avec quelques minutes de jeu en plus.  
+On peut bien sûr trouver des reproches. Le fait que ce soit assez court par exemple, le discours et le rythme auraient sûrement gagné en puissance avec quelques minutes de jeu en plus. Puis on se souvient que c'est un projet étudiant, produit rapidement, avec des moyens et un temps très réduits.  
+Le bémol que j'avancerais ne concerne pas ces restrictions de production. Je me demande s'il n'aurait pas été tout aussi intéressant de pousser jusqu'au bout le parti pris dirigiste en retirant toute interaction avec des objets. Ces interactions, trop rares, ne servent finalement qu'à souligner tous les autres moments où elles sont absentes et n'apportent, donc, que frustration au joueur.
 
-Si vous avez accès à un Oculus Rift, [8:46] est sans aucun doute un jeu à essayer.
+Quoi qu'il en soit, si vous avez accès à un Oculus Rift, [8:46] est sans aucun doute un jeu à essayer.
 
 Pour conclure&nbsp;: merci aux [porteurs du projet](http://www.08h46.com/#!artists/cfvg) pour leur temps et à [\@ThePixelHunt](https://twitter.com/ThePixelHunt) pour avoir organisé cette petite soirée de test, c'était bien cool.
 
