@@ -44,7 +44,7 @@ Concernant l'expérience en elle même ensuite. J'ai été assez bluffé par l'i
 On peut bien sûr trouver des reproches. Le fait que ce soit assez court par exemple, le discours et le rythme auraient sûrement gagné en puissance avec quelques minutes de jeu en plus. Puis on se souvient que c'est un projet étudiant, produit rapidement, avec des moyens et un temps très réduits.  
 Le bémol que j'avancerais ne concerne pas ces restrictions de production. Je me demande s'il n'aurait pas été tout aussi intéressant de pousser jusqu'au bout le parti pris dirigiste en retirant toute interaction avec des objets. Ces interactions, trop rares, ne servent finalement qu'à souligner tous les autres moments où elles sont absentes et n'apportent, donc, que frustration au joueur.
 
-Quoi qu'il en soit, si vous avez accès à un Oculus Rift, [08:46] est sans aucun doute un jeu à essayer.
+Quoi qu'il en soit, si vous avez accès à un Oculus Rift, [08:46] est sans aucun doute un jeu à essayer. Il vous interrogera sur le futur de la VR et son impact sur le jeu vidéo, bien sûr, mais aussi sur le journalisme et la diffusion de l'information.
 
 Pour conclure&nbsp;: merci aux [porteurs du projet](http://www.08h46.com/#!artists/cfvg) pour leur temps et à [\@ThePixelHunt](https://twitter.com/ThePixelHunt) pour avoir organisé cette petite soirée de test, c'était bien cool.
 
