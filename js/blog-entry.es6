@@ -1,4 +1,7 @@
+const oldOnload = window.onload;
 window.onload = function() {
+    oldOnload();
+
     // Tweet link
     (() => {
         let title = document.getElementsByTagName('h2')[0].textContent,
