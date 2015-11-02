@@ -61,4 +61,40 @@ window.addEventListener('load', () => {
             dates[i].textContent = [date[2], months[date[1] - 1], date[0]].join(' ');
         }
     })();
+
+    // ???
+    (() => {
+        const sequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+        let timeout,
+            idx = 0;
+
+        let cancel = resetIdx => {
+            clearTimeout(timeout);
+            timeout = null;
+
+            if (resetIdx) {
+                idx = 0;
+            }
+        };
+
+        window.addEventListener('keyup', ev => {
+            if (timeout != null) {
+                cancel();
+            }
+
+            if (ev.keyCode === sequence[idx]) {
+                ++idx;
+                if (idx < sequence.length) {
+                    timeout = setTimeout(() => {
+                        cancel(true);
+                    }, 500);
+                } else {
+                    document.getElementsByTagName('body')[0].setAttribute('class', 'fuckfest');
+                }
+            } else {
+                cancel(true);
+            }
+        });
+    })();
 });
