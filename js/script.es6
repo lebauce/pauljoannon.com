@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener('load', () => {
     // Mustache color
     (() => {
         let mustaches = document.getElementsByTagName('object'),
@@ -61,4 +61,4 @@ window.onload = function() {
             dates[i].textContent = [date[2], months[date[1] - 1], date[0]].join(' ');
         }
     })();
-};
+});

@@ -1,7 +1,4 @@
-const oldOnload = window.onload;
-window.onload = function() {
-    oldOnload();
-
+window.addEventListener('load', () => {
     // Tweet link
     (() => {
         let title = document.getElementsByTagName('h2')[0].textContent,
@@ -17,4 +14,4 @@ window.onload = function() {
             );
         });
     })();
-};
+});
