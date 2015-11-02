@@ -1,6 +1,7 @@
 ---
 title: Yes, yes, I'm a talking Cave
 date: 2013-04-01
+tags: jeu vidéo
 ---
 
 ![The Cave](/content/blog/2013/04/the-cave/tc1.jpg)

@@ -1,6 +1,7 @@
 ---
 title: Square Enix, Crystal Dynamics et trente pièces d'argent
 date: 2013-04-07
+tags: jeu vidéo
 ---
 
 ![](/content/blog/2013/04/square-enix-crystal-dynamics-et-trente-pieces-d-argent/tr1.jpg)

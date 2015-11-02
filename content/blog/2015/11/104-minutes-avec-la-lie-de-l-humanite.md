@@ -1,6 +1,7 @@
 ---
 title: 104 minutes avec la lie de l'humanité
 date: 2015-11-02
+tags: cinéma
 ---
 
 Il y a de ces blagues, de ces défis entre amis qui vont trop loin.  

@@ -1,6 +1,7 @@
 ---
 title: Du muscle, du sang et des Valkyries
 date: 2013-10-22
+tags: jeu vidéo
 ---
 
 ![Völgarr the Viking](/content/blog/2013/10/volgarr-the-viking/vtv1.jpg)

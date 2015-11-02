@@ -2,6 +2,7 @@
 title: Comment j'ai perdu mon week-end,
 subtitle: ou pourquoi les jams et moi on va faire un pause
 date: 2015-01-29
+tags: jeu vidéo, gamedev, humeur
 ---
 
 Bon ok, ce titre est sûrement un peu exagéré,mais il dénote bien mon agacement et mon incompréhension par rapport à tout ça.  
