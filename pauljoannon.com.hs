@@ -117,8 +117,9 @@ blogEntryContext tags = mconcat
         defaultContext,
         constField "main-title" "Paulloz&nbsp;:&nbsp;le&nbsp;blog",
         constField "main-url" "/blog",
-        field "tags" (\_ -> renderTagList tags),
-        teaserField "teaser" "content"
+        field "all-the-tags" (\_ -> renderTagList tags),
+        teaserField "teaser" "content",
+        tagsField "tags-list" tags
     ]
 
 blogContext :: Tags -> Context String
