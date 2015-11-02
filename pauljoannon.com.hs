@@ -10,8 +10,13 @@ import Data.Monoid (mconcat)
 main :: IO ()
 main = do
     hakyllWith configuration $ do
+        -- Build tags
+        tags <- buildTags "content/blog/**/*.md" (fromCapture "blog/tags/*.html")
+
         -- Copy static assets
-        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg", "content/social.jpg", "content/**/*.jpg", "content/**/*.gif", "content/favicon.*"]) $ do
+        let assets = ["CNAME", "css/fonts/*", "content/mustache.svg", "content/social.jpg",
+                      "content/**/*.jpg", "content/**/*.gif", "content/favicon.*"]
+        match (foldr1 (.||.) assets) $ do
             route idRoute
             compile copyFileCompiler
 
@@ -36,6 +41,7 @@ main = do
                     >>= loadAndApplyTemplate "templates/index.html" indexContext
                     >>= relativizeUrls
 
+        -- Compile portfolio
         create ["content/portfolio.md"] $  do
             compile $ do
                 makeItem ""
@@ -48,19 +54,27 @@ main = do
                     >>= loadAndApplyTemplate "templates/portfolio-item.html" defaultContext
                     >>= saveSnapshot "content"
 
+        -- Compile blog
         match "content/blog/**/*.md" $ do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
                 pandocCompiler
                     >>= saveSnapshot "content"
-                    >>= loadAndApplyTemplate "templates/blog-entry.html" blogEntryContext
+                    >>= loadAndApplyTemplate "templates/blog-entry.html" (blogEntryContext tags)
                     >>= relativizeUrls
 
         create ["content/blog/index.md"] $ do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
                 makeItem ""
-                    >>= loadAndApplyTemplate "templates/blog.html" blogContext
+                    >>= loadAndApplyTemplate "templates/blog.html" (blogContext tags)
+                    >>= relativizeUrls
+
+        tagsRules tags $ \tag pattern -> do
+            route idRoute
+            compile $ do
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/blog.html" (blogTagContext pattern tags tag)
                     >>= relativizeUrls
 
 -- -------------------------------------------------------------------------------------------------
@@ -97,21 +111,29 @@ portfolioContext = mconcat
         listField "items" defaultContext (recentFirst =<< loadAllSnapshots "content/portfolio/*.md" "content")
     ]
 
-blogEntryContext :: Context String
-blogEntryContext = mconcat
+blogEntryContext :: Tags -> Context String
+blogEntryContext tags = mconcat
     [
         defaultContext,
         constField "main-title" "Paulloz&nbsp;:&nbsp;le&nbsp;blog",
         constField "main-url" "/blog",
+        field "tags" (\_ -> renderTagList tags),
         teaserField "teaser" "content"
     ]
 
-blogContext :: Context String
-blogContext = mconcat
+blogContext :: Tags -> Context String
+blogContext tags = mconcat
     [
-        blogEntryContext,
-        titleField "blog",
-        listField "entries" blogEntryContext (recentFirst =<< loadAllSnapshots "content/blog/**/*.md" "content")
+        blogEntryContext tags,
+        listField "entries" (blogEntryContext tags) (recentFirst =<< loadAllSnapshots "content/blog/**/*.md" "content")
+    ]
+
+blogTagContext :: Pattern -> Tags -> String -> Context String
+blogTagContext pattern tags tag = mconcat
+    [
+        blogEntryContext tags,
+        constField "tag" tag,
+        listField "entries" (blogEntryContext tags) (recentFirst =<< loadAllSnapshots pattern "content")
     ]
 
 -- -------------------------------------------------------------------------------------------------
