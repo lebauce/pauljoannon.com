@@ -11,7 +11,7 @@ main :: IO ()
 main = do
     hakyllWith configuration $ do
         -- Copy static assets
-        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg", "content/social.jpg", "content/**/*.jpg", "content/favicon.*"]) $ do
+        match (foldr1 (.||.) ["CNAME", "css/fonts/*", "content/mustache.svg", "content/social.jpg", "content/**/*.jpg", "content/**/*.gif", "content/favicon.*"]) $ do
             route idRoute
             compile copyFileCompiler
 
