@@ -16,3 +16,5 @@ Je crois bien que ce soir j'ai trouvé.
 <!--more-->
 
 ![](/content/blog/2015/11/104-minutes-avec-la-lie-de-l-humanite/paulloz-facepalm.gif)
+
+Je ne perdrai pas plus de temps à écrire quoi que ce soit de construit à propos de ce film qui colporte un discours à la fois raciste, sexiste et homophobe.
