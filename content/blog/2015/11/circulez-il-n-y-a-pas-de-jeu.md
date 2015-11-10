@@ -4,7 +4,7 @@ date: 2015-11-09
 tags: jeu vidéo
 ---
 
-La dernière console de salon que j'ai acheté, c'est une Xbox 360 et ça devait être en 2008. Je me suis fait voler ma Nintendo 2Ds il y a plus ou moins un an et n'ai pas racheté de console portable depuis. Mon ordinateur sous Windows a décidé de rendre l'âme il y a quelques semaines. Autant dire qu'à part quelques jeux de ma [bibliothèque Steam](http://steamcommunity.com/id/paulloz/games/?tab=all&sort=name) tournant sur Linux, mes occasions de jouer à des trucs ne font pas légion.  
+La dernière console de salon que j'ai achetée, c'est une Xbox 360 et ça devait être en 2008. Je me suis fait voler ma Nintendo 2Ds il y a plus ou moins un an et n'ai pas racheté de console portable depuis. Mon ordinateur sous Windows a décidé de rendre l'âme il y a quelques semaines. Autant dire qu'à part quelques jeux de ma [bibliothèque Steam](http://steamcommunity.com/id/paulloz/games/?tab=all&sort=name) tournant sur Linux, mes occasions de jouer à des trucs ne font pas légion.  
 
 ![Not loading](/content/blog/2015/11/circulez-il-n-y-a-pas-de-jeu/ting2.jpg)
 
