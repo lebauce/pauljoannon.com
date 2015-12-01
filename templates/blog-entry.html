@@ -14,9 +14,9 @@
             $partial("templates/_left-bottom.html")$
         </div>
 
-        <div class="right">
+        <main class="right">
             <div class="blog">
-                <div id="entry" class="blog__entry">
+                <article id="entry" class="blog__entry">
                     <h2>$title$</h2>
                     $if(subtitle)$
                         <h3>$subtitle$</h3>
@@ -48,9 +48,9 @@
                             Pour toute réaction, insulte ou mot d'amour, les liens pour me contacter sont un peu plus haut sur la gauche. ❤️
                         </p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </main>
 
         $partial("templates/_piwik.html")$
     </body>

@@ -13,10 +13,10 @@
             $partial("templates/_left-bottom.html")$
         </div>
 
-        <div class="right">
+        <main class="right">
             <div class="blog">
                 $for(entries)$
-                    <div class="blog__entry">
+                    <article class="blog__entry">
                         <h2><a href="$url$">$title$</a></h2>
                         $if(subtitle)$
                         <h3><a href="$url$">$subtitle$</a></h3>
@@ -34,11 +34,11 @@
                                 </a>
                             </span>
                         </p>
-                    </div>
+                    </article>
                     <div class="separator"></div>
                 $endfor$
             </div>
-        </div>
+        </main>
 
         $partial("templates/_piwik.html")$
     </body>
