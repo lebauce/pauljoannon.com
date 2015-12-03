@@ -3,6 +3,7 @@ title: Je suis mort pendant les attentats du 11 septembre
 subtitle: À travers un casque de réalité virtuelle
 date: 2015-10-28
 tags: jeu vidéo, réalité augmentée
+description: J'étais invité à tester une «expérience narrative» qui met, grâce à la réalité virtuelle, le joueur dans la peau d'une personne travaillant dans la tour Nord du World Trade Center le 11 septembre 2001.
 ---
 
 En 2015 tout le monde est au courant&nbsp;: [Bush did 9/11](https://en.wikipedia.org/wiki/9/11_conspiracy_theories). Ce que beaucoup moins de gens savent en revenche, c'est que [french students did [08:46]](http://www.08h46.com/).  

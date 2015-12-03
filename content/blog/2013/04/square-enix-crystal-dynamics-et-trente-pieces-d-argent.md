@@ -2,6 +2,7 @@
 title: Square Enix, Crystal Dynamics et trente pièces d'argent
 date: 2013-04-07
 tags: jeu vidéo
+description: L'euphorie d'abord puis l'attente, l'impatience. Reviendra l'euphorie, très vite rattrapée par la déception, la contrariété et la rancoeur.
 ---
 
 ![](/content/blog/2013/04/square-enix-crystal-dynamics-et-trente-pieces-d-argent/tr1.jpg)

@@ -2,6 +2,7 @@
 title: Et toi, comment tu te sens ?
 date: 2015-11-15
 tags: humeur
+description: Je ne sais pas vraiment comment je me sens. Je crois qu'il faut que je retrace dans ma tête la soirée du 13 novembre...
 ---
 
 Depuis hier, un peu tout le monde me demande si ça va, me demande comment je me sens. À vrai dire je ne sais pas vraiment comment je me sens. Je crois qu'il faut que je retrace dans ma tête la soirée du 13 novembre...  

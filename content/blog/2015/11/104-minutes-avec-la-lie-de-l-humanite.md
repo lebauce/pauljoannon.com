@@ -2,6 +2,7 @@
 title: 104 minutes avec la lie de l'humanité
 date: 2015-11-02
 tags: cinéma
+description: On s'était posé comme défi d'aller voir le jour de sa sortie Aladin (oui, celui avec Kev Adams).
 ---
 
 Il y a de ces blagues, de ces défis entre amis qui vont trop loin.  

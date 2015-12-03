@@ -2,10 +2,11 @@
 title: La fable du SVG to PNG
 date: 2015-12-03
 tags: D3.js, javascript, programmation, SVG
+description: De la génération de PNG en D3.js. C'est possible, ce n'est pas bien compliqué et surtout c'est ultra cool.
 ---
 
 En septembre dernier, avec [Six Plus](http://www.liberation.fr/data-nouveaux-formats-six-plus,100538), on a publié un [petit truc pour pronostiquer la Coupe du Monde de Rugby](https://github.com/libe-sixplus/qui-sera-champion-du-monde-de-rugby).  
-Eh bien là dedans, tout au fond, il y a une feature qui est passée totalement inaperçue&nbsp;: de la génération de PNG en [D3.js](http://d3js.org/). C'est possible et ce n'est pas bien compliqué et surtout c'est ultra cool.
+Eh bien là dedans, tout au fond, il y a une feature qui est passée totalement inaperçue&nbsp;: de la génération de PNG en [D3.js](http://d3js.org/). C'est possible, ce n'est pas bien compliqué et surtout c'est ultra cool.
 
 <!--more-->
 
