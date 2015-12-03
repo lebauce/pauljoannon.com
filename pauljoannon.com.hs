@@ -63,10 +63,10 @@ main = do
                     >>= loadAndApplyTemplate "templates/blog-entry.html" (blogEntryContext tags)
                     >>= relativizeUrls
 
-        create ["content/blog/index.md"] $ do
+        match "content/blog/index.md" $ do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
-                makeItem ""
+                pandocCompiler
                     >>= loadAndApplyTemplate "templates/blog.html" (blogContext tags)
                     >>= relativizeUrls
 

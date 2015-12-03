@@ -14,7 +14,7 @@
             $partial("templates/_left-bottom.html")$
         </div>
 
-        <main class="right">
+        <div class="right">
             <div class="blog">
                 <article id="entry" class="blog__entry">
                     <h2>$title$</h2>
@@ -26,7 +26,9 @@
                         &nbsp;
                         <i class="fa fa-tag"></i>&nbsp;$tags-list$
                     </span>
-                    $body$
+                    <div role="main">
+                        $body$
+                    </div>
                     <p class="blog__entry__link small align-right">
                         <span>
                             <a href="javascript:window.history.back()"><i class="fa fa-angle-left"></i>&nbsp;Retour</a>
@@ -50,7 +52,7 @@
                     </div>
                 </article>
             </div>
-        </main>
+        </div>
 
         $partial("templates/_piwik.html")$
     </body>
