@@ -9,9 +9,12 @@
     </head>
     <body>
         <div class="left">
+            $partial("templates/_left-toggle.html")$
             $partial("templates/_left-top.html")$
-            $partial("templates/_left-blog.html")$
-            $partial("templates/_left-bottom.html")$
+            <div class="left--below-title">
+                $partial("templates/_left-blog.html")$
+                $partial("templates/_left-bottom.html")$
+            </div>
         </div>
 
         <div class="right">
