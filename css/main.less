@@ -23,20 +23,10 @@ html, body {
     color: @color;
 }
 
-body.fuckfest {
-    @keyframes enlarge-my-mustache {
-        100% { width: 300%; }
-    }
+body.no-scroll {
+    height: 100%;
 
-    @keyframes rotate-my-mustache {
-        0% { transform: rotate(0); }
-        100% { transform: rotate(1turn); }
-    }
-
-    object {
-        animation: enlarge-my-mustache 3s 0s ease-in-out infinite alternate,
-                   rotate-my-mustache 5s 0s ease-in-out infinite normal;
-    }
+    overflow-y: hidden;
 }
 
 .left {

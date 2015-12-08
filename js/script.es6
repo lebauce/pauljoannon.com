@@ -90,7 +90,6 @@ window.addEventListener('load', () => {
                         cancel(true);
                     }, 500);
                 } else {
-                    document.getElementsByTagName('body')[0].setAttribute('class', 'fuckfest');
                 }
             } else {
                 cancel(true);
