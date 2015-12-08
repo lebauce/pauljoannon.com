@@ -1,23 +1,7 @@
-.box-sizing(@box-sizing) {
-    -webkit-box-sizing: @box-sizing;
-       -moz-box-sizing: @box-sizing;
-        -ms-box-sizing: @box-sizing;
-         -o-box-sizing: @box-sizing;
-            box-sizing: @box-sizing;
-}
-
-.transform(@transform) {
-    -webkit-transform: @transform;
-       -moz-transform: @transform;
-        -ms-transform: @transform;
-         -o-transform: @transform;
-            transform: @transform;
-}
-
-.transition(@transition) {
-    -webkit-transition: @transition;
-       -moz-transition: @transition;
-        -ms-transition: @transition;
-         -o-transition: @transition;
-            transition: @transition;
+.vendor(@property, @value) {
+    -webkit-@{property}: @value;
+       -moz-@{property}: @value;
+        -ms-@{property}: @value;
+         -o-@{property}: @value;
+            @{property}: @value;
 }
