@@ -3,6 +3,7 @@ title: Doom Doom Doom
 subtitle: I want you in my room
 date: 2015-12-06
 tags: jeu vidéo
+description: Doom Doom Doom, I want you in my room. J'ai testé l'alpha de Doom.
 ---
 
 Il y a quelques temps c'était l'E3 et avec quelques potes on a suivi les conférences comme tous les ans&nbsp;: en direct, de nuit, sur Skype. Une nuit, alors qu'on était un certain nombre dans la conversation, je me suis retrouvé quasi-seul, hypé en diable par l'annonce de Doom.  
