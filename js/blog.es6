@@ -48,7 +48,13 @@ window.addEventListener('load', () => {
             };
             container.style({ 'display' : 'block' , 'width' : '100%' });
             update();
-            window.addEventListener('resize', update);
+            window.addEventListener('resize', (f, t) => {
+                let timer;
+                return () => {
+                    clearTimeout(timer);
+                    timer = setTimeout(f, t);
+                };
+            }(update, 50));
         }
     })();
 
