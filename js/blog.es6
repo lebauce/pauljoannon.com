@@ -22,6 +22,36 @@ window.addEventListener('load', () => {
         });
     })();
 
+    // Menu D3
+    (() => {
+        let container = document.querySelector('.left__categories__list');
+
+        if (container != null) {
+            container.innerHTML = container.innerHTML.replace(/,/g, '');
+            container = d3.select(container);
+            const links = container.selectAll('a');
+
+            const getN = s => parseInt(s.match(/\((\d+)\)$/)[1])
+
+            let totalN = 0;
+            links.each(function() { totalN += getN(this.textContent); });
+
+            const scale = d3.scale.linear().domain([0, totalN]);
+
+            const update = () => {
+                scale.range([0, container[0][0].getBoundingClientRect().width]);
+                links.each(function() {
+                    d3.select(this).attr('class', 'category').style({
+                        width: String(scale(getN(this.textContent))) + 'px'
+                    });
+                });
+            };
+            container.style({ 'display' : 'block' , 'width' : '100%' });
+            update();
+            window.addEventListener('resize', update);
+        }
+    })();
+
     // Tags non breaking spaces
     (() => {
         let links = document.getElementsByClassName('left__categories')[0].getElementsByTagName('a');

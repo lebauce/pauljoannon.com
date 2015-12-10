@@ -1,5 +1,33 @@
-.left__toggle {
-    display: none;
+.left{
+    &__toggle {
+        display: none;
+    }
+
+    &__categories {
+        .category {
+            display: block;
+
+            padding-bottom: .2em;
+            margin: .2em 0 .2em .2em;
+
+            border-bottom: 1px solid @link-color;
+
+            text-decoration: none;
+
+            .vendor(box-sizing, border-box);
+
+            &:hover {
+                padding-bottom: calc(~".2em - 2px");
+
+                border-bottom-width: 3px;
+
+                background-color: transparent;
+
+                color: @link-color;
+                // font-weight: bold;
+            }
+        }
+    }
 }
 
 .blog {
