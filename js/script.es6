@@ -1,22 +1,4 @@
 window.addEventListener('load', () => {
-    // Mustache color
-    (() => {
-        let mustaches = document.getElementsByTagName('object'),
-            color = '#f4f4f4';
-
-        for (let i = 0; i < mustaches.length; ++i) {
-            let svg = mustaches[i].getSVGDocument(),
-                lines = svg.getElementsByTagName('line'),
-                paths = svg.getElementsByTagName('path');
-            for (let j = 0; j < lines.length; ++j) {
-                lines[j].setAttribute('stroke', color);
-            }
-            for (let j = 0; j < paths.length; ++j) {
-                paths[j].setAttribute('stroke', color);
-            }
-        }
-    })();
-
     // Title size
     (() => {
         let resizeTitle = () => {
