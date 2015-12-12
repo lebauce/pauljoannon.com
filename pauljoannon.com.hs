@@ -4,6 +4,14 @@
 
 import Hakyll
 import Data.Monoid (mconcat)
+import System.FilePath
+import qualified Data.Map as M
+import Control.Monad (forM_, forM, liftM)
+
+-- -------------------------------------------------------------------------------------------------
+
+type Year = String
+type Month = String
 
 -- -------------------------------------------------------------------------------------------------
 
@@ -12,6 +20,7 @@ main = do
     hakyllWith configuration $ do
         -- Build tags
         tags <- buildTags "content/blog/**/*.md" (fromCapture "blog/tags/*.html")
+        monthsYears <- buildMonthsAndyear "content/blog/**/*.md"
 
         -- Copy static assets
         let assets = ["CNAME", "css/fonts/*", "content/mustache.svg", "content/social.jpg",
@@ -42,7 +51,7 @@ main = do
                     >>= relativizeUrls
 
         -- Compile portfolio
-        create ["content/portfolio.md"] $  do
+        create ["content/portfolio.md"] $ do
             compile $ do
                 makeItem ""
                     >>= loadAndApplyTemplate "templates/portfolio.html" portfolioContext
@@ -63,6 +72,13 @@ main = do
                     >>= loadAndApplyTemplate "templates/blog-entry.html" (blogEntryContext tags)
                     >>= relativizeUrls
 
+        match "content/blog/*/*" $ do
+            route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
+            compile $ do
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/blog.html" (blogContext tags)
+                    >>= relativizeUrls
+
         match "content/blog/index.md" $ do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
@@ -76,6 +92,14 @@ main = do
                 makeItem ""
                     >>= loadAndApplyTemplate "templates/blog.html" (blogTagContext pattern tags tag)
                     >>= relativizeUrls
+
+        forM_ monthsYears $ \(yearMonth, _) ->
+            create [(monthYearId yearMonth)] $ do
+                route idRoute
+                compile $ do
+                    makeItem ""
+                        >>= loadAndApplyTemplate "templates/blog.html" (blogMonthYearContext yearMonth tags)
+                        >>= relativizeUrls
 
 -- -------------------------------------------------------------------------------------------------
 -- Compilers
@@ -129,6 +153,13 @@ blogContext tags = mconcat
         listField "entries" (blogEntryContext tags) (recentFirst =<< loadAllSnapshots "content/blog/**/*.md" "content")
     ]
 
+blogMonthYearContext :: (Year, Month) -> Tags -> Context String
+blogMonthYearContext (year, month) tags = mconcat
+    [
+        blogEntryContext tags,
+        listField "entries" (blogEntryContext tags) (recentFirst =<< loadAllSnapshots (fromGlob $ "content/blog/" ++ year ++ "/" ++ month ++ "/*.md") "content")
+    ]
+
 blogTagContext :: Pattern -> Tags -> String -> Context String
 blogTagContext pattern tags tag = mconcat
     [
@@ -154,3 +185,25 @@ configuration = defaultConfiguration
         previewHost = "0.0.0.0",
         deployCommand = "cd _site && rm -rf .git && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
     }
+
+-- -------------------------------------------------------------------------------------------------
+-- Utils
+
+buildMonthsAndyear :: MonadMetadata m => Pattern -> m [((Year, Month), Int)]
+buildMonthsAndyear pattern = do
+    ids <- getMatches pattern
+    return . frequency . (map getMonthYear) $ ids
+    where
+        frequency xs = M.toList (M.fromListWith (+) [(x, 1) | x <- xs])
+
+getMonthYear :: Identifier -> (Year, Month)
+getMonthYear id = ((getYear id), (getMonth id))
+
+getYear :: Identifier -> Year
+getYear = takeBaseName . takeDirectory . takeDirectory . toFilePath
+
+getMonth :: Identifier -> Month
+getMonth = takeBaseName . takeDirectory . toFilePath
+
+monthYearId :: (Year, Month) -> Identifier
+monthYearId (year, month) = fromFilePath ("blog/" ++ year ++ "/" ++ month ++ "/index.html")
