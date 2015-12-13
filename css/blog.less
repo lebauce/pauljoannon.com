@@ -8,7 +8,7 @@
             display: block;
 
             padding-bottom: .2em;
-            margin: .2em 0 .2em .2em;
+            margin: .2em 0 .2em 0;
 
             border-bottom: 1px solid @link-color;
 
@@ -25,6 +25,63 @@
 
                 color: @link-color;
                 // font-weight: bold;
+            }
+        }
+    }
+
+    &__archives {
+        .year, .year__label, .month {
+            display: inline-block;
+
+            .vendor(box-sizing, border-box);
+        }
+
+        .year {
+            width: calc(~"100% / 3");
+            padding-right: .2em;
+
+            line-height: 0 !important;
+
+            &__label {
+                width: 100%;
+
+                line-height: 1.2em;
+            }
+
+            &:nth-child(even),
+            &:nth-child(3n+3) {
+                padding-right: 0;
+            }
+
+            &:nth-child(3n+3) {
+                padding-left: .2em;
+            }
+        }
+
+        .month {
+            width: calc(~"100% / 5");
+
+            padding-top: .2em;
+
+            border: 1px solid @background-color;
+
+            background-color: @link-color;
+
+            line-height: 1em;
+            font-size: .6em;
+            color: @background-color;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+
+            cursor: not-allowed;
+
+            &[href]{
+                cursor: pointer;
+
+                &:hover {
+                    background-color: @link-color !important;
+                }
             }
         }
     }
