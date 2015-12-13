@@ -220,7 +220,7 @@ getMonth :: Identifier -> Month
 getMonth = takeBaseName . takeDirectory . toFilePath
 
 archivePath :: (Year, Month) -> FilePath
-archivePath (year, month) = "blog/" ++ year ++ "/" ++ month ++ "/index.html"
+archivePath (year, month) = "blog/" ++ year ++ "/" ++ month ++ ".html"
 
 archiveId :: (Year, Month) -> Identifier
 archiveId = fromFilePath . archivePath
