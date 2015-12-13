@@ -130,7 +130,7 @@ window.addEventListener('load', () => {
             container[0][0].innerHTML = '';
 
             const monthLabels = ['j', 'f', 'm', 'a', 'm', 'j', 'j', 'a', 's', 'o', 'n', 'd'],
-                  scale = d3.scale.linear().domain([0, maxN]).range([0.05, 1]);
+                  scale = d3.scale.linear().domain([0, maxN]).range([0.05, 0.90]);
 
             const update = () => {
                 const years = container.selectAll('.year').data(Object.keys(links));
