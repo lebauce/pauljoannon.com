@@ -37,8 +37,10 @@
         }
 
         .year {
-            width: calc(~"100% / 3");
-            padding-right: .2em;
+            @margin: 16px;
+
+            width: calc(~"(100% - 16px) / 3");
+            margin-right: @margin / 2;
 
             line-height: 0 !important;
 
@@ -50,11 +52,11 @@
 
             &:nth-child(even),
             &:nth-child(3n+3) {
-                padding-right: 0;
+                margin-right: 0;
             }
 
             &:nth-child(3n+3) {
-                padding-left: .2em;
+                margin-left: @margin / 2;
             }
         }
 
