@@ -3,7 +3,7 @@
 * @Date:   2016-02-12T22:34:24+01:00
 * @Email:  hello@pauljoannon.com
 * @Last modified by:   paulloz
-* @Last modified time: 2016-02-12T22:34:25+01:00
+* @Last modified time: 2016-02-13T00:06:13+01:00
 */
 
 window.addEventListener('load', () => {
@@ -141,7 +141,7 @@ window.addEventListener('load', () => {
                   scale = d3.scale.linear().domain([0, maxN]).range([0.05, 0.90]);
 
             const update = () => {
-                const years = container.selectAll('.year').data(Object.keys(links));
+                const years = container.selectAll('.year').data(Object.keys(links).reverse());
                 let entered = years.enter(),
                     exited = years.exit();
 
