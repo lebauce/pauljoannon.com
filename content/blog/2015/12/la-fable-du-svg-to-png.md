@@ -1,7 +1,7 @@
 ---
 title: La fable du SVG to PNG
 date: 2015-12-03
-tags: D3.js, javascript, programmation, SVG
+tags: D3.js, javascript, programmation
 description: De la génération de PNG en D3.js. C'est possible, ce n'est pas bien compliqué et surtout c'est ultra cool.
 ---
 
