@@ -1,3 +1,11 @@
+/**
+* @Author: Paul Joannon <paulloz>
+* @Date:   2016-02-12T22:34:25+01:00
+* @Email:  hello@pauljoannon.com
+* @Last modified by:   paulloz
+* @Last modified time: 2016-02-12T22:34:26+01:00
+*/
+
 window.addEventListener('load', () => {
     // Title size
     (() => {

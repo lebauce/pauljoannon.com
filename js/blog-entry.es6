@@ -1,3 +1,11 @@
+/**
+* @Author: Paul Joannon <paulloz>
+* @Date:   2016-02-12T22:34:20+01:00
+* @Email:  hello@pauljoannon.com
+* @Last modified by:   paulloz
+* @Last modified time: 2016-02-12T22:34:22+01:00
+*/
+
 window.addEventListener('load', () => {
     // Tweet link
     (() => {
