@@ -2,7 +2,7 @@
 -- @Date:   2016-02-12T22:41:05+01:00
 -- @Email:  hello@pauljoannon.com
 -- @Last modified by:   paulloz
--- @Last modified time: 2016-02-12T22:48:15+01:00
+-- @Last modified time: 2016-02-15T22:57:08+01:00
 
 -- -------------------------------------------------------------------------------------------------
 
@@ -11,7 +11,7 @@
 import Hakyll
 import Data.Monoid (mconcat)
 import System.FilePath
-import Control.Monad (forM_, forM)
+import Control.Monad (forM_, forM, liftM)
 import Data.List (intercalate, sort)
 import Text.Blaze.Html (toHtml, toValue, (!))
 import Text.Blaze.Html.Renderer.String (renderHtml)
@@ -157,7 +157,7 @@ blogContext :: Tags -> Archives -> Context String
 blogContext tags archives = mconcat
     [
         blogEntryContext tags archives,
-        listField "entries" (blogEntryContext tags archives) (recentFirst =<< loadAllSnapshots "content/blog/**/*.md" "content")
+        listField "entries" (blogEntryContext tags archives) ((liftM (take 5) . recentFirst) =<< loadAllSnapshots "content/blog/**/*.md" "content")
     ]
 
 blogArchiveContext :: (Year, Month) -> Tags -> Archives -> Context String
