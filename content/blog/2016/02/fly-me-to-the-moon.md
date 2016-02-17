@@ -1,7 +1,7 @@
 ---
 title: (Fly me) To the Moon
 subtitle: Garanti 100% sans spoiler
-date: 2016-02-00
+date: 2016-02-16
 tags: jeu vidéo
 description: J'ai enfin terminé To the Moon et je me demande si, malgré une narration excellente, c'est un bon jeu vidéo.
 ---
