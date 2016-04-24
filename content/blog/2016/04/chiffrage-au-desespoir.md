@@ -1,8 +1,9 @@
 ---
-title: Chiffrage, au désespoir (de nos vieux ennemies)
+title: Chiffrage, au désespoir (de nos vieux ennemis)
 subtitle: Données personnelles, vie privée et sécurité &#35;2
 date: 2016-04-15
 tags: données personnelles
+description: Il y a tant de raisons de vouloir sécuriser au maximum son smartphone. En plus, c'est hyper simple.
 ---
 
 Mon smartphone contient une bonne partie de ma vie&nbsp;: mon agenda, mon répertoire, mes mails, pas mal de photos, un accès à mes comptes [Twitter](https://twitter.com/pauljoannon), [Snapchat](https://snapchat.com/add/paullozz), [Steam](https://steamcommunity.com/id/paulloz), [Soundcloud](https://soundcloud.com/paulloz-1), [Flickr](https://flickr.com/photos/paulloz), [GitHub](https://github.com/Paulloz), et j'en oublie sûrement. Aux États-Unis, il est même possible de payer physiquement avec son téléphone grâce à [Android Pay](https://www.android.com/pay/) ou [Apple Pay](http://www.apple.com/apple-pay/), et ces solutions [devraient arriver](http://www.frandroid.com/marques/apple/342484_apple-pay-devrait-arriver-dici-quelques-mois-en-france) en France sous peu.  
