@@ -2,7 +2,7 @@
 title: Comment j'ai perdu mon week-end,
 subtitle: ou pourquoi les jams et moi on va faire un pause
 date: 2015-01-29
-tags: jeu vidéo, gamedev, humeur
+tags: jeu vidéo, gamedev, humeur, post-mortem
 description: Le week-end du 23 au 25 janvier 2015 se tenait la Global Game Jam. Notre expérience nous a bien refroidit.
 ---
 
