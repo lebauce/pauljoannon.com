@@ -6,7 +6,7 @@ tags: post-mortem
 description: Allez, j'ai un peu de temps donc je vais raconter un peu pourquoi et comment on a décidé de lancer avec Watercat un podcast qui s'appelle Les Zehefs de la SF.
 ---
 
-![](/content/blog/2016/07/podcast.jpg)
+![](/content/blog/2016/07/on-s-est-lance-dans-un-podcast-en-2016/podcast.jpg)
 
 Allez, j'ai un peu de temps donc je vais raconter un peu pourquoi et comment on a décidé de lancer avec [Watercat](https://twitter.com/PetitGregenrit) un podcast qui s'appelle [Les Zehefs de la SF](https://twitter.com/LesZehefs). Pas d'inquiétude, l'histoire n'est pas bien longue.
 
