@@ -1,5 +1,5 @@
 ---
-title: Je prends une carte UGC ?
+title: Je prends une carte UGC&nbsp;?
 subtitle: Le guide ultime du Paulloz au cinéma (version 2016)
 date: 2017-01-08
 tags: cinéma
