@@ -15,3 +15,4 @@ pauljoannon.com
 
 # Vim swapfiles
 .*.swp
+.stack-work
