@@ -3,7 +3,7 @@ title: Les matins calmes d'un voyage animé
 subtitle: Je suis parti en Corée comme sur un coup de tête
 date: 2016-11-15
 tags: voyage, post-mortem
-description: De temps en temps, quand on ne se sent pas très bien dans sa vie, ça peut faire du bien de s'éloigner un brin de son quotidien. Moi ce que j'ai fait : partir seul un mois en Corée du Sud.
+description: "De temps en temps, quand on ne se sent pas très bien dans sa vie, ça peut faire du bien de s'éloigner un brin de son quotidien. Moi ce que j'ai fait : partir seul un mois en Corée du Sud."
 ---
 
 ![](https://c2.staticflickr.com/6/5820/30230962403_6d3d3043aa_z.jpg)

@@ -2,7 +2,7 @@
 title: Quand deux jeux gratuits te rappellent à ta vie
 date: 2016-01-18
 tags: jeu vidéo
-description: Le premier c'est l'entrée de notch pour le Ludum Dare \#29 : Drowning in Problems. Le second, qui fait un peu plus parler de lui ces derniers temps, se nomme Emily is Away.
+description: "Le premier c'est l'entrée de notch pour le Ludum Dare #29 : Drowning in Problems. Le second, qui fait un peu plus parler de lui ces derniers temps, se nomme Emily is Away."
 ---
 
 Comme je l'expliquais il y a déjà quelques temps en introduction d'un [magnifique billet](/blog/2015/11/circulez-il-n-y-a-pas-de-jeu.html), je n'ai en ce moment que très peu d'occasion de jouer à des jeux vidéo.  
