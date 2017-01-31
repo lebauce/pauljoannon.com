@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
             let em = 1,
                 leftClientRect = document.getElementsByClassName('left')[0].getBoundingClientRect(),
                 title = document.getElementsByTagName('h1')[0];
-            while (em < 10) {
+            while (em < Math.min(10, title.innerText.length * 2)) {
                 title.style['font-size'] = String(em) + 'em';
                 em += 0.1;
                 if (title.getBoundingClientRect().width >= leftClientRect.width - 40) {

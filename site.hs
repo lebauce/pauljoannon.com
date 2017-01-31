@@ -145,7 +145,7 @@ blogEntryContext :: Tags -> Archives -> Context String
 blogEntryContext tags archives = mconcat
     [
         defaultContext,
-        constField "main-title" "Paulloz&nbsp;:&nbsp;le&nbsp;blog",
+        constField "main-title" "PLZ",
         constField "main-url" "/blog",
         field "all-the-tags" (\_ -> renderTagList tags),
         field "all-the-archives" (\_ -> renderArchives archives),
