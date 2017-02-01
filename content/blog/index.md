@@ -1,4 +1,4 @@
 ---
 title: "PLZ"
-description: ""
+description: "Le blog de Paulloz."
 ---
