@@ -43,6 +43,13 @@ Tout d'abord, il est possible de changer la visibilité de chaque message.
 
 À chaque fois que je poste un message ce bouton me permet de choisir si sera visible par tous ou seulement mes abonnés, et si il sera ou non visible dans les fils publics.  
 
-Ce qui m'amène enfin à parler des fils publics. Il est possible d'afficher dans un colonne soit le fil public global (ou fédéré) qui regroupe les messages postés sur l'ensemble du réseau, soit le fil public local qui contient uniquement les messages postés sur l'instance.
+Ce qui m'amène enfin à parler des fils publics.
 
 ![](/content/blog/2017/04/entrez-dans-la-federation/fils-publics.jpg)
+
+Il est possible d'afficher dans un colonne soit le fil public global (ou fédéré) qui regroupe les messages postés sur l'ensemble du réseau, soit le fil public local qui contient uniquement les messages postés sur l'instance.
+
+
+### Du coup c'est bien ou pas&nbsp;?
+
+À vous de juger, en gardant à l'esprit d'une part que le réseau n'en est encore à ses balbutiements, d'autre part que tout semble possible à un projet porté par la communauté.
