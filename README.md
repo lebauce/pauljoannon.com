@@ -4,14 +4,16 @@
 Everyting's written in **ES6** and **Less**.
 
 ## How to install / build?
+Assuming you have a working `Stack` environment.
 ```bash
 $> npm install -g less babel
 ...
-$> cabal install hakyll
+$> stack setup
 ...
-$> ghc --make pauljoannon.com.hs
+$> stack build
 ...
-$> ./pauljoannon.com build
+$> stack exec site -- build
+...
 ```
 
 Enjoy :shipit:
