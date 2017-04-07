@@ -47,7 +47,7 @@ Ce qui m'amène enfin à parler des fils publics.
 
 ![](/content/blog/2017/04/entrez-dans-la-federation/fils-publics.jpg)
 
-Il est possible d'afficher dans un colonne soit le fil public global (ou fédéré) qui regroupe les messages postés sur l'ensemble du réseau, soit le fil public local qui contient uniquement les messages postés sur l'instance.
+Il est possible d'afficher dans un colonne soit le fil public local qui contient uniquement les messages postés sur l'instance, soit le fil public global (ou fédéré) qui regroupe tous les messages postés (ou que ce soit sur le réseau) dont l'instance a connaissance.
 
 
 ### Du coup c'est bien ou pas&nbsp;?
