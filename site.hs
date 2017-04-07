@@ -77,6 +77,14 @@ main = do
                     >>= saveSnapshot "content"
 
         -- Compile blog
+        create ["blog/atom.xml"] $ do
+            route idRoute
+            compile $ do
+                let feedContext = (bodyField "description") `mappend` defaultContext
+                entries <- fmap (take 10) . recentFirst =<<
+                    loadAllSnapshots "content/blog/**/*.md" "content"
+                renderAtom feedConfiguration feedContext entries
+
         match "content/blog/**/*.md" $ do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
@@ -191,6 +199,16 @@ configuration = defaultConfiguration
     {
         previewHost = "0.0.0.0",
         deployCommand = "cd _site && rm -rf .git && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
+    }
+
+feedConfiguration :: FeedConfiguration
+feedConfiguration = FeedConfiguration
+    {
+        feedTitle = "PLZ : Le blog de Paulloz",
+        feedDescription = "Les derniers articles disponibles sur PLZ.",
+        feedAuthorName = "Paulloz",
+        feedAuthorEmail = "hello@pauljoannon.com",
+        feedRoot = "http://pauljoannon.com"
     }
 
 -- -------------------------------------------------------------------------------------------------
