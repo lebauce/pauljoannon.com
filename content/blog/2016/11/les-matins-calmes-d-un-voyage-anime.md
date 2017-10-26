@@ -2,11 +2,11 @@
 title: Les matins calmes d'un voyage animé
 subtitle: Je suis parti en Corée comme sur un coup de tête
 date: 2016-11-15
-tags: voyage, post-mortem
+tags: voyage
 description: "De temps en temps, quand on ne se sent pas très bien dans sa vie, ça peut faire du bien de s'éloigner un brin de son quotidien. Moi ce que j'ai fait : partir seul un mois en Corée du Sud."
 ---
 
-![](https://c2.staticflickr.com/6/5820/30230962403_6d3d3043aa_z.jpg)
+![](https://farm5.staticflickr.com/4345/36871510116_9d1fdcabea_z_d.jpg)
 
 De temps en temps, quand on ne se sent pas très bien dans sa vie, ça peut faire du bien de s'éloigner un brin de son quotidien.
 Moi ce que j'ai fait&nbsp;: partir seul un mois en Corée du Sud.  
@@ -28,7 +28,7 @@ Sur le trajet je fais un arrêt rapide dans les villes de 수원 (Suwon) puis �
 Encore un peu de route et me voilà à 전주 (Jeonju) où je fais une première vrai halte. C'est l'occasion de me régaler d'un 비빔밥 (bibimbap), l'une des spécialités de la province, servi dans un 돌솥 (dolsot, un bol en pierre chaud). Je profite de l'hospitalité du [Carpe Diem Hostel](https://www.facebook.com/carpediemhostel), n'hésitez surtout pas à y passer une nuit ou deux si vous êtes dans le coin.  
 Avant de repartir je fais l'ascension du 모악산 (Moaksan), la montagne la plus haute des environs.
 
-![](https://c2.staticflickr.com/6/5591/30750078082_2ca7df2bd6_z.jpg)
+![](https://farm5.staticflickr.com/4358/36224939764_619b29c564_z_d.jpg)
 
 Je continue ma route vers le Sud, sans réelle escale qu'il serait intéressant de raconter ici.  
 Le soir je me retrouve avec moi-même (l'occasion de faire le point non&nbsp;?) et avec comme seul livre de chevet un bouquin pour apprendre le Coréen. Du coup je commence à apprenre le 한글 (hangeul, l'alphabet coréen) et, finalement, ce n'est pas si compliqué.  
@@ -46,6 +46,8 @@ Pour repartir je choisis l'avion&nbsp;: moins d'une heure de vol contre une nuit
 
 C'est une ville assez folle et tentaculaire, c'est d'ailleurs le seul endroit où j'ai réussi à me perdre (et ceux qui me connaissent sauront y voir un signe).  
 Le paysage urbain est assez fou&nbsp;: un [immense pont](https://fr.wikipedia.org/wiki/Pont_Gwangan) fait front devant la plage de 광안리 (Gwangalli) et l'énorme 신세계 (Shinsegae) s'impose au milieu du quartier de Centum City. Ce gigantesque mall s'étend sur une dizaine de niveaux et offre à ses visiteurs à peu près tout ce qu'on peut imaginer&nbsp;: un spa, une patinoire, un cinéma, un golf, un certain nombre de restaurants etc.
+
+![](https://farm5.staticflickr.com/4403/36918650571_54348050da_z_d.jpg)
 
 De mémoire je suis resté quatre jours sans bouger avant de reprendre la route. Ma direction est le parc national du 지리산 (Jirisan).  
 Certains voyageurs rencontrés un peu plus tôt dans mon périple m'ont en effet conseillé une randonnée offrant la magnifique vue d'un lever de soleil depuis le sommet du pic 천왕봉 (Cheonwangbong).
@@ -70,6 +72,9 @@ Il y a beaucoup à voir à 서울 (Seoul), mais premièrement il faut que je tro
 
 Un bon vieux poncif journalistique dirait *«&nbsp;une ville entre tradition et modernité&nbsp;»* mais je vais éviter d'écrire ça, par peur d'être pris au premier degrés. Toujours est-il qu'il est possible de visiter le palais de [Gyeongbokgung](http://french.visitkorea.or.kr/fre/SI/SI_FR_4_2_1_1.jsp) tout en voyant non loin le haut des grands immeubles des quartiers les plus récents.  
 Je fais aussi un passage par le sommet du 남산 (Namsan), montagne au cœur de la capitale en haut de laquelle se trouve la tour de transmission TV.  
+
+![](https://farm5.staticflickr.com/4357/36918587041_20ab890381_z_d.jpg)
+
 Avec le temps qu'il me reste, je fais quelques emplettes&nbsp;: je me dégote un Olympus Pen EE-3 à un prix correct et j'achète une [nouvelle paire de Jordan's](https://twitter.com/pauljoannon/status/780830960086646784) tout en vadrouillant dans 강남 (Gangnam). Je passe aussi à l'imposant Electronics Market ainsi qu'à la [Gundam Base](https://www.facebook.com/pages/Gundam-Base/202098183213319).  
 Bien sûr ces promenades sont ponctuées par pas mal de nourriture, parce que voyager c'est principalement pour la bouffe.  
 

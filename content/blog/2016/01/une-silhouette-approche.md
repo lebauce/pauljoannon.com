@@ -1,7 +1,7 @@
 ---
 title: Une silhouette approche
 date: 2016-01-03
-tags: humeur
+tags: humeur, rapport d'auto-psy
 description: Au loin une silouhette approche, comme un grand mec en manteau noir. C'est 2016 qui arrive, peut-être pour te reveler et t'essuyer les coins de la bouche.
 ---
 

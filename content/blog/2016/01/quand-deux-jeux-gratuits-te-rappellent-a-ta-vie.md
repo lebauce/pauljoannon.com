@@ -1,7 +1,7 @@
 ---
 title: Quand deux jeux gratuits te rappellent à ta vie
 date: 2016-01-18
-tags: jeu vidéo
+tags: jeu vidéo, rapport d'auto-psy
 description: "Le premier c'est l'entrée de notch pour le Ludum Dare #29 : Drowning in Problems. Le second, qui fait un peu plus parler de lui ces derniers temps, se nomme Emily is Away."
 ---
 
