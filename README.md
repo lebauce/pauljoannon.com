@@ -6,7 +6,7 @@ Everyting's written in **ES6** and **Less**.
 ## How to install / build?
 Assuming you have a working `Stack` environment.
 ```bash
-$> npm install -g less babel
+$> npm install -g less babel-cli
 ...
 $> stack setup
 ...
