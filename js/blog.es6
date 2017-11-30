@@ -88,12 +88,19 @@ window.addEventListener('load', () => {
             const update = () => {
                 scale.range([0, container[0][0].getBoundingClientRect().width]);
                 links.each(function() {
-                    d3.select(this).attr('class', 'category').style({
+                    d3.select(this).attr('class', 'category');
+                    d3.select(this).select(() => {
+                      let e = this.getElementsByTagName('span');
+                      if (e.length <= 0) {
+                        this.appendChild(document.createElement('span'));
+                        e = this.getElementsByTagName('span');
+                      }
+                      return e[0];
+                    }).attr('class', 'category__underline').style({
                         width: String(scale(getN(this.textContent))) + 'px'
                     });
                 });
             };
-            container.style({ 'display' : 'block' , 'width' : '100%' });
             update();
             window.addEventListener('resize', debounce(update, 50));
         }

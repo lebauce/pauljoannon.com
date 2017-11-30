@@ -12,22 +12,41 @@
     }
 
     &__categories {
+        &__list {
+            display: block;
+
+            width: 100%;
+        }
+
         .category {
             display: block;
 
+            position: relative;
+
             padding-bottom: .2em;
             margin: .2em 0 .2em 0;
-
-            border-bottom: 1px solid @link-color;
 
             text-decoration: none;
 
             .vendor(box-sizing, border-box);
 
-            &:hover {
-                padding-bottom: calc(~".2em - 2px");
+            &__underline {
+              display: inline-block;
 
-                border-bottom-width: 3px;
+              position:absolute;
+              top: 0;
+              left: 0;
+
+              height: 100%;
+              box-sizing: border-box;
+
+              border-bottom: 1px solid @link-color;
+            }
+
+            &:hover {
+                .category__underline {
+                  border-bottom-width: 3px;
+                }
 
                 background-color: transparent;
 
