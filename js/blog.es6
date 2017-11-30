@@ -90,12 +90,10 @@ window.addEventListener('load', () => {
                 links.each(function() {
                     d3.select(this).attr('class', 'category');
                     d3.select(this).select(() => {
-                      let e = this.getElementsByTagName('span');
-                      if (e.length <= 0) {
-                        this.appendChild(document.createElement('span'));
-                        e = this.getElementsByTagName('span');
-                      }
-                      return e[0];
+                      let e = this.querySelector('span.category__underline');
+                      if (e == null)
+                        e = this.appendChild(document.createElement('span'));
+                      return e;
                     }).attr('class', 'category__underline').style({
                         width: String(scale(getN(this.textContent))) + 'px'
                     });
