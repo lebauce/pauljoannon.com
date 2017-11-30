@@ -68,6 +68,7 @@ window.addEventListener('load', () => {
                         cancel(true);
                     }, 500);
                 } else {
+                    window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
                 }
             } else {
                 cancel(true);
