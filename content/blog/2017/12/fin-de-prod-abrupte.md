@@ -36,7 +36,7 @@ Par un incroyable alignement des astres, [Florent](https://twitter.com/ThePixelH
 
 Tant mieux, car je ne reviendrai pas travailler sur ce projet. Le moins que je puisse dire c'est que de vivre un projet comme ça (qui plus est entouré de gens ultra cool) pendant neuf ou dix mois et se voir forcer un abandon avant la fin c'est pas évident à gérer.  
 
-Depuis mon lit je me bas un peu contre mon sentiment de culpabilité en continuant à réfléchir à certains problèmes techniques et en répondant aux quelques questions de dev qu'on veut bien me poser. Mais au delà du fait que je me sente coupable de devoir abandonner la prod, j'ai aussi ce sentiment (un peu déplacé) de me faire voler mon projet.  
+Depuis mon lit je me bats un peu contre mon sentiment de culpabilité en continuant à réfléchir à certains problèmes techniques et en répondant aux quelques questions de dev qu'on veut bien me poser. Mais au delà du fait que je me sente coupable de devoir abandonner la prod, j'ai aussi ce sentiment (un peu déplacé) de me faire voler mon projet.  
 Mais au moins le projet avance. Et quand les commentaires que j'ai laissé dans mon code ne suffisent pas, je fais mon possible pour aider comme je peux. Autant pour faire avancer le jeu que pour me sentir un minimum utile.  
 
 ![](/content/blog/2017/12/fin-de-prod-abrupte/majd.jpg)
