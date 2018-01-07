@@ -1,0 +1,45 @@
+body.cv {
+    ul {
+        padding-left: 0;
+
+        list-style: none;
+    }
+
+    .left {
+        ul {
+            font-size: 1.5em;
+            font-weight: 200;
+
+            li {
+                i.fa {
+                    width: 1.3em;
+                }
+
+                margin-bottom: .3em;
+            }
+        }
+    }
+
+    .right {
+        ul {
+            li {
+                padding-left: 1.3em;
+                margin-bottom: .3em;
+
+                &:before {
+                    content: "\f0da";
+                    font-family: FontAwesome;
+                    display: inline-block;
+                    margin-left: -1.3em;
+                    width: .7em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 649px) {
+    body.cv .left h1 {
+        display: inline-block !important;
+    }
+}

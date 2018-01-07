@@ -63,6 +63,13 @@ main = do
                     >>= loadAndApplyTemplate "templates/index.html" indexContext
                     >>= relativizeUrls
 
+        match (fromList ["content/cv.md", "content/en/cv.md"]) $ do
+            route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
+            compile $ do
+                pandocCompiler
+                    >>= loadAndApplyTemplate "templates/cv.html" mainContext
+                    >>= relativizeUrls
+
         -- Compile portfolio
         create ["content/portfolio.md"] $ do
             compile $ do
@@ -133,12 +140,18 @@ babelCompiler =
 -- -------------------------------------------------------------------------------------------------
 -- Contexts
 
-indexContext :: Context String
-indexContext = mconcat
+mainContext :: Context String
+mainContext = mconcat
     [
         defaultContext,
         constField "main-title" "Paul&nbsp;Joannon",
-        constField "main-url" "/",
+        constField "main-url" "/"
+    ]
+
+indexContext :: Context String
+indexContext = mconcat
+    [
+        mainContext,
         includeField "content" "portfolio"
     ]
 
