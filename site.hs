@@ -63,12 +63,17 @@ main = do
                     >>= loadAndApplyTemplate "templates/index.html" indexContext
                     >>= relativizeUrls
 
-        match (fromList ["content/cv.md", "content/en/cv.md"]) $ do
-            route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
-            compile $ do
-                pandocCompiler
-                    >>= loadAndApplyTemplate "templates/cv.html" mainContext
-                    >>= relativizeUrls
+        -- Compile curriculum
+        -- match (fromList ["content/cv.md", "content/en/cv.md"]) $ do
+        --     route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
+        --     compile $ do
+        --         pandocCompiler
+        --             >>= loadAndApplyTemplate "templates/cv.html" mainContext
+        --             >>= relativizeUrls
+        --
+        -- match (fromList ["content/cv.pdf", "content/en/cv.pdf"]) $ do
+        --     route $ gsubRoute "content/" (const "") `composeRoutes` gsubRoute "cv" (const "cv-pauljoannon")
+        --     compile copyFileCompiler
 
         -- Compile portfolio
         create ["content/portfolio.md"] $ do
