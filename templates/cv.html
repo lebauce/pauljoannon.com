@@ -4,6 +4,31 @@
         <title>Paul Joannon - $title$</title>
 
         $partial("templates/_head.html")$
+        <style>
+            @media print {
+                body {
+                    width: 100%;
+
+                    padding: 2em;
+
+                    font-size: .7em;
+                }
+
+                .left {
+                    width: 30%;
+                    float: left;
+
+                    h1 {
+                        font-size: 3em !important;
+                    }
+                }
+
+                .right {
+                    width: 60%;
+                    float: right;
+                }
+            }
+        </style>
     </head>
     <body class="cv">
         <div class="left">
@@ -13,6 +38,7 @@
                     <li><i class="fa fa-phone"></i> (+33) 6 24 57 50 53</li>
                     <li><i class="fa fa-envelope"></i> hello (at) pauljoannon.com</li>
                     <li><i class="fa fa-lock"></i> 0x128B663C</li>
+                    <li><i class="fa fa-link"></i> http://pauljoannon.com</li>
                 </ul>
             </p>
         </div>
