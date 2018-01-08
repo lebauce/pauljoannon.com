@@ -2,6 +2,16 @@
 title: Curriculum Vitae
 ---
 
+## Compétences
+
+* Programmation orientée objet : **C**, **C++**, **C#**
+* Langages de script : **Python**, **Perl**
+* Programmation fonctionnelle : **Haskell**
+* Moteurs de jeux : **Monogame**, **Godot Engine**
+* Technologies web : **HTML**, **Javascript**, **CSS**
+* **Anglais** courant, **Italien** scolaire, bases en **Arabe**
+* Permis B
+
 ## Expérience
 
 * **The Pixel Hunt** (nov. 2016 - sept. 2017)  

@@ -2,6 +2,16 @@
 title: Curriculum Vitae
 ---
 
+## Skills
+
+* Object oriented programming: **C**, **C++**, **C#**
+* Scripting languages: **Python**, **Perl**
+* Functional programming: **Haskell**
+* Game engines: **Monogame**, **Godot Engine**
+* Web technologies: **HTML**, **Javascript**, **CSS**
+* Fluent **English**, high-school level **Italian**, basic **Arabic**
+* Driving licence
+
 ## Experience
 
 * **The Pixel Hunt** (nov. 2016 - sept. 2017)  
@@ -18,4 +28,4 @@ Linux system developer
 ## Education
 
 * I.T. expert master's degree at **EPITECH Paris** (2015)
-* Scientific high school diploma (2009)
+* Scientific high-school diploma (2009)
