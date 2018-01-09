@@ -18,7 +18,7 @@ import Text.Blaze.Html.Renderer.String (renderHtml)
 import qualified Data.Map                       as M
 import qualified Text.Blaze.Html5               as H
 import qualified Text.Blaze.Html5.Attributes    as A
-import qualified System.Process                 as Process
+-- import qualified System.Process                 as Process
 
 -- -------------------------------------------------------------------------------------------------
 
@@ -150,17 +150,17 @@ babelCompiler =
         >>= withItemBody (unixFilter "babel" [])
         >>= return
 
-pdfCompiler :: Item String -> Compiler (Item TmpFile)
-pdfCompiler item = do
-    TmpFile htmlPath <- newTmpFile "cv-pauljoannon.html"
-    let pdfPath = replaceExtension htmlPath "pdf"
-
-    unsafeCompiler $ do
-        writeFile htmlPath $ itemBody item
-        _ <- Process.system $ unwords ["wkhtmltopdf", "--disable-javascript", "--page-size", "A4", htmlPath, pdfPath]
-        return ()
-
-    makeItem $ TmpFile pdfPath
+-- pdfCompiler :: Item String -> Compiler (Item TmpFile)
+-- pdfCompiler item = do
+--     TmpFile htmlPath <- newTmpFile "cv-pauljoannon.html"
+--     let pdfPath = replaceExtension htmlPath "pdf"
+--
+--     unsafeCompiler $ do
+--         writeFile htmlPath $ itemBody item
+--         _ <- Process.system $ unwords ["wkhtmltopdf", "--disable-javascript", "--page-size", "A4", htmlPath, pdfPath]
+--         return ()
+--
+--     makeItem $ TmpFile pdfPath
 
 
 -- -------------------------------------------------------------------------------------------------
