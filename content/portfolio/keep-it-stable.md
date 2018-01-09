@@ -1,6 +1,6 @@
 ---
 title: Keep it stable
 image: keep-it-stable.jpg
-url: http://keepitstable.mysweetwhomp.fr/
+url: https://github.com/MySweetWhomp/diversityjam
 date: 2016-04-17
 ---
