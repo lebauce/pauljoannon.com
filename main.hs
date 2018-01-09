@@ -37,9 +37,8 @@ main = do
         archives <- buildArchives "content/blog/**/*.md"
 
         -- Copy static assets
-        let assets = ["CNAME", "css/fonts/*", "content/mustache.svg", "content/social.jpg",
-                      "content/**/*.jpg", "content/**/*.gif", "content/favicon.*"]
-        match (foldr1 (.||.) assets) $ do
+        match ("CNAME" .||. "css/fonts/*" .||. "content/mustache.svg" .||. "content/social.jpg" .||.
+               "content/**/*.jpg" .||. "content/**/*.gif" .||. "content/favicon.*") $ do
             route idRoute
             compile copyFileCompiler
 
