@@ -15,9 +15,10 @@ import Control.Monad (forM_, forM, liftM)
 import Data.List (intercalate, sort)
 import Text.Blaze.Html (toHtml, toValue, (!))
 import Text.Blaze.Html.Renderer.String (renderHtml)
-import qualified Data.Map as M
-import qualified Text.Blaze.Html5                as H
-import qualified Text.Blaze.Html5.Attributes     as A
+import qualified Data.Map                       as M
+import qualified Text.Blaze.Html5               as H
+import qualified Text.Blaze.Html5.Attributes    as A
+import qualified System.Process                 as Process
 
 -- -------------------------------------------------------------------------------------------------
 
@@ -64,16 +65,20 @@ main = do
                     >>= relativizeUrls
 
         -- Compile curriculum
-        -- match (fromList ["content/cv.md", "content/en/cv.md"]) $ do
+        -- match (fromList ["content/cv.md"]) $ do
         --     route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
         --     compile $ do
         --         pandocCompiler
         --             >>= loadAndApplyTemplate "templates/cv.html" mainContext
         --             >>= relativizeUrls
-        --
-        -- match (fromList ["content/cv.pdf", "content/en/cv.pdf"]) $ do
-        --     route $ gsubRoute "content/" (const "") `composeRoutes` gsubRoute "cv" (const "cv-pauljoannon")
-        --     compile copyFileCompiler
+        --             >>= saveSnapshot "content"
+
+        -- match (fromList ["content/cv.md"]) $ version "pdf" $ do
+        --     route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "pdf"
+        --     compile $ do
+        --         id' <- getUnderlying
+        --         loadSnapshot (setVersion Nothing id') "content"
+        --             >>= pdfCompiler
 
         -- Compile portfolio
         create ["content/portfolio.md"] $ do
@@ -141,6 +146,19 @@ babelCompiler =
     getResourceString
         >>= withItemBody (unixFilter "babel" [])
         >>= return
+
+pdfCompiler :: Item String -> Compiler (Item TmpFile)
+pdfCompiler item = do
+    TmpFile htmlPath <- newTmpFile "cv-pauljoannon.html"
+    let pdfPath = replaceExtension htmlPath "pdf"
+
+    unsafeCompiler $ do
+        writeFile htmlPath $ itemBody item
+        _ <- Process.system $ unwords ["wkhtmltopdf", "--disable-javascript", "--page-size", "A4", htmlPath, pdfPath]
+        return ()
+
+    makeItem $ TmpFile pdfPath
+
 
 -- -------------------------------------------------------------------------------------------------
 -- Contexts
@@ -239,7 +257,7 @@ renderArchives archives = do
         return ((year, month), route', count)
     return . intercalate ", " $ map makeLink archives'
     where
-        makeLink ((year, month), route', count) =
+        makeLink ((year, month), _, count) =
             (renderHtml (H.a ! A.href (archiveUrl (year, month)) $ toHtml $ fullText ((year, month), count) ))
         fullText ((year, month), count) = year ++ "-" ++ month ++ " (" ++ show count ++ ")"
         archiveUrl = toValue . toUrl . archivePath
@@ -253,7 +271,7 @@ buildArchives pattern = do
         frequency xs = M.toList (M.fromListWith (+) [(x, 1) | x <- xs])
 
 getMonthAndYear :: Identifier -> (Year, Month)
-getMonthAndYear id = ((getYear id), (getMonth id))
+getMonthAndYear id' = ((getYear id'), (getMonth id'))
 
 getYear :: Identifier -> Year
 getYear = takeBaseName . takeDirectory . takeDirectory . toFilePath
