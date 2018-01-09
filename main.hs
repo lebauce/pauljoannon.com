@@ -9,7 +9,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Hakyll
-import Data.Monoid (mconcat)
+import Data.Monoid ((<>))
 import System.FilePath
 import Control.Monad (forM_, forM, liftM)
 import Data.List (intercalate, sort)
@@ -60,8 +60,9 @@ main = do
         match "content/index.md" $ do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
+                let ctx = includeField "content" "portfolio" <> mainContext
                 pandocCompiler
-                    >>= loadAndApplyTemplate "templates/index.html" indexContext
+                    >>= loadAndApplyTemplate "templates/index.html" ctx
                     >>= relativizeUrls
 
         -- Compile curriculum
@@ -83,8 +84,11 @@ main = do
         -- Compile portfolio
         create ["content/portfolio.md"] $ do
             compile $ do
+                let ctx =
+                        listField "items" defaultContext (recentFirst =<< loadAllSnapshots "content/portfolio/*.md" "content") <>
+                        defaultContext
                 makeItem ""
-                    >>= loadAndApplyTemplate "templates/portfolio.html" portfolioContext
+                    >>= loadAndApplyTemplate "templates/portfolio.html" ctx
                     >>= saveSnapshot "content"
 
         match "content/portfolio/*.md" $ do
@@ -164,60 +168,36 @@ pdfCompiler item = do
 -- Contexts
 
 mainContext :: Context String
-mainContext = mconcat
-    [
-        defaultContext,
-        constField "main-title" "Paul&nbsp;Joannon",
-        constField "main-url" "/"
-    ]
-
-indexContext :: Context String
-indexContext = mconcat
-    [
-        mainContext,
-        includeField "content" "portfolio"
-    ]
-
-portfolioContext :: Context String
-portfolioContext = mconcat
-    [
-        defaultContext,
-        listField "items" defaultContext (recentFirst =<< loadAllSnapshots "content/portfolio/*.md" "content")
-    ]
+mainContext =
+        constField "main-title" "Paul&nbsp;Joannon" <>
+        constField "main-url" "/" <>
+        defaultContext
 
 blogEntryContext :: Tags -> Archives -> Context String
-blogEntryContext tags archives = mconcat
-    [
-        defaultContext,
-        constField "main-title" "PLZ",
-        constField "main-url" "/blog",
-        field "all-the-tags" (\_ -> renderTagList tags),
-        field "all-the-archives" (\_ -> renderArchives archives),
-        teaserField "teaser" "content",
-        tagsField "tags-list" tags
-    ]
+blogEntryContext tags archives =
+        constField "main-title" "PLZ" <>
+        constField "main-url" "/blog" <>
+        field "all-the-tags" (\_ -> renderTagList tags) <>
+        field "all-the-archives" (\_ -> renderArchives archives) <>
+        teaserField "teaser" "content" <>
+        tagsField "tags-list" tags <>
+        defaultContext
 
 blogContext :: Tags -> Archives -> Context String
-blogContext tags archives = mconcat
-    [
-        blogEntryContext tags archives,
-        listField "entries" (blogEntryContext tags archives) ((liftM (take 5) . recentFirst) =<< loadAllSnapshots "content/blog/**/*.md" "content")
-    ]
+blogContext tags archives =
+        listField "entries" (blogEntryContext tags archives) ((liftM (take 5) . recentFirst) =<< loadAllSnapshots "content/blog/**/*.md" "content") <>
+        blogEntryContext tags archives
 
 blogArchiveContext :: (Year, Month) -> Tags -> Archives -> Context String
-blogArchiveContext (year, month) tags archives = mconcat
-    [
-        blogEntryContext tags archives,
-        listField "entries" (blogEntryContext tags archives) (recentFirst =<< loadAllSnapshots (fromGlob $ "content/blog/" ++ year ++ "/" ++ month ++ "/*.md") "content")
-    ]
+blogArchiveContext (year, month) tags archives =
+        listField "entries" (blogEntryContext tags archives) (recentFirst =<< loadAllSnapshots (fromGlob $ "content/blog/" ++ year ++ "/" ++ month ++ "/*.md") "content") <>
+        blogEntryContext tags archives
 
 blogTagContext :: Pattern -> Tags -> Archives -> String -> Context String
-blogTagContext pattern tags archives tag = mconcat
-    [
-        blogEntryContext tags archives,
-        constField "tag" tag,
-        listField "entries" (blogEntryContext tags archives) (recentFirst =<< loadAllSnapshots pattern "content")
-    ]
+blogTagContext pattern tags archives tag =
+        constField "tag" tag <>
+        listField "entries" (blogEntryContext tags archives) (recentFirst =<< loadAllSnapshots pattern "content") <>
+        blogEntryContext tags archives
 
 -- -------------------------------------------------------------------------------------------------
 -- Fields
