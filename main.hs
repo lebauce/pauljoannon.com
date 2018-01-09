@@ -65,13 +65,13 @@ main = do
                     >>= relativizeUrls
 
         -- Compile curriculum
-        -- match (fromList ["content/cv.md"]) $ do
-        --     route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
-        --     compile $ do
-        --         pandocCompiler
-        --             >>= loadAndApplyTemplate "templates/cv.html" mainContext
-        --             >>= relativizeUrls
-        --             >>= saveSnapshot "content"
+        match (fromList ["content/cv.md"]) $ do
+            route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
+            compile $ do
+                pandocCompiler
+                    >>= loadAndApplyTemplate "templates/cv.html" mainContext
+                    >>= relativizeUrls
+                    >>= saveSnapshot "content"
 
         -- match (fromList ["content/cv.md"]) $ version "pdf" $ do
         --     route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "pdf"
@@ -234,7 +234,7 @@ configuration :: Configuration
 configuration = defaultConfiguration
     {
         previewHost = "0.0.0.0",
-        deployCommand = "cd _site && rm -rf .git && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
+        deployCommand = "cd _site && rm -rf .git && rm cv.html && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
     }
 
 feedConfiguration :: FeedConfiguration
