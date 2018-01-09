@@ -57,7 +57,7 @@ main = do
             compile babelCompiler
 
         -- Compile index
-        match (fromList ["content/index.md", "content/en/index.md"]) $ do
+        match "content/index.md" $ do
             route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
             compile $ do
                 pandocCompiler
