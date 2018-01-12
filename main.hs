@@ -213,7 +213,7 @@ configuration :: Configuration
 configuration = defaultConfiguration
     {
         previewHost = "0.0.0.0",
-        deployCommand = "cd _site && rm -rf .git && rm cv.html && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
+        deployCommand = "cd _site && rm -rf .git && rm -f cv.html && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
     }
 
 feedConfiguration :: FeedConfiguration
