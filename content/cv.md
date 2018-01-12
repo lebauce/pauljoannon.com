@@ -1,7 +1,7 @@
 ---
 title: Curriculum Vitae
 subtitle: Développeur de jeux
-text: Après avoir crée <b>«Enterre-moi, mon amour»</b> (prix des développeurs à IndieCade EU, nominé à IGF et GDCA), je suis à la recherche d'un poste dans l'industrie du jeu vidéo.<br><br>Je suis passionné de littérature et de photographie.<br><br>Tous les projets auxquels j'ai participé sont visible en détails sur mon site internet.<br><br>
+text: Après avoir crée <b>«Enterre-moi, mon amour»</b> (prix des développeurs à IndieCade EU, nominé à IGF et GDCA), je suis à la recherche d'un poste dans l'industrie du jeu vidéo.<br><br>Ayant passé trois ans à travailler pour différents médias au sein d'équipes de journalistes, je suis habitué à dialoguer autour de projets avec des personnes aux profils variés.<br>En parallèle, j'ai toujours développé des jeux dans un contexte amateur. Tous les projets auxquels j'ai eu la chance de participer sont visible en détails sur mon site internet.<br><br>Je suis aussi passionné de littérature, notamment de science-fiction, et de photographie.<br><br>
 ---
 
 ## Compétences
