@@ -41,6 +41,7 @@ text: Après avoir crée <b>«Enterre-moi, mon amour»</b> (prix des développeu
     * Participation à de nombreuses gamejams  
         * **Global Game Jam**, **Ludum Dare** (top 20), **Gameboy&nbsp;Jam**...
 * Contributions open source
+    * **Godot Engine**, moteur de jeu multi-plateforme (**C++**)
     * **Inky**, éditeur de texte pour le langage de script **Ink**
 
 ## Formation
