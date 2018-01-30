@@ -67,7 +67,6 @@
             @margin: 16px;
 
             width: calc(~"(100% - 16px) / 3");
-            margin-right: @margin / 2;
 
             line-height: 0 !important;
 
@@ -77,12 +76,8 @@
                 line-height: 1.2em;
             }
 
-            &:nth-child(even),
-            &:nth-child(3n+3) {
-                margin-right: 0;
-            }
-
-            &:nth-child(3n+3) {
+            &:nth-child(3n+2) {
+                margin-right: @margin / 2;
                 margin-left: @margin / 2;
             }
         }
