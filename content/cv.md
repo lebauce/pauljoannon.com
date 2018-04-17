@@ -1,20 +1,22 @@
 ---
 title: Curriculum Vitae
 subtitle: Développeur de jeux
-text: Après avoir crée <b>«Enterre-moi, mon amour»</b> (gagnant de Google Play Indie, prix des développeurs à IndieCade EU, nominé à IGF et GDCA), je suis à la recherche d'un poste dans l'industrie du jeu vidéo.<br><br>Ayant passé trois ans à travailler pour différents médias au sein d'équipes de journalistes, je suis habitué à dialoguer autour de projets avec des personnes aux profils variés.<br>En parallèle, j'ai toujours développé des jeux dans un contexte amateur. Tous les projets auxquels j'ai eu la chance de participer sont visible en détails sur mon site internet.<br><br>Je suis aussi passionné de littérature, notamment de science-fiction, et de photographie.<br><br>
+text: Après avoir crée <b>«Enterre-moi, mon amour»</b> (gagnant de Google Play Indie, prix des développeurs à IndieCade EU, nominé à IGF, aux GDCA et aux BAFTA), je suis à la recherche d'un poste dans l'industrie du jeu vidéo.<br><br>Ayant passé trois ans à travailler pour différents médias au sein d'équipes de journalistes, je suis habitué à dialoguer autour de projets avec des personnes aux profils variés.<br>En parallèle, j'ai toujours développé des jeux dans un contexte amateur. Tous les projets auxquels j'ai eu la chance de participer sont visible en détails sur mon site internet.<br><br>Je suis aussi passionné de littérature, notamment de science-fiction, et de photographie.<br><br>
 ---
 
 ## Compétences
 
 * Moteurs de jeux : **Monogame**, **Godot Engine**, **Unity**
-* Programmation orientée objet : **C**, **C++**, **C#**
+* Programmation orientée objet : **C++**, **C#**
 * Langages de script : **Python**, **Perl**, **Ink**
-* Programmation fonctionnelle : **Haskell**
+* Programmation fonctionnelle : **Haskell**, **F#**
 * Technologies web : **HTML**, **Javascript**, **CSS**
 * **Anglais** courant, **Italien** scolaire, bases en **Arabe**
 
 ## Expérience professionnelle
 
+* **The Pixel Hunt** : mar. 2018 - avr. 2018 (Freelance)
+    * Portage PC / MacOS / Linux du jeu **Enterre-moi, mon amour**
 * **The Pixel Hunt** : nov. 2016 - sept. 2017 (CDD)
     * Développeur principal du jeu **Enterre-moi, mon amour**
         * Moteur & gameplay en **C#** dans **Monogame**
