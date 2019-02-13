@@ -198,21 +198,31 @@ configuration = defaultConfiguration
     {
         previewHost = "0.0.0.0",
         deployCommand = "\
-        \  echo Cleaning...                              ; \
-        \ (stack exec pauljoannon -- clean > /dev/null)  ; \
-        \  echo Building website...                      ; \
-        \ (stack exec pauljoannon -- build > /dev/null)  ; \
-        \  cd _site                                      ; \
-        \  echo Removing unnecessary files...            ; \
-        \  rm -rf .git cv/ content/cv/                   ; \
-        \  echo Initializing repository...               ; \
-        \ (git init > /dev/null)                         ; \
-        \  cp ../.git/config .git/                       ; \
-        \  git add *                                     ; \
-        \ (git commit -m ':shipit:' > /dev/null)         ; \
-        \  echo Deploying on GitHub pages...             ; \
-        \ (git push origin +master:gh-pages > /dev/null) ; \
-        \  echo Done.                                    ; \
+        \  echo Cleaning...                                                 ; \
+        \ (stack exec pauljoannon -- clean > /dev/null)                     ; \
+        \  echo Building website...                                         ; \
+        \ (stack exec pauljoannon -- build > /dev/null)                     ; \
+        \  echo Removing unnecessary files...                               ; \
+        \  rm -rf _site/cv/ _site/content/cv/                               ; \
+        \  echo Switching to gh-pages...                                    ; \
+        \  git fetch -q origin                                              ; \
+        \ (git branch -q -D gh-pages 2> /dev/null)                          ; \
+        \ (git checkout -q -b gh-pages --track origin/gh-pages > /dev/null) ; \
+        \  rsync -a --delete --exclude _site                                  \
+        \                    --exclude _cache                                 \
+        \                    --exclude .stack-work                            \
+        \                    --exclude .gitignore                             \
+        \                    _site .                                        ; \
+        \  git add -A                                                       ; \
+        \ (git commit -m ':shipit:' > /dev/null)                            ; \
+        \  echo Deploying on GitHub pages...                                ; \
+        \ (git push origin gh-pages:gh-pages > /dev/null)                   ; \
+        \  echo Done.                                                       ; \
+        \  echo Cleaning the mess...                                        ; \
+        \  git checkout -q master                                           ; \
+        \ (git branch -q -D gh-pages 2> /dev/null)                          ; \
+        \ (stack exec pauljoannon -- clean > /dev/null)                     ; \
+        \  echo 'Goodbye! :)'                                                 \
         \ "
     }
 
