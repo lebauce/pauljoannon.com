@@ -1,18 +1,6 @@
-# Vendor
-assets/vendor
-
 # Hakyll internal dirs
 /_cache
 /_site
 
-# Cabal build dir
-/dist
-
-# Haskell compiled files
-*.hi
-*.o
-pauljoannon.com
-
-# Vim swapfiles
-.*.swp
+# Stack working dir
 .stack-work
