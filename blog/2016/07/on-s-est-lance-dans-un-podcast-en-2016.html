@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PLZ - On s'est lancé dans un podcast en 2016</title>
+
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+<link rel="shortcut icon" href="../../../content/favicon.ico?v4">
+<link rel="canonical" href="http://pauljoannon.com/">
+
+<meta property="og:title" content="On s'est lancé dans un podcast en 2016">
+<meta property="og:site_name" content="PLZ">
+<meta property="og:image" content="https://paulloz.github.io/pauljoannon.com/content/social.jpg">
+<meta property="og:url" content="http://pauljoannon.com/blog/2016/07/on-s-est-lance-dans-un-podcast-en-2016.html">
+<meta property="og:locale:alternate" content="fr_FR" />
+
+
+<meta name="description" content="Allez, j'ai un peu de temps donc je vais raconter un peu pourquoi et comment on a décidé de lancer avec Watercat un podcast qui s'appelle Les Zehefs de la SF.">
+<meta property="og:description" content="Allez, j'ai un peu de temps donc je vais raconter un peu pourquoi et comment on a décidé de lancer avec Watercat un podcast qui s'appelle Les Zehefs de la SF.">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../../../css/main.css">
+
+<script src="../../../js/script.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="../../../js/blog.js"></script>
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+        <script type="text/javascript" src="../../../js/blog-entry.js"></script>
+    </head>
+    <body>
+        <div class="left">
+            <a class="left__toggle">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-info fa-stack-1x"></i>
+    </span>
+</a>
+
+            <object data="../../../content/mustache.svg" type="image/svg+xml"></object>
+<h1><a href="../../../blog">PLZ</a></h1>
+
+            <div class="left--below-title">
+                <p style="margin-top:0;">
+    Le blog de <a href="../../../">Paulloz</a>, en bordel constant, en travaux perpétuels, corps et âme sous <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">cc by-nc-nd</a>.
+</p>
+<p class="left__categories">
+    <span class="left__categories__list">
+        <a href="../../../blog/tags/D3.js.html">D3.js (1)</a>, <a href="../../../blog/tags/cin%C3%A9ma.html">cinéma (3)</a>, <a href="../../../blog/tags/donn%C3%A9es%20personnelles.html">données personnelles (5)</a>, <a href="../../../blog/tags/gamedev.html">gamedev (5)</a>, <a href="../../../blog/tags/humeur.html">humeur (6)</a>, <a href="../../../blog/tags/javascript.html">javascript (1)</a>, <a href="../../../blog/tags/jeu%20vid%C3%A9o.html">jeu vidéo (8)</a>, <a href="../../../blog/tags/post-mortem.html">post-mortem (4)</a>, <a href="../../../blog/tags/programmation.html">programmation (2)</a>, <a href="../../../blog/tags/rapport%20d%27auto-psy.html">rapport d'auto-psy (3)</a>, <a href="../../../blog/tags/r%C3%A9alit%C3%A9%20augment%C3%A9e.html">réalité augmentée (1)</a>, <a href="../../../blog/tags/voyage.html">voyage (1)</a>
+    </span>
+</p>
+<p class="left__archives">
+    <span class="left__archives__list">
+        <a href="../../../blog/2018/08.html">2018-08 (1)</a>, <a href="../../../blog/2018/03.html">2018-03 (1)</a>, <a href="../../../blog/2018/01.html">2018-01 (1)</a>, <a href="../../../blog/2017/12.html">2017-12 (2)</a>, <a href="../../../blog/2017/08.html">2017-08 (1)</a>, <a href="../../../blog/2017/04.html">2017-04 (1)</a>, <a href="../../../blog/2017/02.html">2017-02 (2)</a>, <a href="../../../blog/2017/01.html">2017-01 (2)</a>, <a href="../../../blog/2016/11.html">2016-11 (1)</a>, <a href="../../../blog/2016/07.html">2016-07 (1)</a>, <a href="../../../blog/2016/06.html">2016-06 (1)</a>, <a href="../../../blog/2016/04.html">2016-04 (2)</a>, <a href="../../../blog/2016/02.html">2016-02 (1)</a>, <a href="../../../blog/2016/01.html">2016-01 (2)</a>, <a href="../../../blog/2015/12.html">2015-12 (3)</a>, <a href="../../../blog/2015/11.html">2015-11 (3)</a>, <a href="../../../blog/2015/10.html">2015-10 (1)</a>, <a href="../../../blog/2015/01.html">2015-01 (1)</a>, <a href="../../../blog/2013/04.html">2013-04 (1)</a>
+    </span>
+</p>
+
+                <div class="separator"></div>
+<p>
+    <a href="mailto:hello@pauljoannon.com">hello[at]pauljoannon[dot]com</a>
+    <br>
+    <i class="fa fa-lock"></i>&nbsp;0x128B663C
+<p>
+    <a title="PLZ" class="social" target="_blank" href="../../../blog"><i class="fa fa-lg fa-pencil-square"></i></a>
+    <a title="@pauljoannon sur Twitter" class="social" target="_blank" href="https://twitter.com/pauljoannon"><i class="fa fa-lg fa-twitter-square"></i></a>
+    <a title="Paulloz sur GitHub" class="social" target="_blank" href="https://github.com/paulloz"><i class="fa fa-lg fa-github-square"></i></a>
+    <a title="paulloz sur Reddit" class="social" target="_blank" href="https://reddit.com/user/paulloz"><i class="fa fa-lg fa-reddit-square"></i></a>
+    <a title="Paulloz sur Flickr" class="social" target="_blank" href="https://flickr.com/photos/paulloz"><i class="fa fa-lg fa-flickr"></i></a>
+    <a title="Paulloz sur Steam" class="social" target="_blank" href="https://steamcommunity.com/id/paulloz"><i class="fa fa-lg fa-steam-square"></i></a>
+</p>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="blog">
+                <article id="entry" class="blog__entry">
+                    <h2>On s'est lancé dans un podcast en 2016</h2>
+                    
+                        <h3>C'est tard mais toujours avant que Slate.fr ne fasse croire que c'est nouveau</h3>
+                    
+                    <span class="blog__entry__metadata small">
+                        <i class="fa fa-calendar"></i>&nbsp;<span class="date">2016-07-08</span>
+                        &nbsp;
+                        <i class="fa fa-tag"></i>&nbsp;<a href="../../../blog/tags/post-mortem.html">post-mortem</a>
+                    </span>
+                    <div role="main">
+                        <div class="figure">
+<img src="../../../content/blog/2016/07/on-s-est-lance-dans-un-podcast-en-2016/podcast.jpg" />
+
+</div>
+<p>Allez, j’ai un peu de temps donc je vais raconter un peu pourquoi et comment on a décidé de lancer avec <a href="https://twitter.com/PetitGregenrit">Watercat</a> un podcast qui s’appelle <a href="https://twitter.com/LesZehefs">Les Zehefs de la SF</a>. Pas d’inquiétude, l’histoire n’est pas bien longue.</p>
+<!--more-->
+<p>À l’origine, il y a juste l’envie commune de Watercat et moi même de raconter des bêtises dans un micro et d’en infliger l’écoute à qui voudrait bien entendre. À l’origine, c’est aussi une envie commune de parler d’autre chose que de jeux-vidéo alors qu’on s’est connu sur feu <a href="http://www.livegen.fr/">Livegen</a>. Puis il y a mon idée de parler de science-fiction, peut-être sous une forme «fiction + débat + actu». À l’époque de cette idée de base on est fin 2015 (novembre ou décembre à la louche).</p>
+<div class="figure">
+<img src="https://media.giphy.com/media/v6hlgfuFftgMU/giphy.gif" />
+
+</div>
+<p>Quelques temps passent, c’est compliqué puisque mon accolyte vit à <a href="https://www.openstreetmap.org/relation/439840">Prague</a> et on a besoin d’affiner un peu notre idée de ce qu’on veut faire et raconter. Courant mars ou avril on décide qu’on va parler de drones dans l’épisode pilote. Les recherches sur le sujet démarrent et on commence à écrire un semblant de conducteur. Ça devient un peu dur de se motiver avec <a href="https://fr.wikipedia.org/wiki/1000_bornes">1000 bornes</a> qui nous séparent. On met beaucoup de temps à avancer et le projet est, de fait, un peu en pause.</p>
+<p>Bref, fast-forward jusqu’à fin mai et PAF, on a décidé de coller une date d’enregistrement sinon on ne le fera jamais. On est samedi, il pleut, la qualité des micros (et donc du son) laisse totalement à désirer et on enregistre à distance. Techniquement c’est dégueulasse mais on se dit que niveau contenu c’est cool donc je monte l’épisode (la veille au soir on a trouvé un générique qui claque). Dans la semaine qui suit, le premier numéro estempillé Les Zehefs de la SF est en ligne. La publication est complètement ghetto. C’est uploadé sur <a href="http://les-zehefs-de-la-sf.tumblr.com/">un Tumblr</a>, j’oublie complètement de mettre en place un flux RSS (alors que c’est la base pour que quiconque soit au courant de la sortie du nouvel épisode d’un podcast) ou même de publier sur <a href="https://itunes.apple.com/us/podcast/les-zehefs-de-la-sf/id1121147523">iTunes</a>.</p>
+<p>Quoi qu’il en soit, on corrige ça au fur et à mesure et on a quand même des retours sur ce premier épisode. Des trucs positifs, des trucs négatifs, mais au moins des gens nous ont écouté dire de trucs approximatifs pendant nos 45 minutes de son crade.</p>
+<p>Du coup on est sur-motivés et on prépare un épisode 2 dans la foulée. Je traîne sur des sites de petites annonce à longueur de journées pour trouver un peu de matos correct à bas prix. Fin juin on enregistre donc notre numéro 2, publié la première semaine de juillet. On y parle de police prédictive, un sujet intéressant et que je connais un poil plus que notre sujet précédent. Le côté technique est mieux, j’espère que l’éditorial l’est aussi mais le ton reste un poil hésitant.</p>
+<p>En tout cas on est pas partis pour s’arrêter tout de suite et on compte bien affiner tout ça petit à petit. Les Zehefs de la SF numéro 2, c’est par <a href>ici</a>. Pour la douleur auditive du numéro 1, c’est <a href="http://les-zehefs-de-la-sf.tumblr.com/post/145296081136/episode-01">là</a>.<br />
+Et n’hésitez surtout pas à nous envoyer votre avis, quel qu’il soit.</p>
+                    </div>
+                    <p class="blog__entry__link small align-right">
+                        <span>
+                            <a href="javascript:window.history.back()"><i class="fa fa-angle-left"></i>&nbsp;Retour</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a href="#entry"><i class="fa fa-angle-up"></i>&nbsp;Remonter</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a class="tweet"><i class="fa fa-twitter"></i>&nbsp;Tweeter</a>
+                        </span>
+                    </p>
+                    <div class="separator"></div>
+                    <div class="blog__entry__footer">
+                        <p>
+                            Non, non, il n'y a pas de commentaires sur ce blog.
+                            <br>
+                            Pour toute réaction, insulte ou mot d'amour, les liens pour me contacter sont un peu plus haut sur la gauche. ❤️
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.paulloz.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.paulloz.com/piwik.php?idsite=1" style="border:0;" alt /></p></noscript>
+<!-- End Piwik Code -->
+
+    </body>
+</html>

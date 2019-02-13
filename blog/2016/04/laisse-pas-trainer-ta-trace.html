@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PLZ - Laisse pas traîner ta trace</title>
+
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+<link rel="shortcut icon" href="../../../content/favicon.ico?v4">
+<link rel="canonical" href="http://pauljoannon.com/">
+
+<meta property="og:title" content="Laisse pas traîner ta trace">
+<meta property="og:site_name" content="PLZ">
+<meta property="og:image" content="https://paulloz.github.io/pauljoannon.com/content/social.jpg">
+<meta property="og:url" content="http://pauljoannon.com/blog/2016/04/laisse-pas-trainer-ta-trace.html">
+<meta property="og:locale:alternate" content="fr_FR" />
+
+
+<meta name="description" content="Il n’est pas très compliqué de réduire nos traces de pas numériques. Voici quelques étapes indispensables à une navigation plus «responsable».">
+<meta property="og:description" content="Il n’est pas très compliqué de réduire nos traces de pas numériques. Voici quelques étapes indispensables à une navigation plus «responsable».">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../../../css/main.css">
+
+<script src="../../../js/script.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="../../../js/blog.js"></script>
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+        <script type="text/javascript" src="../../../js/blog-entry.js"></script>
+    </head>
+    <body>
+        <div class="left">
+            <a class="left__toggle">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-info fa-stack-1x"></i>
+    </span>
+</a>
+
+            <object data="../../../content/mustache.svg" type="image/svg+xml"></object>
+<h1><a href="../../../blog">PLZ</a></h1>
+
+            <div class="left--below-title">
+                <p style="margin-top:0;">
+    Le blog de <a href="../../../">Paulloz</a>, en bordel constant, en travaux perpétuels, corps et âme sous <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">cc by-nc-nd</a>.
+</p>
+<p class="left__categories">
+    <span class="left__categories__list">
+        <a href="../../../blog/tags/D3.js.html">D3.js (1)</a>, <a href="../../../blog/tags/cin%C3%A9ma.html">cinéma (3)</a>, <a href="../../../blog/tags/donn%C3%A9es%20personnelles.html">données personnelles (5)</a>, <a href="../../../blog/tags/gamedev.html">gamedev (5)</a>, <a href="../../../blog/tags/humeur.html">humeur (6)</a>, <a href="../../../blog/tags/javascript.html">javascript (1)</a>, <a href="../../../blog/tags/jeu%20vid%C3%A9o.html">jeu vidéo (8)</a>, <a href="../../../blog/tags/post-mortem.html">post-mortem (4)</a>, <a href="../../../blog/tags/programmation.html">programmation (2)</a>, <a href="../../../blog/tags/rapport%20d%27auto-psy.html">rapport d'auto-psy (3)</a>, <a href="../../../blog/tags/r%C3%A9alit%C3%A9%20augment%C3%A9e.html">réalité augmentée (1)</a>, <a href="../../../blog/tags/voyage.html">voyage (1)</a>
+    </span>
+</p>
+<p class="left__archives">
+    <span class="left__archives__list">
+        <a href="../../../blog/2018/08.html">2018-08 (1)</a>, <a href="../../../blog/2018/03.html">2018-03 (1)</a>, <a href="../../../blog/2018/01.html">2018-01 (1)</a>, <a href="../../../blog/2017/12.html">2017-12 (2)</a>, <a href="../../../blog/2017/08.html">2017-08 (1)</a>, <a href="../../../blog/2017/04.html">2017-04 (1)</a>, <a href="../../../blog/2017/02.html">2017-02 (2)</a>, <a href="../../../blog/2017/01.html">2017-01 (2)</a>, <a href="../../../blog/2016/11.html">2016-11 (1)</a>, <a href="../../../blog/2016/07.html">2016-07 (1)</a>, <a href="../../../blog/2016/06.html">2016-06 (1)</a>, <a href="../../../blog/2016/04.html">2016-04 (2)</a>, <a href="../../../blog/2016/02.html">2016-02 (1)</a>, <a href="../../../blog/2016/01.html">2016-01 (2)</a>, <a href="../../../blog/2015/12.html">2015-12 (3)</a>, <a href="../../../blog/2015/11.html">2015-11 (3)</a>, <a href="../../../blog/2015/10.html">2015-10 (1)</a>, <a href="../../../blog/2015/01.html">2015-01 (1)</a>, <a href="../../../blog/2013/04.html">2013-04 (1)</a>
+    </span>
+</p>
+
+                <div class="separator"></div>
+<p>
+    <a href="mailto:hello@pauljoannon.com">hello[at]pauljoannon[dot]com</a>
+    <br>
+    <i class="fa fa-lock"></i>&nbsp;0x128B663C
+<p>
+    <a title="PLZ" class="social" target="_blank" href="../../../blog"><i class="fa fa-lg fa-pencil-square"></i></a>
+    <a title="@pauljoannon sur Twitter" class="social" target="_blank" href="https://twitter.com/pauljoannon"><i class="fa fa-lg fa-twitter-square"></i></a>
+    <a title="Paulloz sur GitHub" class="social" target="_blank" href="https://github.com/paulloz"><i class="fa fa-lg fa-github-square"></i></a>
+    <a title="paulloz sur Reddit" class="social" target="_blank" href="https://reddit.com/user/paulloz"><i class="fa fa-lg fa-reddit-square"></i></a>
+    <a title="Paulloz sur Flickr" class="social" target="_blank" href="https://flickr.com/photos/paulloz"><i class="fa fa-lg fa-flickr"></i></a>
+    <a title="Paulloz sur Steam" class="social" target="_blank" href="https://steamcommunity.com/id/paulloz"><i class="fa fa-lg fa-steam-square"></i></a>
+</p>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="blog">
+                <article id="entry" class="blog__entry">
+                    <h2>Laisse pas traîner ta trace</h2>
+                    
+                        <h3>Données personnelles, vie privée et sécurité #1</h3>
+                    
+                    <span class="blog__entry__metadata small">
+                        <i class="fa fa-calendar"></i>&nbsp;<span class="date">2016-04-09</span>
+                        &nbsp;
+                        <i class="fa fa-tag"></i>&nbsp;<a href="../../../blog/tags/donn%C3%A9es%20personnelles.html">données personnelles</a>
+                    </span>
+                    <div role="main">
+                        <p>Qu’on ait choisi Firefox, Chrome, Opera, Safari, Edge (il paraît que c’est le nouveau nom d’Internet Explorer), ou même Vivaldi (eh oui, il y en a…), on passe chaque jour un temps certain à utiliser un navigateur web. On ne s’en doute pas forcément, mais cette utilisation intensive peut laisser pas mal de traces.</p>
+<p>Pourtant, il n’est pas très compliqué de réduire ces traces de pas numériques. Voici quelques étapes indispensables à une navigation plus «responsable».</p>
+<!--more-->
+<h3 id="utilisons-des-logiciels-libres">Utilisons des logiciels libres</h3>
+<p>Alors avant tout, je suis désolé, mais il serait mieux de quitter les navigateurs propriétaires et d’adopter <a href="https://www.mozilla.org/fr/firefox/new/">Firefox</a>. Pourquoi ? Simplement parce qu’en tant que logiciel libre, l’intégralité de son code source est <a href="https://developer.mozilla.org/fr/docs/T%C3%A9l%C3%A9chargement_du_code_source_de_Mozilla">disponible</a> et peut donc être étudié et révisé par la communauté.</p>
+<h3 id="mangeons-un-peu-moins-de-cookies">Mangeons un peu moins de cookies</h3>
+<p>Bon ! Mais utiliser Firefox ne suffit pas à alléger nos traces.</p>
+<p>Direction le menu de configuration <em>«Vie privée»</em>, et dans la section <em>«Historique»</em>, on choisit <em>«utiliser les paramètres personnalisés pour l’historique»</em> afin de pouvoir régler comment notre navigateur doit se comporter vis-à-vis des cookies.</p>
+<div class="figure">
+<img src="../../../content/blog/2016/04/laisse-pas-trainer-ta-trace/firefox-preferences.jpg" />
+
+</div>
+<p>Un cookie, c’est un petit fichier contenant du texte qu’un site Internet envoie sur notre ordinateur. Ils sont utilisés pour beaucoup de choses utiles et pratiques, comme par exemple retenir le contenu de notre panier sur une boutique en ligne avant qu’on n’en finalise la commande. Mais ces fichiers peuvent aussi être utilisés pour nous marquer et suivre nos actions un peu partout sur Internet.<br />
+Il est donc important de trouver un juste milieu quant à leur utilisation.</p>
+<p>Premièrement, réduisons le nombre de cookies indésirables en refusant les cookies tiers. Car les sites que l’on visite directement ne sont pas les seuls à pouvoir nous faire discrètement télécharger des cookies.<br />
+Les cookies peuvent aussi venir de sites hébergeant les encarts publicitaires que l’on voit un peu partout sur Internet. Le problème, c’est que ces cookies peuvent donc être utilisés pour nous suivre sur toutes les pages affichant les mêmes encarts publicitaires.<br />
+Donc, on passe <em>«Accepter les cookies tiers»</em> sur <em>«jamais»</em>.</p>
+<p>Deuxièmement, assurons-nous de la durée de vie de nos cookies.<br />
+Un cookie est supprimé dans deux cas : si sa date d’expiration est dépassée ou si il est supprimé manuellement. On va donc régler <em>«Les conserver jusqu’à»</em> sur <em>«la fermeture de Firefox»</em>. Comme ça, tous les cookies seront nettoyés à la fermeture du navigateur.</p>
+<h3 id="et-faisons-le-plein-de-modules">Et faisons le plein de modules</h3>
+<p>Il est possible d’installer un certain nombre de modules dans Firefox. Certains d’entre eux sont très utiles et très performant pour protéger un peu plus nos données personnelles.</p>
+<div class="figure">
+<img src="../../../content/blog/2016/04/laisse-pas-trainer-ta-trace/modules.jpg" />
+
+</div>
+<p>Tout d’abord, <a href="https://github.com/gorhill/uBlock">uBlock Origin</a>, <a href="https://disconnect.me/">Disconnect</a> et <a href="https://www.eff.org/privacybadger">Privacy Badger</a> sont d’excellents bloqueurs de scripts qui empêcheront une majorité de trackers (des scripts ayant pour but de collecter diverse informations) de s’exécuter.</p>
+<p>Ensuite, <a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a> sert à forcer autant que possible l’utilisation du protocole HTTPS.<br />
+Pour naviguer sur Internet, notre ordinateur échange en permanence des données avec des serveurs sur lesquels sont stockés les sites web. Ces informations sont habituellement échangées en clair (et donc lisible par n’importe qui) via le protocol HTTP. En utilisant HTTPS, les informations échangées sont illisibles à tout autre personne que leur émetteur ou leur récepteur.</p>
+<div class="figure">
+<img src="../../../content/blog/2016/04/laisse-pas-trainer-ta-trace/https.jpg" />
+
+</div>
+<p>On peut remarquer qu’un cadenas apparaît à côté de l’adresse d’un site consulté via HTTPS.</p>
+<h3 id="partager-et-informer">Partager et informer !</h3>
+<p>Pour finir, le plus important est d’informer son entourage et de l’inciter à faire attention à son tour. La protection de nos données personnelles et de notre vie privée est un problème global, être conscient des traces qu’on peut laisser sur Internet est la première étape de sa résolution.</p>
+                    </div>
+                    <p class="blog__entry__link small align-right">
+                        <span>
+                            <a href="javascript:window.history.back()"><i class="fa fa-angle-left"></i>&nbsp;Retour</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a href="#entry"><i class="fa fa-angle-up"></i>&nbsp;Remonter</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a class="tweet"><i class="fa fa-twitter"></i>&nbsp;Tweeter</a>
+                        </span>
+                    </p>
+                    <div class="separator"></div>
+                    <div class="blog__entry__footer">
+                        <p>
+                            Non, non, il n'y a pas de commentaires sur ce blog.
+                            <br>
+                            Pour toute réaction, insulte ou mot d'amour, les liens pour me contacter sont un peu plus haut sur la gauche. ❤️
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.paulloz.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.paulloz.com/piwik.php?idsite=1" style="border:0;" alt /></p></noscript>
+<!-- End Piwik Code -->
+
+    </body>
+</html>

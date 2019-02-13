@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PLZ - Chiffrage, au désespoir (de nos vieux ennemis)</title>
+
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+<link rel="shortcut icon" href="../../../content/favicon.ico?v4">
+<link rel="canonical" href="http://pauljoannon.com/">
+
+<meta property="og:title" content="Chiffrage, au désespoir (de nos vieux ennemis)">
+<meta property="og:site_name" content="PLZ">
+<meta property="og:image" content="https://paulloz.github.io/pauljoannon.com/content/social.jpg">
+<meta property="og:url" content="http://pauljoannon.com/blog/2016/04/chiffrage-au-desespoir.html">
+<meta property="og:locale:alternate" content="fr_FR" />
+
+
+<meta name="description" content="Il y a tant de raisons de vouloir sécuriser au maximum son smartphone. En plus, c'est hyper simple.">
+<meta property="og:description" content="Il y a tant de raisons de vouloir sécuriser au maximum son smartphone. En plus, c'est hyper simple.">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../../../css/main.css">
+
+<script src="../../../js/script.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="../../../js/blog.js"></script>
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+        <script type="text/javascript" src="../../../js/blog-entry.js"></script>
+    </head>
+    <body>
+        <div class="left">
+            <a class="left__toggle">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-info fa-stack-1x"></i>
+    </span>
+</a>
+
+            <object data="../../../content/mustache.svg" type="image/svg+xml"></object>
+<h1><a href="../../../blog">PLZ</a></h1>
+
+            <div class="left--below-title">
+                <p style="margin-top:0;">
+    Le blog de <a href="../../../">Paulloz</a>, en bordel constant, en travaux perpétuels, corps et âme sous <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">cc by-nc-nd</a>.
+</p>
+<p class="left__categories">
+    <span class="left__categories__list">
+        <a href="../../../blog/tags/D3.js.html">D3.js (1)</a>, <a href="../../../blog/tags/cin%C3%A9ma.html">cinéma (3)</a>, <a href="../../../blog/tags/donn%C3%A9es%20personnelles.html">données personnelles (5)</a>, <a href="../../../blog/tags/gamedev.html">gamedev (5)</a>, <a href="../../../blog/tags/humeur.html">humeur (6)</a>, <a href="../../../blog/tags/javascript.html">javascript (1)</a>, <a href="../../../blog/tags/jeu%20vid%C3%A9o.html">jeu vidéo (8)</a>, <a href="../../../blog/tags/post-mortem.html">post-mortem (4)</a>, <a href="../../../blog/tags/programmation.html">programmation (2)</a>, <a href="../../../blog/tags/rapport%20d%27auto-psy.html">rapport d'auto-psy (3)</a>, <a href="../../../blog/tags/r%C3%A9alit%C3%A9%20augment%C3%A9e.html">réalité augmentée (1)</a>, <a href="../../../blog/tags/voyage.html">voyage (1)</a>
+    </span>
+</p>
+<p class="left__archives">
+    <span class="left__archives__list">
+        <a href="../../../blog/2018/08.html">2018-08 (1)</a>, <a href="../../../blog/2018/03.html">2018-03 (1)</a>, <a href="../../../blog/2018/01.html">2018-01 (1)</a>, <a href="../../../blog/2017/12.html">2017-12 (2)</a>, <a href="../../../blog/2017/08.html">2017-08 (1)</a>, <a href="../../../blog/2017/04.html">2017-04 (1)</a>, <a href="../../../blog/2017/02.html">2017-02 (2)</a>, <a href="../../../blog/2017/01.html">2017-01 (2)</a>, <a href="../../../blog/2016/11.html">2016-11 (1)</a>, <a href="../../../blog/2016/07.html">2016-07 (1)</a>, <a href="../../../blog/2016/06.html">2016-06 (1)</a>, <a href="../../../blog/2016/04.html">2016-04 (2)</a>, <a href="../../../blog/2016/02.html">2016-02 (1)</a>, <a href="../../../blog/2016/01.html">2016-01 (2)</a>, <a href="../../../blog/2015/12.html">2015-12 (3)</a>, <a href="../../../blog/2015/11.html">2015-11 (3)</a>, <a href="../../../blog/2015/10.html">2015-10 (1)</a>, <a href="../../../blog/2015/01.html">2015-01 (1)</a>, <a href="../../../blog/2013/04.html">2013-04 (1)</a>
+    </span>
+</p>
+
+                <div class="separator"></div>
+<p>
+    <a href="mailto:hello@pauljoannon.com">hello[at]pauljoannon[dot]com</a>
+    <br>
+    <i class="fa fa-lock"></i>&nbsp;0x128B663C
+<p>
+    <a title="PLZ" class="social" target="_blank" href="../../../blog"><i class="fa fa-lg fa-pencil-square"></i></a>
+    <a title="@pauljoannon sur Twitter" class="social" target="_blank" href="https://twitter.com/pauljoannon"><i class="fa fa-lg fa-twitter-square"></i></a>
+    <a title="Paulloz sur GitHub" class="social" target="_blank" href="https://github.com/paulloz"><i class="fa fa-lg fa-github-square"></i></a>
+    <a title="paulloz sur Reddit" class="social" target="_blank" href="https://reddit.com/user/paulloz"><i class="fa fa-lg fa-reddit-square"></i></a>
+    <a title="Paulloz sur Flickr" class="social" target="_blank" href="https://flickr.com/photos/paulloz"><i class="fa fa-lg fa-flickr"></i></a>
+    <a title="Paulloz sur Steam" class="social" target="_blank" href="https://steamcommunity.com/id/paulloz"><i class="fa fa-lg fa-steam-square"></i></a>
+</p>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="blog">
+                <article id="entry" class="blog__entry">
+                    <h2>Chiffrage, au désespoir (de nos vieux ennemis)</h2>
+                    
+                        <h3>Données personnelles, vie privée et sécurité #2</h3>
+                    
+                    <span class="blog__entry__metadata small">
+                        <i class="fa fa-calendar"></i>&nbsp;<span class="date">2016-04-15</span>
+                        &nbsp;
+                        <i class="fa fa-tag"></i>&nbsp;<a href="../../../blog/tags/donn%C3%A9es%20personnelles.html">données personnelles</a>
+                    </span>
+                    <div role="main">
+                        <p>Mon smartphone contient une bonne partie de ma vie : mon agenda, mon répertoire, mes mails, pas mal de photos, un accès à mes comptes <a href="https://twitter.com/pauljoannon">Twitter</a>, <a href="https://snapchat.com/add/paullozz">Snapchat</a>, <a href="https://steamcommunity.com/id/paulloz">Steam</a>, <a href="https://soundcloud.com/paulloz-1">Soundcloud</a>, <a href="https://flickr.com/photos/paulloz">Flickr</a>, <a href="https://github.com/Paulloz">GitHub</a>, et j’en oublie sûrement. Aux États-Unis, il est même possible de payer physiquement avec son téléphone grâce à <a href="https://www.android.com/pay/">Android Pay</a> ou <a href="http://www.apple.com/apple-pay/">Apple Pay</a>, et ces solutions <a href="http://www.frandroid.com/marques/apple/342484_apple-pay-devrait-arriver-dici-quelques-mois-en-france">devraient arriver</a> en France sous peu.<br />
+Bref, autant de raisons de vouloir sécuriser au maximum son smartphone. En plus, c’est hyper simple.</p>
+<!--more-->
+<h3 id="bertrand-renard-si-tu-mécoutes">Bertrand Renard, si tu m’écoutes</h3>
+<p>Premier réflexe, chiffrer son smartphone. Comme ça en cas de perte, impossible d’extraire les données qu’il contient sans le dévérouiller avec la bonne passphrase.</p>
+<p><img src="../../../content/blog/2016/04/chiffrage-au-desespoir/chiffrer-android.jpg" /> <img src="../../../content/blog/2016/04/chiffrage-au-desespoir/chiffrer-ios.jpg" /> <img src="../../../content/blog/2016/04/chiffrage-au-desespoir/chiffrer-wp.jpg" /></p>
+<p>Sur un téléphone Android, il faut se rendre dans le menu de configuration <em>«Sécurité»</em> et appuyer sur le bouton <em>«Chiffrer le téléphone»</em>.<br />
+Sur iOs c’est tout aussi simple, voir encore plus transparent. Le chiffrement est activé d’office à partir du moment où le téléphone est vérouillé par un code. Direction donc le menu de configuration <em>«Touch ID et code»</em> (ou <em>«Vérouillage par code»</em>) pour définir un code. La phrase <em>«La protection des données est activée»</em> devrait ensuite apparaître tout en bas de ce menu.<br />
+Et sur Windows Phone (depuis WP10) il y a dans le menu de configuration <em>«Système»</em> un sous-menu <em>«Chiffrement du périphérique»</em> qui servira de guide.</p>
+<h3 id="des-photos-de-nuages-mais-pas-de-nuages-de-photos">Des photos de nuages mais pas de nuages de photos</h3>
+<p>Second réflexe, désactiver la synchronisation automatique des photos vers le <a href="http://download.fsfe.org/advocacy/promomaterial/NoCloud/NoCloud-sticker/thereisnocloud-sticker-74mm.en.pdf">«cloud»</a>.<br />
+Ça évitera que des <a href="https://fr.wikipedia.org/w/index.php?title=The_Fappening">photos ne se retrouve n’importe où</a> à cause de je ne sais quelle faille sur les serveurs d’Apple, Google ou Microsoft. En fait, ces serveurs je considère déjà un peu ça comme «n’importe où»…</p>
+<p><img src="../../../content/blog/2016/04/chiffrage-au-desespoir/cloud-android.jpg" /> <img src="../../../content/blog/2016/04/chiffrage-au-desespoir/cloud-ios.jpg" /> <img src="../../../content/blog/2016/04/chiffrage-au-desespoir/cloud-wp.jpg" /></p>
+<p>Sur Android, direction le menu de configuration de l’application <em>«Photos»</em> pour y désactiver l’option <em>«Sauvegarder et synchroniser»</em>.<br />
+Sur iOs c’est dans le menu de configuration <em>«iCloud»</em> que tout se passe.<br />
+Sur Windows Phone, il faut aller dans les paramètre de l’application <em>«Photos»</em> et désactiver <em>«OneDrive»</em> sous la mention <em>«Chargement automatique»</em>.</p>
+<p>En sauvegardant de temps en temps les photos sur un autre disque dur, tout devrait bien se passer.</p>
+<h3 id="dé-localisation-en-masse">Dé-localisation en masse</h3>
+<p>Un petit tour par <a href="https://maps.google.com/locationhistory/">l’historique des positions de Google Maps</a> et tout le monde s’écrit <em>«Mais c’est super flippant !»</em>. Du coup, troisième réflexe : désactiver les services de localisation.</p>
+<p><img src="../../../content/blog/2016/04/chiffrage-au-desespoir/localisation-android.jpg" /> <img src="../../../content/blog/2016/04/chiffrage-au-desespoir/localisation-ios.jpg" /> <img src="../../../content/blog/2016/04/chiffrage-au-desespoir/localisation-wp.jpg" /></p>
+<p>C’est encore une fois super simple, il y a toujours un menu de configuration dont le nom ressemble à <em>«Localisation»</em> où un bouton désactive tout d’un seul coup.</p>
+<h3 id="encore-un-jeu-de-mots-sur-le-fait-de-chiffrer-des-lettres">Encore un jeu de mots sur le fait de chiffrer des lettres</h3>
+<p>Enfin, un smartphone ça sert avant tout à communiquer. Mais communiquer en clair c’est un truc de narvalo, surtout que c’est de plus en plus simple de chiffrer (c’est à dire rendre illisible à toute autre personne que l’expéditeur et le destinataire) messages et appels.</p>
+<p>J’ai d’abord voulu aller voir du côté de <a href="https://smssecure.org/">SMSSecure</a>. Étant donné que l’application n’est utilisable que sous Android, l’intérêt est limité (impossible de déchiffrer mes messages depuis un smartphone iOs ou Windows Phone).<br />
+Jusqu’à <a href="https://blog.whatsapp.com/10000618/Le-chiffrement-de-bout-en-bout">début avril (2016)</a>, <a href="https://www.whatsapp.com/">Whatsapp</a> souffrait du même problème et ne proposait du chiffrement bout en bout qu’aux périphériques Android. Qui plus est, Whatsapp est tout sauf open source.<br />
+<a href="https://telegram.org/">Telegram</a> est aussi une option, cette fois disponible sur toutes les plateformes. Pourtant, pas mal de monde emmet des doutes (par exemple <a href="http://www.dailydot.com/politics/telegram-isis-encryption-cryptography/">ici</a>, <a href="https://unhandledexpression.com/2013/12/17/telegram-stand-back-we-know-maths/">là</a>, <a href="http://www.alexrad.me/discourse/a-264-attack-on-telegram-and-why-a-super-villain-doesnt-need-it-to-read-your-telegram-chats.html">ici</a> ou encore <a href="http://security.stackexchange.com/questions/49782/is-telegram-secure/">là</a>) quant à la sécurité réelle qu’elle apporte.</p>
+<p>Actuellement, <a href="https://whispersystems.org/">Signal</a> semble être la meilleure solution.<br />
+Une fois installée, l’application permet de communiquer (en texte et en voix) de façon chiffrée avec les autres personnes l’utilisant. Il est aussi possible de la configurer pour qu’elle remplace l’application de SMS par défaut. Comme ça, sont regroupés au même endroits les contacts valables (qui communiquent sainement) et les autres (qui parlent en clair, bâââh, caca, caca !).<br />
+Bon, je suis désolé, aucun <a href="http://support.whispersystems.org/hc/en-us/articles/213133427-Are-there-plans-for-a-Windows-Phone-version-BlackBerry-version-Ubuntu-Phone-version-">support de Windows Phone</a> n’est pour l’instant prévu.</p>
+<p>Pour plus d’information, la page <a href="https://www.eff.org/secure-messaging-scorecard">Secure Messaging Scorecard</a> de l’EFF est très bien (mais en anglais).</p>
+<h3 id="en-bonus-jai-enfin-le-droit-de-tirer-sur-le-messager">En bonus : j’ai enfin le droit de tirer sur le messager</h3>
+<p>Un petit conseil que j’expliquerai plus en détails prochainement…</p>
+<div class="figure">
+<img src="../../../content/blog/2016/04/chiffrage-au-desespoir/uninstall-messenger.jpg" />
+
+</div>
+<style type="text/css">img{max-width:32%;}</style>
+                    </div>
+                    <p class="blog__entry__link small align-right">
+                        <span>
+                            <a href="javascript:window.history.back()"><i class="fa fa-angle-left"></i>&nbsp;Retour</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a href="#entry"><i class="fa fa-angle-up"></i>&nbsp;Remonter</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a class="tweet"><i class="fa fa-twitter"></i>&nbsp;Tweeter</a>
+                        </span>
+                    </p>
+                    <div class="separator"></div>
+                    <div class="blog__entry__footer">
+                        <p>
+                            Non, non, il n'y a pas de commentaires sur ce blog.
+                            <br>
+                            Pour toute réaction, insulte ou mot d'amour, les liens pour me contacter sont un peu plus haut sur la gauche. ❤️
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.paulloz.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.paulloz.com/piwik.php?idsite=1" style="border:0;" alt /></p></noscript>
+<!-- End Piwik Code -->
+
+    </body>
+</html>

@@ -1,0 +1,6 @@
+# Hakyll internal dirs
+/_cache
+/_site
+
+# Stack working dir
+.stack-work

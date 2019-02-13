@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PLZ - Les matins calmes d'un voyage animé</title>
+
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+<link rel="shortcut icon" href="../../../content/favicon.ico?v4">
+<link rel="canonical" href="http://pauljoannon.com/">
+
+<meta property="og:title" content="Les matins calmes d'un voyage animé">
+<meta property="og:site_name" content="PLZ">
+<meta property="og:image" content="https://paulloz.github.io/pauljoannon.com/content/social.jpg">
+<meta property="og:url" content="http://pauljoannon.com/blog/2016/11/les-matins-calmes-d-un-voyage-anime.html">
+<meta property="og:locale:alternate" content="fr_FR" />
+
+
+<meta name="description" content="De temps en temps, quand on ne se sent pas très bien dans sa vie, ça peut faire du bien de s'éloigner un brin de son quotidien. Moi ce que j'ai fait : partir seul un mois en Corée du Sud.">
+<meta property="og:description" content="De temps en temps, quand on ne se sent pas très bien dans sa vie, ça peut faire du bien de s'éloigner un brin de son quotidien. Moi ce que j'ai fait : partir seul un mois en Corée du Sud.">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../../../css/main.css">
+
+<script src="../../../js/script.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="../../../js/blog.js"></script>
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+        <script type="text/javascript" src="../../../js/blog-entry.js"></script>
+    </head>
+    <body>
+        <div class="left">
+            <a class="left__toggle">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-info fa-stack-1x"></i>
+    </span>
+</a>
+
+            <object data="../../../content/mustache.svg" type="image/svg+xml"></object>
+<h1><a href="../../../blog">PLZ</a></h1>
+
+            <div class="left--below-title">
+                <p style="margin-top:0;">
+    Le blog de <a href="../../../">Paulloz</a>, en bordel constant, en travaux perpétuels, corps et âme sous <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">cc by-nc-nd</a>.
+</p>
+<p class="left__categories">
+    <span class="left__categories__list">
+        <a href="../../../blog/tags/D3.js.html">D3.js (1)</a>, <a href="../../../blog/tags/cin%C3%A9ma.html">cinéma (3)</a>, <a href="../../../blog/tags/donn%C3%A9es%20personnelles.html">données personnelles (5)</a>, <a href="../../../blog/tags/gamedev.html">gamedev (5)</a>, <a href="../../../blog/tags/humeur.html">humeur (6)</a>, <a href="../../../blog/tags/javascript.html">javascript (1)</a>, <a href="../../../blog/tags/jeu%20vid%C3%A9o.html">jeu vidéo (8)</a>, <a href="../../../blog/tags/post-mortem.html">post-mortem (4)</a>, <a href="../../../blog/tags/programmation.html">programmation (2)</a>, <a href="../../../blog/tags/rapport%20d%27auto-psy.html">rapport d'auto-psy (3)</a>, <a href="../../../blog/tags/r%C3%A9alit%C3%A9%20augment%C3%A9e.html">réalité augmentée (1)</a>, <a href="../../../blog/tags/voyage.html">voyage (1)</a>
+    </span>
+</p>
+<p class="left__archives">
+    <span class="left__archives__list">
+        <a href="../../../blog/2018/08.html">2018-08 (1)</a>, <a href="../../../blog/2018/03.html">2018-03 (1)</a>, <a href="../../../blog/2018/01.html">2018-01 (1)</a>, <a href="../../../blog/2017/12.html">2017-12 (2)</a>, <a href="../../../blog/2017/08.html">2017-08 (1)</a>, <a href="../../../blog/2017/04.html">2017-04 (1)</a>, <a href="../../../blog/2017/02.html">2017-02 (2)</a>, <a href="../../../blog/2017/01.html">2017-01 (2)</a>, <a href="../../../blog/2016/11.html">2016-11 (1)</a>, <a href="../../../blog/2016/07.html">2016-07 (1)</a>, <a href="../../../blog/2016/06.html">2016-06 (1)</a>, <a href="../../../blog/2016/04.html">2016-04 (2)</a>, <a href="../../../blog/2016/02.html">2016-02 (1)</a>, <a href="../../../blog/2016/01.html">2016-01 (2)</a>, <a href="../../../blog/2015/12.html">2015-12 (3)</a>, <a href="../../../blog/2015/11.html">2015-11 (3)</a>, <a href="../../../blog/2015/10.html">2015-10 (1)</a>, <a href="../../../blog/2015/01.html">2015-01 (1)</a>, <a href="../../../blog/2013/04.html">2013-04 (1)</a>
+    </span>
+</p>
+
+                <div class="separator"></div>
+<p>
+    <a href="mailto:hello@pauljoannon.com">hello[at]pauljoannon[dot]com</a>
+    <br>
+    <i class="fa fa-lock"></i>&nbsp;0x128B663C
+<p>
+    <a title="PLZ" class="social" target="_blank" href="../../../blog"><i class="fa fa-lg fa-pencil-square"></i></a>
+    <a title="@pauljoannon sur Twitter" class="social" target="_blank" href="https://twitter.com/pauljoannon"><i class="fa fa-lg fa-twitter-square"></i></a>
+    <a title="Paulloz sur GitHub" class="social" target="_blank" href="https://github.com/paulloz"><i class="fa fa-lg fa-github-square"></i></a>
+    <a title="paulloz sur Reddit" class="social" target="_blank" href="https://reddit.com/user/paulloz"><i class="fa fa-lg fa-reddit-square"></i></a>
+    <a title="Paulloz sur Flickr" class="social" target="_blank" href="https://flickr.com/photos/paulloz"><i class="fa fa-lg fa-flickr"></i></a>
+    <a title="Paulloz sur Steam" class="social" target="_blank" href="https://steamcommunity.com/id/paulloz"><i class="fa fa-lg fa-steam-square"></i></a>
+</p>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="blog">
+                <article id="entry" class="blog__entry">
+                    <h2>Les matins calmes d'un voyage animé</h2>
+                    
+                        <h3>Je suis parti en Corée comme sur un coup de tête</h3>
+                    
+                    <span class="blog__entry__metadata small">
+                        <i class="fa fa-calendar"></i>&nbsp;<span class="date">2016-11-15</span>
+                        &nbsp;
+                        <i class="fa fa-tag"></i>&nbsp;<a href="../../../blog/tags/voyage.html">voyage</a>
+                    </span>
+                    <div role="main">
+                        <div class="figure">
+<img src="https://farm5.staticflickr.com/4345/36871510116_9d1fdcabea_z_d.jpg" />
+
+</div>
+<p>De temps en temps, quand on ne se sent pas très bien dans sa vie, ça peut faire du bien de s’éloigner un brin de son quotidien. Moi ce que j’ai fait : partir seul un mois en Corée du Sud.<br />
+Je suis parti simplement avec mon sac à dos, sans parler un brin de Coréen et sans avoir réellement préparé mon voyage.</p>
+<p>Au départ je pensais raconter tout ça seulement à coup d’anecdotes marrantes. Comment j’ai failli passer ma première nuit en Corée dans la rue. Comment je suis tombé sans le vouloir sur un pr0n coréen depuis une chambre d’hôtel. Comment j’ai passé une nuit blanche entre le parking du port de 완도 (Wando) et un convenient store juste à côté. Comment je me suis baladé à poil dans les bains publics à 진주 (Jinju). Comment j’ai rigolé seul devant les Trump World Tower à 부산 (Busan). Comment j’ai été dégoûté par les gros sacs de vers à soie bouillis sur les marchés de 대구 (Daegu).</p>
+<p>Mais non, en fait je vais raconter mon voyage un peu plus en détails…</p>
+<!--more-->
+<p>Ce qu’il faut savoir, c’est donc que je suis parti tout seul à l’autre bout d’un monde pour faire une pause avec Paris et faire un peu le point sur ma vie. Eh bien mon idiotie s’est chargée de faire en sorte que je fasse <strong>vraiment</strong> le point. Même pas 10h après mon arrivée à 서울 (Seoul) j’avais perdu mon téléphone et donc mon seul moyen de communication avec mes amis en France.<br />
+La Corée du Sud, pays de la 4G de l’infini et des innombrables hotspots Wi-Fi, ce sera sans moi.</p>
+<p>Toujours est-il que j’avais en tête les grandes lignes de mon trajet. Donc un jour et demi après mon arrivée (un délai raisonnable pour me recaler sur l’heure locale) je commençais ma route vers le Sud. Avant toute chose, j’achète une carte T-Money qui me permettra de payer les transports en commun dans tout le pays. Le but : arriver dans les quinze jours à 완도 (Wando) pour prendre un ferry en direction de 제주도 (Jeju-do).</p>
+<p>Sur le trajet je fais un arrêt rapide dans les villes de 수원 (Suwon) puis 공주 (Gongju). Une journée dans chacune d’elle m’a permis d’y admirer forteresses et murailles (datant d’un côté du XVIII<sup>e</sup>, de l’autre du VI<sup>e</sup> siècle).</p>
+<p>Encore un peu de route et me voilà à 전주 (Jeonju) où je fais une première vrai halte. C’est l’occasion de me régaler d’un 비빔밥 (bibimbap), l’une des spécialités de la province, servi dans un 돌솥 (dolsot, un bol en pierre chaud). Je profite de l’hospitalité du <a href="https://www.facebook.com/carpediemhostel">Carpe Diem Hostel</a>, n’hésitez surtout pas à y passer une nuit ou deux si vous êtes dans le coin.<br />
+Avant de repartir je fais l’ascension du 모악산 (Moaksan), la montagne la plus haute des environs.</p>
+<div class="figure">
+<img src="https://farm5.staticflickr.com/4358/36224939764_619b29c564_z_d.jpg" />
+
+</div>
+<p>Je continue ma route vers le Sud, sans réelle escale qu’il serait intéressant de raconter ici.<br />
+Le soir je me retrouve avec moi-même (l’occasion de faire le point non ?) et avec comme seul livre de chevet un bouquin pour apprendre le Coréen. Du coup je commence à apprenre le 한글 (hangeul, l’alphabet coréen) et, finalement, ce n’est pas si compliqué.<br />
+D’ailleurs, un conseil en passant : si vous partez un moment en Corée, employez-vous aussi à lire cet alphabet. Ça vous évitera des doutes inutiles en lisant des panneaux pas toujours romanisés de la même façon.</p>
+<p>Au bout de quelques jours et d’un certain nombre de trajets en bus j’arrive à 완도 (Wando). Petit couac : j’arrive plus d’une heure après que le dernier ferry soit parti. Tant pis, je passe la nuit dehors et je monte sur le premier bateau le lendemain : direction 제주도 (Jeju-do) !</p>
+<p>Sous un soleil et une chaleur de ouf, je sépare mon séjour sur l’île en deux. Je reste d’abord sur la côte Nord, puis à 서귀포 (Seogwipo) sur la côte Sud. Entre les deux je fais l’ascension du mont 한라산 (Hallasan), qui est du haut de ses 1 950m le point culminant de Corée du Sud.</p>
+<div class="figure">
+<img src="https://c2.staticflickr.com/6/5322/30778307591_c5664e02cf_z.jpg" />
+
+</div>
+<p>Ce séjour sur l’île a été la période la plus calme de mon voyage : matinées dans le hamac, baignades et repas tranquilles avec les autres voyageurs de l’auberge de jeunesse. Aucun soucis, aucun tracas et pas mal de <a href="https://en.wikipedia.org/wiki/Seongsan_Ilchulbong#/media/File:Seongsan_Ilchulbong_from_the_air.jpg">paysages extraordinaires</a>.</p>
+<p>Pour repartir je choisis l’avion : moins d’une heure de vol contre une nuit entière sur le ferry. Je décolle donc pour attérrir à 부산 (Busan), deuxième ville de Corée du Sud. Sur la côte Sud-Est du pays, cette ville est coincée entre mer et montagne.</p>
+<p>C’est une ville assez folle et tentaculaire, c’est d’ailleurs le seul endroit où j’ai réussi à me perdre (et ceux qui me connaissent sauront y voir un signe).<br />
+Le paysage urbain est assez fou : un <a href="https://fr.wikipedia.org/wiki/Pont_Gwangan">immense pont</a> fait front devant la plage de 광안리 (Gwangalli) et l’énorme 신세계 (Shinsegae) s’impose au milieu du quartier de Centum City. Ce gigantesque mall s’étend sur une dizaine de niveaux et offre à ses visiteurs à peu près tout ce qu’on peut imaginer : un spa, une patinoire, un cinéma, un golf, un certain nombre de restaurants etc.</p>
+<div class="figure">
+<img src="https://farm5.staticflickr.com/4403/36918650571_54348050da_z_d.jpg" />
+
+</div>
+<p>De mémoire je suis resté quatre jours sans bouger avant de reprendre la route. Ma direction est le parc national du 지리산 (Jirisan).<br />
+Certains voyageurs rencontrés un peu plus tôt dans mon périple m’ont en effet conseillé une randonnée offrant la magnifique vue d’un lever de soleil depuis le sommet du pic 천왕봉 (Cheonwangbong).</p>
+<div class="figure">
+<img src="../../../content/blog/2016/11/les-matins-calmes-d-un-voyage-anime/sunset.jpg" />
+
+</div>
+<p>Le but est simple : arriver en fin d’après-midi (après une randonnée d’environ cinq heures) au refuge de 장터목 (Jangtomok) et y dormir. Je passe cette froide nuit à même le sol et je suis le seul non Coréen dans le refuge, autant dire que la conversation était compliquée. Le lendemain on se lève vers quatre heures et demie pour arriver en haut du pic un peu avant le lever du soleil et on profite de la vue.</p>
+<div class="figure">
+<img src="../../../content/blog/2016/11/les-matins-calmes-d-un-voyage-anime/sunrise.jpg" />
+
+</div>
+<p>En haut il fait froid, il y a un vent à décorner un bœuf et je suis clairement venu ici à l’arrache et sans équipement.<br />
+Je redescends donc du pic par le versant opposé à mon ascension de la veille et dans l’après-midi, à la fois déçu et soulagé de ne pas avoir rencontré d’<a href="http://english.knps.or.kr/Knp/Jirisan/Intro/FlagstaffSpecies.aspx">ours</a>, je continue mon voyage en remontant vers le Nord.</p>
+<p>Je passe un ou deux jours à 경주 (Gyeongju), une ville historiquement très importante. Ayant été la capitale de l’ancien royaume de Silla pendant plus de 900 ans, elle regorge de tombeaux, de ruines de palais et de temples etc. Son <a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp">musée national</a> est d’ailleurs très intéressant.</p>
+<p>Mon projet initial était de remonter la côte Est jusqu’à 속초 (Sokcho) avant de tracer vers l’Ouest jusqu’à 서울 (Seoul). Mais étant donné qu’il ne me reste que quatre jours avant de redécoller vers la France, je décide en fin de compte de remonter directement vers la capitale afin d’avoir quelques jours pour la visiter.<br />
+Ce retour je le fais en train, plus précisément en 무궁화 (mugunghwa, l’équivalent des trains corail en France), pour deux raisons : pour l’instant j’ai utilisé un tas de modes de transport (bus, bateau, avion, métro, stop, funiculaire) mais pas encore le train, et puis <a href="https://www.youtube.com/watch?v=hHkKJfcBXcw">j’aime bien les trains</a>, c’est cool les trains.</p>
+<p>Il y a beaucoup à voir à 서울 (Seoul), mais premièrement il faut que je trouve une guesthouse, mais ce n’est pas si évident du jour au lendemain (oui, je suis toujours un boloss et je m’y prends toujours au dernier moment). Après quelques coups de fil, je loge dans le très jeune quartier entourant l’université de 홍익 (Hongik).</p>
+<div class="figure">
+<img src="https://c2.staticflickr.com/6/5690/30234322554_6444f76a86_z.jpg" />
+
+</div>
+<p>Un bon vieux poncif journalistique dirait <em>« une ville entre tradition et modernité »</em> mais je vais éviter d’écrire ça, par peur d’être pris au premier degrés. Toujours est-il qu’il est possible de visiter le palais de <a href="http://french.visitkorea.or.kr/fre/SI/SI_FR_4_2_1_1.jsp">Gyeongbokgung</a> tout en voyant non loin le haut des grands immeubles des quartiers les plus récents.<br />
+Je fais aussi un passage par le sommet du 남산 (Namsan), montagne au cœur de la capitale en haut de laquelle se trouve la tour de transmission TV.</p>
+<div class="figure">
+<img src="https://farm5.staticflickr.com/4357/36918587041_20ab890381_z_d.jpg" />
+
+</div>
+<p>Avec le temps qu’il me reste, je fais quelques emplettes : je me dégote un Olympus Pen EE-3 à un prix correct et j’achète une <a href="https://twitter.com/pauljoannon/status/780830960086646784">nouvelle paire de Jordan’s</a> tout en vadrouillant dans 강남 (Gangnam). Je passe aussi à l’imposant Electronics Market ainsi qu’à la <a href="https://www.facebook.com/pages/Gundam-Base/202098183213319">Gundam Base</a>.<br />
+Bien sûr ces promenades sont ponctuées par pas mal de nourriture, parce que voyager c’est principalement pour la bouffe.</p>
+<p>Voilà, après à peine moins d’un mois sur place, je décolle de l’aéroport d’Incheon à une heure du matin et après une nuit coincé dans un minuscule siège d’avion je suis de retour à Paris pour <a href="https://www.youtube.com/watch?v=pIhQ-ND0QHY&amp;t=37">manger des croissants</a>, de retour dans le train train et une vie banale.</p>
+<div class="separator" style="width:50%;margin:auto;">
+
+</div>
+<p>Pour faire un résumé rapide de mon mois d’aventure, la Corée est un pays fascinant et il faudrait y rester bien plus longtemps pour en faire le tour. J’y ai passé un mois très agréable même s’il n’a pas été dépourvu d’une ou deux crises de panique.<br />
+Je suis parti un peu à l’arrache et je pense que j’aurais passé de bons moments n’importe où pour peu que je sois loin de chez moi.<br />
+Avant tout, ce qui est important pour moi c’est de m’être rendu compte que j’étais capable de m’en sortir par moi-même dans un endroit inconnu à l’autre bout du monde.</p>
+<p>Histoire de finir avec un peu de photo, voilà mon album <a href="https://www.flickr.com/photos/paulloz/albums/72157672659471174">Flickr</a> que je mets à jour petit à petit (c’est un peu long parce qu’il faut que je scanne et nettoie les photos prises avec mon Nikon FG).</p>
+<p>Allez, salut !</p>
+<div class="figure">
+<img src="../../../content/blog/2016/11/les-matins-calmes-d-un-voyage-anime/paulloz.gif" />
+
+</div>
+                    </div>
+                    <p class="blog__entry__link small align-right">
+                        <span>
+                            <a href="javascript:window.history.back()"><i class="fa fa-angle-left"></i>&nbsp;Retour</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a href="#entry"><i class="fa fa-angle-up"></i>&nbsp;Remonter</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a class="tweet"><i class="fa fa-twitter"></i>&nbsp;Tweeter</a>
+                        </span>
+                    </p>
+                    <div class="separator"></div>
+                    <div class="blog__entry__footer">
+                        <p>
+                            Non, non, il n'y a pas de commentaires sur ce blog.
+                            <br>
+                            Pour toute réaction, insulte ou mot d'amour, les liens pour me contacter sont un peu plus haut sur la gauche. ❤️
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.paulloz.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.paulloz.com/piwik.php?idsite=1" style="border:0;" alt /></p></noscript>
+<!-- End Piwik Code -->
+
+    </body>
+</html>

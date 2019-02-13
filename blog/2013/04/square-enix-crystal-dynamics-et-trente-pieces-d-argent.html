@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PLZ - Square Enix, Crystal Dynamics et trente pièces d'argent</title>
+
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+<link rel="shortcut icon" href="../../../content/favicon.ico?v4">
+<link rel="canonical" href="http://pauljoannon.com/">
+
+<meta property="og:title" content="Square Enix, Crystal Dynamics et trente pièces d'argent">
+<meta property="og:site_name" content="PLZ">
+<meta property="og:image" content="https://paulloz.github.io/pauljoannon.com/content/social.jpg">
+<meta property="og:url" content="http://pauljoannon.com/blog/2013/04/square-enix-crystal-dynamics-et-trente-pieces-d-argent.html">
+<meta property="og:locale:alternate" content="fr_FR" />
+
+
+<meta name="description" content="L'euphorie d'abord puis l'attente, l'impatience. Reviendra l'euphorie, très vite rattrapée par la déception, la contrariété et la rancoeur.">
+<meta property="og:description" content="L'euphorie d'abord puis l'attente, l'impatience. Reviendra l'euphorie, très vite rattrapée par la déception, la contrariété et la rancoeur.">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../../../css/main.css">
+
+<script src="../../../js/script.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="../../../js/blog.js"></script>
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+        <script type="text/javascript" src="../../../js/blog-entry.js"></script>
+    </head>
+    <body>
+        <div class="left">
+            <a class="left__toggle">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-info fa-stack-1x"></i>
+    </span>
+</a>
+
+            <object data="../../../content/mustache.svg" type="image/svg+xml"></object>
+<h1><a href="../../../blog">PLZ</a></h1>
+
+            <div class="left--below-title">
+                <p style="margin-top:0;">
+    Le blog de <a href="../../../">Paulloz</a>, en bordel constant, en travaux perpétuels, corps et âme sous <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">cc by-nc-nd</a>.
+</p>
+<p class="left__categories">
+    <span class="left__categories__list">
+        <a href="../../../blog/tags/D3.js.html">D3.js (1)</a>, <a href="../../../blog/tags/cin%C3%A9ma.html">cinéma (3)</a>, <a href="../../../blog/tags/donn%C3%A9es%20personnelles.html">données personnelles (5)</a>, <a href="../../../blog/tags/gamedev.html">gamedev (5)</a>, <a href="../../../blog/tags/humeur.html">humeur (6)</a>, <a href="../../../blog/tags/javascript.html">javascript (1)</a>, <a href="../../../blog/tags/jeu%20vid%C3%A9o.html">jeu vidéo (8)</a>, <a href="../../../blog/tags/post-mortem.html">post-mortem (4)</a>, <a href="../../../blog/tags/programmation.html">programmation (2)</a>, <a href="../../../blog/tags/rapport%20d%27auto-psy.html">rapport d'auto-psy (3)</a>, <a href="../../../blog/tags/r%C3%A9alit%C3%A9%20augment%C3%A9e.html">réalité augmentée (1)</a>, <a href="../../../blog/tags/voyage.html">voyage (1)</a>
+    </span>
+</p>
+<p class="left__archives">
+    <span class="left__archives__list">
+        <a href="../../../blog/2018/08.html">2018-08 (1)</a>, <a href="../../../blog/2018/03.html">2018-03 (1)</a>, <a href="../../../blog/2018/01.html">2018-01 (1)</a>, <a href="../../../blog/2017/12.html">2017-12 (2)</a>, <a href="../../../blog/2017/08.html">2017-08 (1)</a>, <a href="../../../blog/2017/04.html">2017-04 (1)</a>, <a href="../../../blog/2017/02.html">2017-02 (2)</a>, <a href="../../../blog/2017/01.html">2017-01 (2)</a>, <a href="../../../blog/2016/11.html">2016-11 (1)</a>, <a href="../../../blog/2016/07.html">2016-07 (1)</a>, <a href="../../../blog/2016/06.html">2016-06 (1)</a>, <a href="../../../blog/2016/04.html">2016-04 (2)</a>, <a href="../../../blog/2016/02.html">2016-02 (1)</a>, <a href="../../../blog/2016/01.html">2016-01 (2)</a>, <a href="../../../blog/2015/12.html">2015-12 (3)</a>, <a href="../../../blog/2015/11.html">2015-11 (3)</a>, <a href="../../../blog/2015/10.html">2015-10 (1)</a>, <a href="../../../blog/2015/01.html">2015-01 (1)</a>, <a href="../../../blog/2013/04.html">2013-04 (1)</a>
+    </span>
+</p>
+
+                <div class="separator"></div>
+<p>
+    <a href="mailto:hello@pauljoannon.com">hello[at]pauljoannon[dot]com</a>
+    <br>
+    <i class="fa fa-lock"></i>&nbsp;0x128B663C
+<p>
+    <a title="PLZ" class="social" target="_blank" href="../../../blog"><i class="fa fa-lg fa-pencil-square"></i></a>
+    <a title="@pauljoannon sur Twitter" class="social" target="_blank" href="https://twitter.com/pauljoannon"><i class="fa fa-lg fa-twitter-square"></i></a>
+    <a title="Paulloz sur GitHub" class="social" target="_blank" href="https://github.com/paulloz"><i class="fa fa-lg fa-github-square"></i></a>
+    <a title="paulloz sur Reddit" class="social" target="_blank" href="https://reddit.com/user/paulloz"><i class="fa fa-lg fa-reddit-square"></i></a>
+    <a title="Paulloz sur Flickr" class="social" target="_blank" href="https://flickr.com/photos/paulloz"><i class="fa fa-lg fa-flickr"></i></a>
+    <a title="Paulloz sur Steam" class="social" target="_blank" href="https://steamcommunity.com/id/paulloz"><i class="fa fa-lg fa-steam-square"></i></a>
+</p>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="blog">
+                <article id="entry" class="blog__entry">
+                    <h2>Square Enix, Crystal Dynamics et trente pièces d'argent</h2>
+                    
+                    <span class="blog__entry__metadata small">
+                        <i class="fa fa-calendar"></i>&nbsp;<span class="date">2013-04-07</span>
+                        &nbsp;
+                        <i class="fa fa-tag"></i>&nbsp;<a href="../../../blog/tags/jeu%20vid%C3%A9o.html">jeu vidéo</a>
+                    </span>
+                    <div role="main">
+                        <div class="figure">
+<img src="../../../content/blog/2013/04/square-enix-crystal-dynamics-et-trente-pieces-d-argent/tr1.jpg" />
+
+</div>
+<p>Le mois : décembre ; l’année : 2010.</p>
+<p>Square Enix <a href="http://www.rockpapershotgun.com/2010/12/06/backflip-tomb-raider-reboot-announced/">annonce</a> le développement d’un reboot à la saga <em>Tomb Raider</em> par Crystal Dynamics. Une initiative ma foi fort louable et une annonce qui a fait subir à mon esprit un certain nombre d’états différents.<br />
+L’euphorie d’abord puis l’attente, l’impatience. Reviendra l’euphorie, très vite rattrapée par la déception, la contrariété et la rancoeur.</p>
+<!--more-->
+<p>Il s’est passé quelques temps après la sortie de <em>Tomb Raider</em> et avant que je ne l’essaye. Non pas que j’attendais un quelconque retour de la part de la presse, non. Non, dans tous les cas un AAA soutenu par Square Enix recevrait au minimum un bon 75% d’avis favorables. Mais peut-être qu’inconsciemment je voulais repousser un peu l’arrivée de ce sentiment de déception qui m’emplit aujourd’hui. Enfin ne brûlons pas les étapes car je l’ai dit c’est d’abord l’euphorie qui a refait surface.<br />
+Que ressentir d’autre en lançant ce jeu et en étant étonné de voir son ordinateur cracher pareils graphismes ? Oui, c’est beau, c’est très beau, je me suis même surpris un certain nombre de fois à me le répéter intérieurement. Pour autant ça ne fait pas tout.</p>
+<p>Après l’opening on se retrouve échouée sur une île déserte (<a href="http://twitter.com/itsnotaspoil">spoiler</a> alert) et on a droit à un ersatz d’introduction stage nous expliquant les bases du gameplay intelligemment (je suis un grand partisan de l’introduction stage). Lara s’étant retrouvée seule par d’habiles ficelles scénaristiques il nous faut nous mettre à la recherche de nos compagnons.<br />
+La descente aux enfers commence alors ; aussi bien pour Lara que pour moi, joueur. D’ores et déjà entr’aperçus pour certains, on va avoir droit à un florilège des plus mauvais concepts en matière de game design.<br />
+Bien sûr ils sont tous à la mode depuis des années, bien sûr ils tuent à petit feu la majeure partie de la production vidéoludique et bien sûr ils se devaient d’être là, j’aurais dû m’en douter.</p>
+<p>Cinématiques interactives et QTE en pagaille là où un vrai <em>Tomb Raider</em> nous aurait proposé d’épiques scènes d’escalade. Checkpoints en veux-tu en voilà qui rendent les morts (aussi rares soient-elles) totalement et tout bonnement impunies. Le god-mode <em>«montre moi ce que je dois faire s’il te plaît»</em> qui en plus d’être là (passe encore, quoi que) incite le joueur à l’utiliser toutes les trois minutes.<br />
+Et le meilleur du pire, la désormais célèbre régénération de vie à couvert. Oui, ok, les interfaces no-HUD c’est joli etcetera mais bordel j’en ai marre ! Marre marre marre !<br />
+Bien sûr ceux qui me connaissent (et tous les autres en fait) diront que je suis totalement aigri et passéiste. Soit, si vous voulez. Si vouloir retrouver un minimum de challenge en jouant à un jeu c’est être passéiste ; si ne pas vouloir forcément terminer un AAA en moins de six ou sept heures c’est être aigri alors j’assume, totalement.</p>
+<div class="figure">
+<img src="../../../content/blog/2013/04/square-enix-crystal-dynamics-et-trente-pieces-d-argent/tr2.jpg" />
+
+</div>
+<p>Mais bref, passons outre (avec beaucoup de mal) ces multiples dérives de game design. Puisqu’elles sont monnaie courante je vais arrêter de blâmer ce jeu là-dessus.<br />
+Retour donc à <em>Tomb Raider</em> à proprement parler. Ah oui ? On parlait de ça ? Ouais… C’est vrai que c’est marqué sur la jaquette, j’avais oublié.<br />
+Remettons un peu de contexte. Pour ceux qui l’ignoreraient on est censé explorer des tombeaux, des ruines, enfin quoi que ce soit sur un fond minimum d’archéologie dans un <em>Tomb Raider</em>. On est censé escalader des trucs, se prendre un minimum la tête sur des énigmes dans un <em>Tomb Raider</em>.<br />
+Désolé de décevoir mais c’est pas au programme de ce reboot. Enfin si, je suis mauvaise langue, y’a des tombeaux optionnels composés chacun d’une unique salle de trois mètres sur quatre. Pas de quoi réveiller le grand frisson en tout cas. Ici le menu c’est plus courir dans de longs couloirs (en intérieur comme en extérieur) arme à la main, s’arrêter dans une salle et accueillir des ennemis vague après vague, après vague, après vague. Une fois terminé on reprend sa route tranquillement ; enfin jusqu’à la prochaine salle où ça recommence. Merci, bonsoir, au revoir messieurs dames.</p>
+<p>Ça y’est le pavé est dans la mare (s’il n’y était pas déjà…). J’entends d’ici crier au troll, à l’infamie. Tant pis pour ceux qui n’arrivent pas à comprendre mon avis et mon ressenti vis-à-vis de ce <em>Tomb Raider</em> et, à plus grande échelle, vis-à-vis de l’industrie vidéoludique actuelle. Tant pis pour eux.</p>
+<p>Pour les autres, ceux qui seraient encore en train de lire ces lignes je vais vous récompenser un peu. Je vais changer légèrement de ton et lister les éléments du jeu qui m’ont apporté un peu d’espoir alors que j’y jouais.<br />
+Je l’ai déjà dit : c’est beau ! Mais pas que. Il y a un vrai gros travail de mise en scène. La plupart des jeux de caméra, des jeux de lumière, des musiques et des doublages sont supers. C’est léché au poil de cul quasiment partout et ça, ça fait plaisir ! Même si c’est pas ultimement exploité, le coup des cordes suspendues c’est bien fun et y’avait moyen de faire de bonnes scènes prise de tête. Un détail que j’ai aimé c’est de pas avoir à appuyer sur un bouton inutilement pour que Lara se baisse en passant par un endroit exigu.<br />
+Et <a href="https://www.youtube.com/watch?v=8Q8gvjgV2XM#t=720">la scène de fuite du palais en flamme</a>, sérieusement, c’était jouissif.</p>
+<div class="figure">
+<img src="../../../content/blog/2013/04/square-enix-crystal-dynamics-et-trente-pieces-d-argent/tr3.jpg" />
+
+</div>
+<p>Vous voyez, même dans un jeu que je descends devant tout le monde depuis trois jours je peux trouver des points positifs. C’est d’ailleurs ce qui m’a énervé encore plus : voir qu’il y a plein de bonnes idées dans ce <em>Tomb Raider</em> mais que dans sa globalité il me laisse un profond sentiment de mécontentement. J’ai comme un goût désagréable dans la bouche d’avoir pensé <em>«il va enfin y avoir un gros titre qui va tout tuer ! Ça faisait longtemps !»</em>.</p>
+<p>Voilà, il est temps pour moi de vous libérer. Si vous voulez me donner votre avis sur le jeu ou cet article vous savez où me trouver.</p>
+                    </div>
+                    <p class="blog__entry__link small align-right">
+                        <span>
+                            <a href="javascript:window.history.back()"><i class="fa fa-angle-left"></i>&nbsp;Retour</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a href="#entry"><i class="fa fa-angle-up"></i>&nbsp;Remonter</a>
+                        </span>
+                        &nbsp;
+                        <span>
+                            <a class="tweet"><i class="fa fa-twitter"></i>&nbsp;Tweeter</a>
+                        </span>
+                    </p>
+                    <div class="separator"></div>
+                    <div class="blog__entry__footer">
+                        <p>
+                            Non, non, il n'y a pas de commentaires sur ce blog.
+                            <br>
+                            Pour toute réaction, insulte ou mot d'amour, les liens pour me contacter sont un peu plus haut sur la gauche. ❤️
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.paulloz.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.paulloz.com/piwik.php?idsite=1" style="border:0;" alt /></p></noscript>
+<!-- End Piwik Code -->
+
+    </body>
+</html>
