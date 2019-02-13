@@ -197,7 +197,23 @@ configuration :: Configuration
 configuration = defaultConfiguration
     {
         previewHost = "0.0.0.0",
-        deployCommand = "cd _site && rm -rf .git && rm -f cv.html && git init && cp ../.git/config .git/ && git add * && git commit -m ':shipit:' && git push origin +master:gh-pages"
+        deployCommand = "\
+        \  echo Cleaning...                              ; \
+        \ (stack exec pauljoannon -- clean > /dev/null)  ; \
+        \  echo Building website...                      ; \
+        \ (stack exec pauljoannon -- build > /dev/null)  ; \
+        \  cd _site                                      ; \
+        \  echo Removing unnecessary files...            ; \
+        \  rm -rf .git cv/ content/cv/                   ; \
+        \  echo Initializing repository...               ; \
+        \ (git init > /dev/null)                         ; \
+        \  cp ../.git/config .git/                       ; \
+        \  git add *                                     ; \
+        \ (git commit -m ':shipit:' > /dev/null)         ; \
+        \  echo Deploying on GitHub pages...             ; \
+        \ (git push origin +master:gh-pages > /dev/null) ; \
+        \  echo Done.                                    ; \
+        \ "
     }
 
 feedConfiguration :: FeedConfiguration
