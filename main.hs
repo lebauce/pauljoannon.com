@@ -1,11 +1,3 @@
--- @Author: Paul Joannon <paulloz>
--- @Date:   2016-02-12T22:41:05+01:00
--- @Email:  hello@pauljoannon.com
--- @Last modified by:   paulloz
--- @Last modified time: 2016-02-15T22:57:08+01:00
-
--- -------------------------------------------------------------------------------------------------
-
 {-# LANGUAGE OverloadedStrings #-}
 
 import Hakyll
@@ -18,7 +10,6 @@ import Text.Blaze.Html.Renderer.String (renderHtml)
 import qualified Data.Map                       as M
 import qualified Text.Blaze.Html5               as H
 import qualified Text.Blaze.Html5.Attributes    as A
--- import qualified System.Process                 as Process
 
 -- -------------------------------------------------------------------------------------------------
 
@@ -38,7 +29,7 @@ main = do
 
         -- Copy static assets
         match ("CNAME" .||. "css/fonts/*" .||. "content/mustache.svg" .||. "content/social.jpg" .||.
-               "content/**/*.jpg" .||. "content/**/*.gif" .||. "content/favicon.*") $ do
+               "content/**/*.jpg" .||. "content/**/*.gif" .||. "content/favicon.*" .||. "content/cv/pjoannon.jpg") $ do
             route idRoute
             compile copyFileCompiler
 
@@ -63,22 +54,6 @@ main = do
                 pandocCompiler
                     >>= loadAndApplyTemplate "templates/index.html" ctx
                     >>= relativizeUrls
-
-        -- Compile curriculum
-        match (fromList ["content/cv.md"]) $ do
-            route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
-            compile $ do
-                pandocCompiler
-                    >>= loadAndApplyTemplate "templates/cv.html" mainContext
-                    >>= relativizeUrls
-                    >>= saveSnapshot "content"
-
-        -- match (fromList ["content/cv.md"]) $ version "pdf" $ do
-        --     route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "pdf"
-        --     compile $ do
-        --         id' <- getUnderlying
-        --         loadSnapshot (setVersion Nothing id') "content"
-        --             >>= pdfCompiler
 
         -- Compile portfolio
         create ["content/portfolio.md"] $ do
@@ -135,6 +110,25 @@ main = do
                         >>= loadAndApplyTemplate "templates/blog.html" (blogArchiveContext (fst archive) tags archives)
                         >>= relativizeUrls
 
+        -- Compile curriculum
+        match (fromList ["content/cv/en.md", "content/cv/fr.md"]) $ do
+            route $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
+            compile $ do
+                let ctx =
+                        includeField "skills" "cv/en/skills" <>
+                        includeField "experience" "cv/en/experience" <>
+                        includeField "personnal-projects" "cv/en/personnal-projects" <>
+                        includeField "school" "cv/en/school" <>
+                        cvContext
+                pandocCompiler
+                    >>= loadAndApplyTemplate "templates/cv.html" ctx
+                    >>= relativizeUrls
+
+        match "content/cv/**/*.md" $ do
+            compile $ do
+                pandocCompiler
+                    >>= saveSnapshot "content"
+
 -- -------------------------------------------------------------------------------------------------
 -- Compilers
 
@@ -149,19 +143,6 @@ babelCompiler =
     getResourceString
         >>= withItemBody (unixFilter "babel" [])
         >>= return
-
--- pdfCompiler :: Item String -> Compiler (Item TmpFile)
--- pdfCompiler item = do
---     TmpFile htmlPath <- newTmpFile "cv-pauljoannon.html"
---     let pdfPath = replaceExtension htmlPath "pdf"
---
---     unsafeCompiler $ do
---         writeFile htmlPath $ itemBody item
---         _ <- Process.system $ unwords ["wkhtmltopdf", "--disable-javascript", "--page-size", "A4", htmlPath, pdfPath]
---         return ()
---
---     makeItem $ TmpFile pdfPath
-
 
 -- -------------------------------------------------------------------------------------------------
 -- Contexts
@@ -197,6 +178,9 @@ blogTagContext pattern tags archives tag =
         constField "tag" tag <>
         listField "entries" (blogEntryContext tags archives) (recentFirst =<< loadAllSnapshots pattern "content") <>
         blogEntryContext tags archives
+
+cvContext :: Context String
+cvContext = mainContext
 
 -- -------------------------------------------------------------------------------------------------
 -- Fields
