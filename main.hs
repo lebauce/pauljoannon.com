@@ -212,7 +212,8 @@ configuration = defaultConfiguration
         \                    --exclude _cache                                 \
         \                    --exclude .stack-work                            \
         \                    --exclude .gitignore                             \
-        \                    _site .                                        ; \
+        \                    --exclude .git                                   \
+        \                    _site/ .                                       ; \
         \  git add -A                                                       ; \
         \ (git commit -m ':shipit:' > /dev/null)                            ; \
         \  echo Deploying on GitHub pages...                                ; \
