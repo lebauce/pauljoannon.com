@@ -5,5 +5,5 @@
 * Functionnal programming: **Haskell**, **F#**
 * Scripting: **Python**, **Perl**
 * Web technologies: **HTML**, **Javascript / Typescript**, **CSS**
-* Unis system administration
+* Unix system administration
 * Fluent **english**, **italian**, basic knowledge in **arabic** and **japanese**
