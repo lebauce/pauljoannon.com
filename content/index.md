@@ -11,4 +11,4 @@ Pendant un moment j'ai aussi parlé de jeux vidéo sur [Livegen](http://livegen.
 
 Je fais des photos quand je ne code pas et que je ne traîne pas sur Twitter, Reddit ou IRC.  
 
-Oh, et j'écris sur mon [blog](/blog) de temps en temps.
+Oh, et j'écris sur mon [blog](https://paulloz.com) de temps en temps.
